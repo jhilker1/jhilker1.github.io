@@ -1,0 +1,63 @@
+baseURL = "https://jhilker.gitlab.io"
+languageCode = "en-us"
+title = "Jacob's Website"
+theme = "anatole"
+
+
+[params]
+title = "Jacob's Website"
+author = "Jacob Hilker"
+description = "This is a website."
+profilePicture = "pics/jhilker.jpg"
+keywords = ""
+mainSections = ["blog", "projects"]
+displayMode = "dark"
+customCss = ["css/custom.css"]
+
+
+[params.math]
+enable = true  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+
+[[params.socialIcons]]
+icon = "fab fa-gitlab"
+title = "GitLab"
+url = "https://gitlab.com/jhilker"
+
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/jhilker1"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://linkedin.com/in/jhilker"
+
+[[params.socialIcons]]
+icon = "fas fa-rss"
+title = "RSS Feed"
+url = "/blog/index.xml"
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+  [[menu.main]]
+  name = "Resumé"
+  identifier = "resume"
+  weight = 200
+  url = "/resume"
+
+  [[menu.main]]
+  name = "Blog"
+  identifier = "blog"
+  weight = 300
+  url = "/blog/"
+

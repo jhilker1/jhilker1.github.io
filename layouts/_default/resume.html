@@ -1,0 +1,28 @@
+{{ define "main" }}
+    <div class="post animated fadeInDown">
+      <div class="post-content">
+        <div class="resume">
+          {{ .Content }}
+        </div>
+            </div>
+
+        <div class="post-footer">
+            <div class="info">
+                {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+                {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+            </div>
+        </div>
+
+        {{ if eq .Type "post"}}
+            {{ if .Site.DisqusShortname -}}
+                <div id="fb_comments_container">
+                    <h2>{{ i18n "comments" }}</h2>
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+            {{- end }}
+        {{ end }}
+    </div>
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+{{ end }}
