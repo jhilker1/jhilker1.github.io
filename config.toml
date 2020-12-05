@@ -61,3 +61,12 @@ url = "/blog/index.xml"
   weight = 300
   url = "/blog/"
 
+
+
+## m10c theme config
+#[params.style]
+    #darkestColor = "#03045e"
+    #darkColor = "#495057"
+    #primaryColor = "#ffffff"
+    #lightColor = "#a2a2a2"
+    #lightestColor = "#d3d3d3"
