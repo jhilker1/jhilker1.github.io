@@ -9,13 +9,14 @@ variables:
 
 test:
   script:
-    - hugo
+    - hugo --layoutDir=layouts/anatole
   except:
     - master
 
 pages:
   script:
-    - hugo
+    - hugo --layoutDir=layouts/anatole
+
   artifacts:
     paths:
       - public
