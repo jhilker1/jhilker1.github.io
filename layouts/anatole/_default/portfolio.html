@@ -8,6 +8,9 @@
                         <div class="listing-item">
                             <div class="listing-post"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
                                 <div class="post-time"><span class="date">{{.Summary }}</span></div>
+                                <div class="project-tags"><span class="tags">{{.Params.tags}}</span></div>
+{{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+
                             </div>
                         </div>
                     </ul>

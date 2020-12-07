@@ -54,11 +54,16 @@ url = "/blog/index.xml"
   identifier = "resume"
   weight = 200
   url = "/resume"
-
+   
+  [[menu.main]]
+   name = "Projects"
+   identifier = "projects"
+   weight = 300
+   url = "/projects"
   [[menu.main]]
   name = "Blog"
   identifier = "blog"
-  weight = 300
+  weight = 400
   url = "/blog/"
 
 
