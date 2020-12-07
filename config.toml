@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Jacob's Website"
 theme = "anatole"
 
-
 [params]
 title = "Jacob's Website"
 author = "Jacob Hilker"
@@ -35,6 +34,12 @@ url = "https://github.com/jhilker1"
 icon = "fab fa-linkedin"
 title = "Linkedin"
 url = "https://linkedin.com/in/jhilker"
+
+
+[[params.socialIcons]]
+icon = "fab fa-dev"
+title = "Dev.to"
+url = "https://dev.to/jhilker"
 
 [[params.socialIcons]]
 icon = "fas fa-rss"
