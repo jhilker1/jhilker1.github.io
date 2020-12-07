@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Jacob's Website"
 theme = "anatole"
 
+[permalinks]
+    blog = "/:year/:month/:slug/"
+    page = "/:slug/"
+
 [params]
 title = "Jacob's Website"
 author = "Jacob Hilker"

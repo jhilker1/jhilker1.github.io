@@ -2,7 +2,7 @@
 #+date: <2020-12-04 Fri>
 #+draft: false
 #+srclang: Python
-#+tags[]: rss
+#+categories[]: rss
 #+summary: Newsfeed is an RSS reader written in Python.
 #+type: single
 
