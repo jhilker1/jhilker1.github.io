@@ -57,3 +57,9 @@ hr {
 .listing-title {
   font-family: "Roboto Slab", serif;
 }
+
+.contact textarea {
+ border-radius: 3px;
+ width: 380px;
+ border: 1px solid var(--border-color);
+}

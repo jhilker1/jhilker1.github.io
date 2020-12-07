@@ -14,19 +14,7 @@
                 {{ end }}
             </div>
 
-            {{ .Content }}
-            <h3>Projects</h3>
-            <p>Here are some of the personal projects I've been involved in.</p>
-            <ul class="projects-list">
-            {{ range first 5 (where .Paginator.Pages "Section" "projects")  }}
-            <li class="projects-list-item">
-          <a class="projects-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="projects-list-item-description">
-            {{ .Summary }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
+            {{ .Content }} 
             <h3>Recent Writings</h3>
             <p>Interested in some of the things I write on my blog? Check them out here.</p>
             <ul class="posts-list">
