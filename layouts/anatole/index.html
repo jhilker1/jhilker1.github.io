@@ -15,7 +15,7 @@
             </div>
 
             {{ .Content }} 
-            <h3>Recent Writings</h3>
+            <h3>RECENT WRITINGS</h3>
             <p>Interested in some of the things I write on my blog? Check them out here.</p>
             <ul class="posts-list">
       {{ range first 5 (where .Paginator.Pages "Type" "post").ByDate.Reverse  }}

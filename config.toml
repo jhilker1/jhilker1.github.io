@@ -4,7 +4,7 @@ title = "Jacob's Website"
 theme = "anatole"
 
 [permalinks]
-    blog = "/:year/:month/:slug/"
+    blog = "/:section/:year/:month/:slug/"
     page = "/:slug/"
 
 [params]
@@ -46,11 +46,20 @@ title = "Dev.to"
 url = "https://dev.to/jhilker"
 
 [[params.socialIcons]]
+icon = "fab fa-codepen"
+title = "CodePen"
+url = "https://codepen.io/hilkerj"
+
+
+[[params.socialIcons]]
 icon = "fas fa-rss"
 title = "RSS Feed"
 url = "/blog/index.xml"
 
-
+[[params.socialIcons]]
+    icon = "fas fa-envelope"
+    title = "Home"
+    url = "mailto:jacob.hilker2@gmail.com"
 [menu]
 
   [[menu.main]]
@@ -58,17 +67,18 @@ url = "/blog/index.xml"
   identifier = "home"
   weight = 100
   url = "/"
+
   [[menu.main]]
   name = "Resumé"
   identifier = "resume"
   weight = 200
-  url = "/resume"
+  url = "/resume/"
    
   [[menu.main]]
    name = "Projects"
    identifier = "projects"
    weight = 300
-   url = "/projects"
+   url = "/projects/"
   
   [[menu.main]]
   name = "Blog"
@@ -76,11 +86,6 @@ url = "/blog/index.xml"
   weight = 400
   url = "/blog/"
     
-  [[menu.main]]
-  name = "Contact"
-  identifier = "contact"
-  weight = 500
-  url = "/contact"
 
 
 
