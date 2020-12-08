@@ -23,7 +23,7 @@
    - Aug 2017 - May 2021
    - University of Mary Washington - Fredericksburg, VA
    - Minor in Cybersecurity
-*** _Relevant Coursework
+*** _Relevant Coursework_
          * Applications of Databases
          * Data Science
          * Artificial Neural Networks
