@@ -62,6 +62,6 @@ hr {
  border: 1px solid var(--border-color);
 }
 
-p, li, a  {
+.post-content p {
     font-size: 15px;
 }
