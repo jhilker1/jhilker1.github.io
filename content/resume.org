@@ -61,7 +61,6 @@
  * React
  * NextJS
 
-
  #+end_wrapper
 * Skills
   #+begin_wrapper
