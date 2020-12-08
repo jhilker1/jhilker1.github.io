@@ -5,39 +5,53 @@
 
 
 * Details
+  #+begin_wrapper
   05 Dec, 1998 \\
   Crozet, Virginia \\
   434-409-3789 \\
   [[mailto:jacob.hilker2@gmail.com][jacob.hilker2@gmail.com]]
 
+  #+end_wrapper
 * Profile
-Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but enjoy writing in Python.
+  #+begin_wrapper
+  Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but enjoy writing in Python.
 
+  #+end_wrapper
 * Education
+  #+begin_wrapper
 ** Bachelor's Of Computer Science
    - Aug 2017 - May 2021
    - University of Mary Washington - Fredericksburg, VA
    - Minor in Cybersecurity
-*** Relevant Coursework
+*** _Relevant Coursework
          * Applications of Databases
          * Data Science
          * Artificial Neural Networks
          * Software Security
 
+#+end_wrapper
 * Experience
+  #+begin_wrapper
 ** Library Volunteer
    Jun 2014 - Jul 2017\\
    Performed various tasks, such as shelving books, planning programs, and organizing projects, to support the Crozet library and local community.
 ** Impact Richmond
    Jul 2012 - Jul 2017\\
    Participated in week-long volunteer sessions in disadvantaged neighborhoods in Richmond, VA.
+ #+end_wrapper
 * Languages
+  #+begin_wrapper
 ** Programming Languages
   - Python
   - Shell Scripts (Bash/ZSH)
   - Java
   - HTML & CSS
   - JavaScript
+** Markup Languages
+   - Markdown
+   - Org
+   - Groff (MS Macros)
+   - Latex 
 ** Packages
  * Numpy
  * Pandas
@@ -47,12 +61,11 @@ Inquisitive, energetic software developer pursuing a position in software develo
  * React
  * NextJS
 
-** Markup Languages
-   - Markdown
-   - Org
-   - Groff (MS Macros)
-   - Latex 
+
+ #+end_wrapper
 * Skills
+  #+begin_wrapper
   - Git
   - Google Cloud Platform
   - Linux
+  #+end_wrapper
