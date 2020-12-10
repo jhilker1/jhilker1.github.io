@@ -2,6 +2,9 @@ baseURL = "https://jhilker.gitlab.io"
 languageCode = "en-us"
 title = "Jacob's Website"
 theme = "anatole"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
 [permalinks]
     blog = "/:section/:year/:month/:slug/"
     page = "/:slug/"
@@ -14,14 +17,11 @@ profilePicture = "pics/jhilker.jpg"
 keywords = ""
 mainSections = ["blog", "projects"]
 displayMode = "dark"
-customCss = ["css/custom.css"]
-
+customCss = ["css/custom.css", "css/syntax.css"]
 
 [params.math]
 enable = true  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
 use = "katex"  # options: "katex", "mathjax". default is "katex".
-pygmentsCodeFences = true
-pygmentsUseClasses = true
 
 [[params.socialIcons]]
 icon = "fab fa-gitlab"

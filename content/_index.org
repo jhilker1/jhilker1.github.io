@@ -4,7 +4,10 @@
 
 * HELLO WORLD
   Hello there, and welcome to my website. This currently houses my resume, as well as some of the projects I’ve been working on. I’m working on a blog currently, but that will be up sometime in the future. This site was written in Emacs’ Org-Mode, using Hugo as an SSG. This site is using a slightly modified version of the [[https://github.com/lxndrblz/anatole][Anatole]] theme for Hugo, as well as the wrapper from Luis Fuentes' resume project on Gitlab.
-
+  #+begin_src python
+    def hello():
+        print("Hello World")
+  #+end_src
 * ABOUT ME
   I'm currently a senior at the University of Mary Washington, majoring in computer science and minoring in cybersecurity.
 
