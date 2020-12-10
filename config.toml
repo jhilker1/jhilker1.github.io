@@ -5,6 +5,11 @@ theme = "anatole"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
 [permalinks]
     blog = "/:section/:year/:month/:slug/"
     page = "/:slug/"
@@ -54,7 +59,7 @@ url = "https://codepen.io/hilkerj"
 [[params.socialIcons]]
 icon = "fas fa-rss"
 title = "RSS Feed"
-url = "/blog/index.xml"
+url = "/blog/feed.xml"
 
 [[params.socialIcons]]
     icon = "fas fa-envelope"
