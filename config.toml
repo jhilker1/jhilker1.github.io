@@ -2,7 +2,6 @@ baseURL = "https://jhilker.gitlab.io"
 languageCode = "en-us"
 title = "Jacob's Website"
 theme = "anatole"
-
 [permalinks]
     blog = "/:section/:year/:month/:slug/"
     page = "/:slug/"
