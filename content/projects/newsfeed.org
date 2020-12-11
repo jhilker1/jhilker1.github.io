@@ -6,7 +6,6 @@
 #+summary: Newsfeed is an RSS reader written in Python.
 #+type: project
 #+layout: single
-#+image: "http://via.placeholder.com/200"
 
 
 Newsfeed is an RSS reader written in Python. 
