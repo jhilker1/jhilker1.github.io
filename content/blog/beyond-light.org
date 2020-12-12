@@ -1,0 +1,4 @@
+#+title: Current Thoughts on Beyond Light
+#+date: 2020-12-11T21:25:21-05:00
+#+draft: true
+#+type: post
