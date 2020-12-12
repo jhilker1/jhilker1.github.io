@@ -4,6 +4,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 theme = "anatole"
 title = "Jacob's Website"
+
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
@@ -24,18 +25,22 @@ identifier = "home"
 name = "Home"
 url = "/"
 weight = 1
+
+
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
+
 [params]
 author = "Jacob Hilker"
 customCss = ["css/custom.css", "css/syntax.css"]
 description = "This is a website."
 displayMode = "dark"
 keywords = ""
-mainSections = ["blog", "projects"]
+mainSections = ["blog", "project"]
 profilePicture = "pics/jhilker.jpg"
 title = "Jacob's Website"
+
 [params.math]
 enable = true
 use = "katex"
@@ -67,6 +72,7 @@ url = "/blog/feed.xml"
 icon = "fas fa-envelope"
 title = "Home"
 url = "mailto:jacob.hilker2@gmail.com"
+
 [permalinks]
-blog = "/:section/:year/:month/:slug/"
+blog = "/:section/post/:year/:month/:slug/"
 page = "/:slug/"

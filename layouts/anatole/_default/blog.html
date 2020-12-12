@@ -9,11 +9,10 @@
         -->
         {{ .Content }}
     </div>
-
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "project") }}
+    
+    {{ $paginator := .Paginate (where .Pages "Type" "post") 10 }}
     {{ range $paginator.Pages }}
 
-                                    {{ $srcIcon := lower (.Page.Params.srclang) }}
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
             <div class="post-title">
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -21,14 +20,11 @@
             </div>
             <div class="post-content">
                 <div class="p_part"><p>{{ .Summary }}</p></div>
-
             </div>
             <div class="post-footer">
                 <div class="meta">
-                    <div class="info">
-                     <i class="devicon-{{$srcIcon}}-plain"></i>
-        <span class="src" style="font-size: 14px;">{{ .Page.Params.srclang }}</span>
-                        <span class="percDone">{{ .Page.Params.percDone}}</span>
+                    <div class="info"><em class="fas fa-calendar-day"></em><span
+                                class="date">{{ .Date.Format "Mon, 02 Jan. 2006" }}</span>
                         {{ with .Params.tags }}
                             {{- range $index, $el := . -}}
                                 <a class="tag"

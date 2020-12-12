@@ -8,13 +8,13 @@
                     <div class="info">
                       <em class="fas fa-calendar-day"></em>
                       <span>&nbsp;</span>
-                      <span class="date">Posted: {{ .Date.Format "15:04, Sat. 02 Jan. 2006" }}</span>
+                      <span class="date">Posted: {{ .Date.Format "15:04, Mon. 02 Jan. 2006" }}</span>
                       {{ if ne .Lastmod .Date}}
                         <br>
                         <br>
     <em class="fas fa-calendar-day"></em>
                       <span>&nbsp;</span>
-                      <span class="date">Last updated: {{ .Lastmod.Format "15:04, Sat. 02 Jan. 2006" }}</span>
+                      <span class="date">Last updated: {{ .Lastmod.Format "15:04, Mon. 02 Jan. 2006" }}</span>
                     {{ end }}
                       <!-- 
                         <br>

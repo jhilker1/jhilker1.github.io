@@ -72,3 +72,13 @@ hr {
 .list-with-title .listing .listing-post a, .list-with-title .listing .listing-post .post-time {
 	color: var(--body-color);
 }
+
+
+
+.info.src {
+    font-size: 14px;
+}
+
+.percDone {
+    margin-left: 60em;
+}
