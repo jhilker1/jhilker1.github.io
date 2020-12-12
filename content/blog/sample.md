@@ -1,6 +1,6 @@
 ---
 title: "A Second Sample"
-date: 2020-12-11T21:09:32-05:00
+date: 2020-12-10T21:09:32-05:00
 draft: false
 type: post
 slug: second-sample
