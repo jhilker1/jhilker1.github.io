@@ -19,10 +19,10 @@
     University of Mary Washington - Fredericksburg, VA \\
     Minor in Cybersecurity
 *** _Relevant Coursework_
-         * Applications of Databases 
-         * Data Science
-         * Artificial Neural Networks
-         * Software Security
+         Applications of Databases \\
+         Data Science \\
+         Artificial Neural Networks \\
+         Software Security
 
 * Experience
 ** Library Volunteer
