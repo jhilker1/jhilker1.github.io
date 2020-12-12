@@ -26,6 +26,7 @@
                     <div class="info"><em class="fas fa-calendar-day"></em><span
                                 class="date">{{ .Date.Format "Mon, 02 Jan. 2006" }}</span>
                       <div class="readTime"><em class="fas fa-stopwatch"></em>
+                        <span>&nbsp;</span>
                         <span class="reading-time">{{ i18n "reading_time" .ReadingTime }}</span></div>
                         {{ with .Params.tags }}
                             {{- range $index, $el := . -}}

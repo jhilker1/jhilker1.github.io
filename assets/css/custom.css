@@ -79,7 +79,7 @@ hr {
     font-size: 14px;
 }
 
-.percDone, .readTime {
+.percDone {
     margin-left: 60em;
 }
 
@@ -92,4 +92,6 @@ hr {
    line-height: 1.5em; 
 }
 
-
+.readTime {
+  margin-left: 52em;
+}
