@@ -64,7 +64,7 @@ hr {
 }
 
 
-.post-content p {
+.post-content p, .project-content p {
     font-size: 15px;
 }
 
@@ -92,3 +92,7 @@ hr {
    line-height: 1.5em; 
 }
 
+.project-footer {
+    /*padding: 0 0 5px;*/
+    border-bottom: 1px solid var(--border-color);
+}

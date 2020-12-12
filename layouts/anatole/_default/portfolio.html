@@ -15,15 +15,15 @@
 
                                     {{ $srcIcon := lower (.Page.Params.srclang) }}
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
-            <div class="post-title">
+            <div class="project-title">
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </h3>
             </div>
-            <div class="post-content">
+            <div class="project-content">
                 <div class="p_part"><p>{{ .Summary }}</p></div>
 
             </div>
-            <div class="post-footer">
+            <div class="project-footer">
                 <div class="meta">
                     <div class="info">
                      <i class="devicon-{{$srcIcon}}-plain"></i>
