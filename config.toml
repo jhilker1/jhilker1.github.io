@@ -6,27 +6,34 @@ theme = "anatole"
 title = "Jacob's Website"
 
 [[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
-weight = 3
-[[menu.main]]
-identifier = "resume"
-name = "Resumé"
-url = "/resume/"
-weight = 2
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
-weight = 4
-[[menu.main]]
 identifier = "home"
 name = "Home"
 url = "/"
 weight = 1
 
+[[menu.main]]
+identifier = "resume"
+name = "Resumé"
+url = "/resume/"
+weight = 2
 
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 3
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 4
+
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archive/"
+weight = 5
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
@@ -76,3 +83,4 @@ url = "mailto:jacob.hilker2@gmail.com"
 [permalinks]
 blog = "/:section/post/:year/:month/:slug/"
 page = "/:slug/"
+archive = "/blog/:slug"

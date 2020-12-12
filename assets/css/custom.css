@@ -82,3 +82,12 @@ hr {
 .percDone {
     margin-left: 60em;
 }
+
+.post-date {
+    float: right;
+}
+
+.archive-item {
+   font-size: 14px;
+   line-height: 1.5em; 
+}

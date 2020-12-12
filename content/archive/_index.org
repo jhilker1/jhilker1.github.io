@@ -1,3 +1,0 @@
-#+title: Blog Archive
-#+type: page
-#+layout: list
