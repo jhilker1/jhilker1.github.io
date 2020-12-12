@@ -79,7 +79,7 @@ hr {
     font-size: 14px;
 }
 
-.percDone {
+.percDone, .readTime {
     margin-left: 60em;
 }
 
