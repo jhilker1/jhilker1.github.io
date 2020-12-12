@@ -83,7 +83,7 @@ hr {
     margin-left: 60em;
 }
 
-.post-date, .readTime {
+.post-date {
     float: right;
 }
 
@@ -92,6 +92,3 @@ hr {
    line-height: 1.5em; 
 }
 
-.readTime {
-  margin-left: 52em;
-}
