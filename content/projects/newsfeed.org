@@ -8,4 +8,3 @@
 
 Newsfeed is an RSS reader written in Python. 
 It is currently a WIP.
-
