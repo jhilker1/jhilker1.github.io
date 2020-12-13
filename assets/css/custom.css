@@ -93,6 +93,15 @@ hr {
 }
 
 .project-footer {
-    /*padding: 0 0 5px;*/
+    padding: 0 0 5px;
     border-bottom: 1px solid var(--border-color);
+}
+
+.project-pic {
+    float: right;
+}
+
+.project-pic img {
+    width: 20%;
+    height: 20%;
 }
