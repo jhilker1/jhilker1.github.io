@@ -7,23 +7,23 @@
 /* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #504945 }
 /* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #504945 }
 /* Keyword */ .chroma .k { color: #fb4934 }
-/* KeywordConstant */ .chroma .kc { color: #cb4b16 }
-/* KeywordDeclaration */ .chroma .kd { color: #268bd2 }
-/* KeywordNamespace */ .chroma .kn { color: #719e07 }
+/* KeywordConstant */ .chroma .kc { color: #fb4934 }
+/* KeywordDeclaration */ .chroma .kd { color: #fb4934 }
+/* KeywordNamespace */ .chroma .kn { color: #83a598 }
 /* KeywordPseudo */ .chroma .kp { color: #719e07 }
-/* KeywordReserved */ .chroma .kr { color: #268bd2 }
+/* KeywordReserved */ .chroma .kr { color: #83a598 }
 /* KeywordType */ .chroma .kt { color: #dc322f }
 /* Name */ .chroma .n {  }
 /* NameAttribute */ .chroma .na {  }
 /* NameBuiltin */ .chroma .nb { color: #d65d0e }
-/* NameBuiltinPseudo */ .chroma .bp { color: #268bd2 }
-/* NameClass */ .chroma .nc { color: #268bd2 }
+/* NameBuiltinPseudo */ .chroma .bp { color: #ebdbb2 }
+/* NameClass */ .chroma .nc { color: #8ec07c}
 /* NameConstant */ .chroma .no { color: #cb4b16 }
-/* NameDecorator */ .chroma .nd { color: #268bd2 }
+/* NameDecorator */ .chroma .nd { color: #83a598 }
 /* NameEntity */ .chroma .ni { color: #cb4b16 }
 /* NameException */ .chroma .ne { color: #cb4b16 }
-/* NameFunction */ .chroma .nf { color: #83a598 }
-/* NameFunctionMagic */ .chroma .fm {  }
+/* NameFunction */ .chroma .nf { color: #8ec07c }
+/* NameFunctionMagic */ .chroma .fm {color: #8ec07c;  }
 /* NameLabel */ .chroma .nl {  }
 /* NameNamespace */ .chroma .nn {  }
 /* NameOther */ .chroma .nx {  }
@@ -58,7 +58,7 @@
 /* LiteralNumberIntegerLong */ .chroma .il { color: #2aa198 }
 /* LiteralNumberOct */ .chroma .mo { color: #2aa198 }
 /* Operator */ .chroma .o { color: #ebdbb2 }
-/* OperatorWord */ .chroma .ow { color: #719e07 }
+/* OperatorWord */ .chroma .ow { color: #fb4934 }
 /* Punctuation */ .chroma .p {  }
 /* Comment */ .chroma .c { color: #7c6f64; font-style: italic; }
 /* CommentHashbang */ .chroma .ch { color: #928374  }
