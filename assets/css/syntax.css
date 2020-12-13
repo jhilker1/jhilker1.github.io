@@ -4,9 +4,9 @@
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
-/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #495050 }
-/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #495050 }
-/* Keyword */ .chroma .k { color: #719e07 }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #504945 }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #504945 }
+/* Keyword */ .chroma .k { color: #fb4934 }
 /* KeywordConstant */ .chroma .kc { color: #cb4b16 }
 /* KeywordDeclaration */ .chroma .kd { color: #268bd2 }
 /* KeywordNamespace */ .chroma .kn { color: #719e07 }
@@ -22,7 +22,7 @@
 /* NameDecorator */ .chroma .nd { color: #268bd2 }
 /* NameEntity */ .chroma .ni { color: #cb4b16 }
 /* NameException */ .chroma .ne { color: #cb4b16 }
-/* NameFunction */ .chroma .nf { color: #268bd2 }
+/* NameFunction */ .chroma .nf { color: #83a598 }
 /* NameFunctionMagic */ .chroma .fm {  }
 /* NameLabel */ .chroma .nl {  }
 /* NameNamespace */ .chroma .nn {  }
@@ -36,7 +36,7 @@
 /* NameVariableMagic */ .chroma .vm {  }
 /* Literal */ .chroma .l {  }
 /* LiteralDate */ .chroma .ld {  }
-/* LiteralString */ .chroma .s { color: #2aa198 }
+/* LiteralString */ .chroma .s { color: #83a958 }
 /* LiteralStringAffix */ .chroma .sa { color: #2aa198 }
 /* LiteralStringBacktick */ .chroma .sb { color: #586e75 }
 /* LiteralStringChar */ .chroma .sc { color: #2aa198 }
@@ -54,10 +54,10 @@
 /* LiteralNumberBin */ .chroma .mb { color: #2aa198 }
 /* LiteralNumberFloat */ .chroma .mf { color: #2aa198 }
 /* LiteralNumberHex */ .chroma .mh { color: #2aa198 }
-/* LiteralNumberInteger */ .chroma .mi { color: #2aa198 }
+/* LiteralNumberInteger */ .chroma .mi { color: #d3869b }
 /* LiteralNumberIntegerLong */ .chroma .il { color: #2aa198 }
 /* LiteralNumberOct */ .chroma .mo { color: #2aa198 }
-/* Operator */ .chroma .o { color: #719e07 }
+/* Operator */ .chroma .o { color: #ebdbb2 }
 /* OperatorWord */ .chroma .ow { color: #719e07 }
 /* Punctuation */ .chroma .p {  }
 /* Comment */ .chroma .c { color: #586e75 }
