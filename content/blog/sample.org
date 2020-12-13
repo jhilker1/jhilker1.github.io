@@ -11,3 +11,17 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempo
 
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
 
+#+begin_src python
+def fizzbuzz(n):
+    for i in range(1,101):
+      if n % 15 == 0:
+          print("FizzBuzz")
+      elif n % 3 == 0:
+           print("Fizz")
+      elif n % 5 == 0:
+           print("Buzz")
+      else:
+          print(n)
+
+
+#+end_src

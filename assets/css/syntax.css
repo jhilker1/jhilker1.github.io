@@ -1,4 +1,4 @@
-/* Background */ .chroma { color: #93a1a1; background-color: #002b36 }
+/* Background */ .chroma { color: #ebdbb2; background-color: #282828 }
 /* Other */ .chroma .x { color: #cb4b16 }
 /* Error */ .chroma .err {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
@@ -15,7 +15,7 @@
 /* KeywordType */ .chroma .kt { color: #dc322f }
 /* Name */ .chroma .n {  }
 /* NameAttribute */ .chroma .na {  }
-/* NameBuiltin */ .chroma .nb { color: #b58900 }
+/* NameBuiltin */ .chroma .nb { color: #d65d0e }
 /* NameBuiltinPseudo */ .chroma .bp { color: #268bd2 }
 /* NameClass */ .chroma .nc { color: #268bd2 }
 /* NameConstant */ .chroma .no { color: #cb4b16 }

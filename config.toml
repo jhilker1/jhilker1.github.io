@@ -4,7 +4,8 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 theme = "anatole"
 title = "Jacob's Website"
-
+linenos = true
+pygmentsOptions = "linenos=table"
 [[menu.main]]
 identifier = "home"
 name = "Home"
