@@ -6,7 +6,8 @@
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
 /* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #504945 }
 /* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #504945 }
-/* Keyword */ .chroma .k { color: #fb4934 }
+/* Keyword */ /*.chroma .k { color: #fb4934 }*/
+/* Keyword */ .chroma .k { color: #d79921 }
 /* KeywordConstant */ .chroma .kc { color: #fb4934 }
 /* KeywordDeclaration */ .chroma .kd { color: #fb4934 }
 /* KeywordNamespace */ .chroma .kn { color: #83a598 }
@@ -74,9 +75,10 @@
 /* GenericHeading */ .chroma .gh { color: #cb4b16 }
 /* GenericInserted */ .chroma .gi { color: #719e07 }
 /* GenericOutput */ .chroma .go {  }
-/* GenericPrompt */ .chroma .gp {  }
+/* GenericPrompt */ .chroma .gp { }
 /* GenericStrong */ .chroma .gs { font-weight: bold }
 /* GenericSubheading */ .chroma .gu { color: #268bd2 }
 /* GenericTraceback */ .chroma .gt {  }
 /* GenericUnderline */ .chroma .gl {  }
 /* TextWhitespace */ .chroma .w {  }
+ 
