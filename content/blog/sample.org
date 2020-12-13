@@ -11,17 +11,35 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempo
 
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
 
-#+begin_src python
-def fizzbuzz(n):
-    for i in range(1,101):
-      if n % 15 == 0:
-          print("FizzBuzz")
-      elif n % 3 == 0:
-           print("Fizz")
-      elif n % 5 == 0:
-           print("Buzz")
-      else:
-          print(n)
+#+begin_src javascript
+function dropRight(array, n=1) {
+  const length = array == null ? 0 : array.length
+  n = length - toInteger(n)
+  return length ? slice(array, 0, n < 0 ? 0 : n) : []
+}
 
+function castArray(...args) {
+  if (!args.length) {
+    return []
+  }
+  const value = args[0]
+  return Array.isArray(value) ? value : [value]
+}
 
+function chunk(array, size = 1) {
+  size = Math.max(toInteger(size), 0)
+  const length = array == null ? 0 : array.length
+  if (!length || size < 1) {
+    return []
+  }
+  let index = 0
+  let resIndex = 0
+  const result = new Array(Math.ceil(length / size))
+
+  while (index < length) {
+    result[resIndex++] = slice(array, index, (index += size))
+  }
+  return result
+}      
+  
 #+end_src
