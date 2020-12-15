@@ -80,7 +80,7 @@ hr {
 }
 
 .percDone {
-    margin-left: 60em;
+    margin-left: 40em;
 }
 
 .post-date {
@@ -97,15 +97,18 @@ hr {
     border-bottom: 1px solid var(--border-color);
 }
 
-.project-pic {
-    float: right;
+
+/*.project-pic {
+    display: inline;
+    text-align: right;
 }
 
 .project-pic img {
-    width: 20%;
-    height: 20%;
+    clear: both;
+    margin-left: 60%;
 }
-
+*/
 .lntable {
   font-family: 'Inconsolata', monospace;
 }
+

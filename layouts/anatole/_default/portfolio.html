@@ -21,13 +21,14 @@
             </div>
             <div class="project-content">
                 <div class="p_part"><p>{{ .Summary }}</p></div>
-
             </div>
             <div class="project-footer">
                 <div class="meta">
                     <div class="info">
                      <i class="devicon-{{$srcIcon}}-plain"></i>
         <span class="src" style="font-size: 14px;">{{ .Page.Params.srclang }}</span>
+
+                <!--<div class="project-pic"><img src="{{.Page.Params.image}}"></div>-->
                         <span class="percDone">{{ .Page.Params.percDone}}</span>
                         {{ with .Params.tags }}
                             {{- range $index, $el := . -}}
