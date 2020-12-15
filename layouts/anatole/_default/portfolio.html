@@ -29,7 +29,10 @@
         <span class="src" style="font-size: 14px;">{{ .Page.Params.srclang }}</span>
 
                 <!--<div class="project-pic"><img src="{{.Page.Params.image}}"></div>-->
-                        <span class="percDone">{{ .Page.Params.percDone}}</span>
+                                            
+                        <div class="skillbar">
+                        <div class="fill" style="width: {{.Page.Params.percDone}}%;"></div>
+                        </div>
                         {{ with .Params.tags }}
                             {{- range $index, $el := . -}}
                                 <a class="tag"

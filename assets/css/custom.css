@@ -112,3 +112,20 @@ hr {
   font-family: 'Inconsolata', monospace;
 }
 
+.skillbar {
+  width: 60%;
+  height: 5px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 3px;
+  float: right;
+  margin-top: 0.6em;
+  display: inline;
+  position: relative;
+  overflow: hidden; }
+  .skillbar .fill {
+    border-radius: 3px 0 0 3px;
+    width: 100%;
+    height: 5px;
+    background-color: #065A7F;
+    background-image: -webkit-linear-gradient(-405deg, #065A7F, #065A7F);
+    background-image: linear-gradient(135deg,#065A7F, #065A7F); }
