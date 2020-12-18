@@ -112,7 +112,7 @@ hr {
   font-family: 'Inconsolata', monospace;
 }
 
-.skillbar {
+.progbar {
   width: 60%;
   height: 5px;
   background-color: var(--secondary-bg-color);
@@ -122,7 +122,8 @@ hr {
   display: inline;
   position: relative;
   overflow: hidden; }
-  .skillbar .fill {
+
+  .progbar .fill {
     border-radius: 3px 0 0 3px;
     width: 100%;
     height: 5px;

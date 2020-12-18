@@ -1,7 +1,7 @@
 #+title: Newsfeed
 #+draft: false
 #+srclang: Python
-#+summary: Newsfeed is an RSS reader written in Python. It is currently on hiatus while I learn more about the =curses= module, and is currently a work in progress.
+#+summary: Newsfeed is a terminal RSS reader written in Python. It is currently a work in progress.
 #+type: project
 #+layout: single
 #+percDone: 10
