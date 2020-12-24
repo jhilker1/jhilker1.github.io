@@ -92,7 +92,7 @@ title = "Home"
 url = "mailto:jacob.hilker2@gmail.com"
 
 [permalinks]
-blog = "/:section/:year/:month/:day/:slug/"
+blog = "/:section/:year/:month/:slug/"
 page = "/:slug/"
 archive = "/blog/:slug"
 
