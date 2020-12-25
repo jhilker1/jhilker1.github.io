@@ -1,5 +1,5 @@
 #+title: pyReddit
-#+draft: false
+#+draft: true
 #+srclang: Python
 #+summary: pyReddit is an RSS reader exclusively for Reddit written in python. It is currently a WIP.
 #+type: project
