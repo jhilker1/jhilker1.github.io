@@ -11,7 +11,7 @@
     </div>
 
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "project") }}
-    {{ range $paginator.Pages }}
+    {{ range ($paginator.Pages.ByParam "percDone").Reverse }}
 
                                     {{ $srcIcon := lower (.Page.Params.srclang) }}
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
@@ -26,7 +26,7 @@
                 <div class="meta">
                     <div class="info">
                      <i class="devicon-{{$srcIcon}}-plain"></i>
-        <span class="src" style="font-size: 14px;">{{ .Page.Params.srclang }}</span>
+        <span class="src" style="font-size: 14px;"><a href="{{.Page.Params.docs}}">{{ .Page.Params.srclang }}</a></span>
 
                 <!--<div class="project-pic"><img src="{{.Page.Params.image}}"></div>-->
                                             

@@ -6,6 +6,6 @@
 #+layout: single
 #+percDone: 1
 #+lastUpdated: 
-
+#+docs: https://chronicle-ck3.readthedocs.io/en/latest/
 
 Chronicle for CK3 is a tool for managing after-action reports (AARs) for Crusader Kings 3 written in Python. Both a GUI and a TUI are available. It is a WIP.
