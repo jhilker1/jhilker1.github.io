@@ -1,0 +1,11 @@
+#+title: Chronicle for CK3
+#+draft: false
+#+srclang: Python
+#+summary: Chronicle for CK3 is a tool for managing after-action reports (AARs) for Crusader Kings 3 written in Python.
+#+type: project
+#+layout: single
+#+percDone: 1
+#+lastUpdated: 
+
+
+Chronicle for CK3 is a tool for managing after-action reports (AARs) for Crusader Kings 3 written in Python. Both a GUI and a TUI are available. It is a WIP.
