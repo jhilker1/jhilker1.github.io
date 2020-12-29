@@ -5,4 +5,4 @@
 #+draft: true
 #+tags[]: rss newsboat reddit
 
-If you saw [[/blog/2020/12/multireddits-newsboat][this post]]
+If you saw [[/blog/2020/12/multireddits-with-newsboat][this post]]

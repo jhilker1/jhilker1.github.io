@@ -1,5 +1,6 @@
 #+title: Using Multireddits with Newsboat
 #+date: 2020-12-23T17:27:23-0500
+#+slug: multireddits-with-newsboat
 #+publishDate: 2020-12-23T19:12:41-0500
 #+layout: single
 #+type: post
