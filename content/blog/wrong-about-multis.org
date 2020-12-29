@@ -4,3 +4,5 @@
 #+type: post
 #+draft: true
 #+tags[]: rss newsboat reddit
+
+If you saw [[/blog/2020/12/multireddits-newsboat][this post]]
