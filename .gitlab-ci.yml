@@ -11,7 +11,7 @@ test:
   script:
     - hugo --layoutDir=layouts/anatole
   except:
-    - master
+    - main
 
 pages:
   script:
