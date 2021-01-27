@@ -1,5 +1,5 @@
 #+title: A Response to Bradbury's 'There Will Come Soft Rains'
-#+date: <2021-1-27 Wed 13:00>
+#+date: 2021-01-27 14:22:41
 #+layout: single
 #+type: post
 #+draft: false
