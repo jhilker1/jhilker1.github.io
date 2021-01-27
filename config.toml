@@ -37,6 +37,13 @@ identifier = "archive"
 name = "Archive"
 url = "/archive/"
 weight = 5
+
+[[menu.main]]
+identifier = "DGST101"
+name = "Digital Studies"
+url = "/dgst101/"
+weight = 6
+
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
@@ -93,6 +100,7 @@ url = "mailto:jacob.hilker2@gmail.com"
 
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
+dgst101 = "/blog/:section/:year/:month/:day/:slug/"
 page = "/:slug/"
 archive = "/blog/:slug"
 
