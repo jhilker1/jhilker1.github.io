@@ -6,6 +6,7 @@
 #+summary: My personal thoughts on Ray Bradbury's 'There Will Come Soft Rains'.
 #+tags[]: dgst101
 
+[[/pics/dgst101/soft-rain.jpg][]]
 I personally feel like /'There Will Come Soft Rains'/ focuses on how technology is a danger to people and really on the negative aspects as a whole, rather than any of the positive aspects that technology provides people. To me, it sort of comes across as a "technology bad" sort of tone, which kind of seems condescending (at least, it does in my opinion).
 
 I am a cybersecurity minor, so I definitely understand how technology and poorly implemented tools/APIs make life much more secure. (On a side note - some political stuff ahead. Not any real opinions, but consider this a heads-up.) As an example, before Parler was brought offline after the events from the 6th, security researchers were able to gather over 30TB of data due to a poorly implemented API[fn:1]. And in addition, many major technology companies don't exactly respect a user's privacy - namely Google, Facebook, and Amazon, though many others don't respect privacy as well. Plus, it seems like some new attack is happening incredibly frequently.
