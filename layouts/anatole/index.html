@@ -18,7 +18,7 @@
             <h3>RECENT WRITINGS</h3>
             <p>Interested in some of the things I write on my blog? Check them out here.</p>
             <ul class="posts-list">
-      {{ range first 5 (where .Paginator.Pages "Type" "post").ByDate.Reverse  }}
+      {{ range first 5 (where .Paginator.Pages "Section" "blog").ByDate.Reverse  }}
         <li class="posts-list-item">
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
