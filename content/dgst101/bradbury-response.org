@@ -1,5 +1,5 @@
 #+title: A Response to Bradbury's 'There Will Come Soft Rains'
-#+date: 2021-01-27 14:22:41
+#+date: 2021-01-30 19:31:01
 #+layout: single
 #+type: post
 #+draft: false
@@ -10,7 +10,9 @@ I personally feel like /'There Will Come Soft Rains'/ focuses on how technology 
 
 I am a cybersecurity minor, so I definitely understand how technology and poorly implemented tools/APIs make life much more secure. (On a side note - some political stuff ahead. Not any real opinions, but consider this a heads-up.) As an example, before Parler was brought offline after the events from the 6th, security researchers were able to gather over 30TB of data due to a poorly implemented API[fn:1]. And in addition, many major technology companies don't exactly respect a user's privacy - namely Google, Facebook, and Amazon, though many others don't respect privacy as well. Plus, it seems like some new attack is happening incredibly frequently.
 
-However, 
+However, I also feel like technology has also been proven to be a helpful resource. With the pandemic, online conferencing tools like Zoom have exploded in popularity, and games like /Animal Crossing/ and /Among Us/ have allowed people to experience some form of escapism from the pandemic. 
+
+Overall, I feel like Bradbury was saying that even though we have all this technology and all these tools that go along with it, it's not the same as experiencing the same thing in person. I absolutely agree with that sentiment, but I also feel like he explpained that with a condescending tone that I personally found off-putting.
 
 
 
