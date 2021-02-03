@@ -11,7 +11,7 @@
   [[mailto:jacob.hilker2@gmail.com][jacob.hilker2@gmail.com]]
 
 * Profile
-  Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but enjoy writing in Python.
+  Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but especially enjoys writing in Python.
 
 * Education
 ** Bachelor's Of Computer Science
@@ -27,10 +27,10 @@
 * Experience
 ** Library Volunteer
    Jun 2014 - Jul 2017\\
-   Performed various tasks, such as shelving books, planning programs, and organizing projects, to support the Crozet library and local community.
+   Performed various tasks, such as shelving books, planning programs, and organizing projects in order to support the Crozet library and local community.
 ** Impact Richmond
    Jul 2012 - Jul 2017\\
-   Participated in week-long volunteer sessions in disadvantaged neighborhoods in Richmond, VA.
+   Participated in week-long volunteer sessions to refurbish homes in disadvantaged neighborhoods in Richmond, VA.
 
 * Languages
 ** Programming Languages
