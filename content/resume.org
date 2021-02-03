@@ -14,8 +14,8 @@
   Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but especially enjoys writing in Python.
 
 * Education
-** Bachelor's Of Computer Science
-    Aug 2017 - May 2021 \\
+** B.S., Computer Science
+    Aug 2017 - exp. May 2021 \\
     University of Mary Washington - Fredericksburg, VA \\
     Minor in Cybersecurity
 *** _Relevant Coursework_
