@@ -1,4 +1,4 @@
 .PHONY: server
 
 server:
-	hugo server -D --navigateToChanged --verbose --layoutDir=layouts/anatole
+	hugo server -D --navigateToChanged --verbose 
