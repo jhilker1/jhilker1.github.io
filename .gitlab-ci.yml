@@ -9,13 +9,13 @@ variables:
 
 test:
   script:
-    - hugo --layoutDir=layouts/anatole
+    - hugo 
   except:
     - main
 
 pages:
   script:
-    - hugo --layoutDir=layouts/anatole
+    - hugo 
 
   artifacts:
     paths:
