@@ -16,14 +16,12 @@
                       <span>&nbsp;</span>
                       <span class="date">Last updated: {{ .Lastmod.Format "15:04, Mon. 02 Jan. 2006" }}</span>
                     {{ end }}
-                      <!-- 
-                        <br>
-                        <br>
+					<span>|</span>
                         <em class="fas fa-stopwatch"></em>
                         <span>&nbsp;</span>
                         <span class="reading-time">{{ i18n "reading_time" .ReadingTime }}</span>
 
---->
+
                     </div>
                 {{ end }}
             </div>
@@ -46,6 +44,7 @@
             {{- end }}
         {{ end }}
     </div>
+
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
