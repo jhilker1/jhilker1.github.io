@@ -32,11 +32,11 @@ name = "Blog"
 url = "/blog/"
 weight = 4
 
-[[menu.main]]
-identifier = "archive"
-name = "Archive"
-url = "/archive/"
-weight = 5
+#[[menu.main]]
+#identifier = "archive"
+#name = "Archive"
+#url = "/archive/"
+#weight = 5
 
 [[menu.main]]
 identifier = "DGST101"
