@@ -1,0 +1,5 @@
+#+title: What Made "Super Metroid" So Good?
+#+draft: true
+#+tags[]: dgst101 super_metroid game_design
+
+Looking ahead on the syllabus, I saw that we would have to play 
