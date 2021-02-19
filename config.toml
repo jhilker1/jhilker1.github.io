@@ -32,16 +32,18 @@ name = "Blog"
 url = "/blog/"
 weight = 4
 
-#[[menu.main]]
-#identifier = "archive"
-#name = "Archive"
-#url = "/archive/"
-#weight = 5
 
 [[menu.main]]
 identifier = "DGST101"
 name = "Digital Studies"
 url = "/dgst101/"
+weight = 5
+
+
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archive/"
 weight = 6
 
 [outputFormats.RSS]
@@ -104,7 +106,7 @@ dgst101 = "/blog/:section/:year/:month/:day/:slug/"
 #blog = "/:section/:year/:month/:slug/"
 #dgst101 = "/blog/:section/:year/:month/:slug/"
 page = "/:slug/"
-archive = "/blog/:slug"
+archive = "/blog/:section"
 
 [taxonomies]
   tag = "tags"
