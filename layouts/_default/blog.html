@@ -23,8 +23,10 @@
             </div>
             <div class="post-footer">
                 <div class="meta">
+         
                     <div class="info"><em class="fas fa-calendar-day"></em><span
                                 class="date">{{ .Date.Format "Mon, 02 Jan. 2006" }}</span>
+                                                        {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
                         {{ with .Params.tags }}
                             {{- range $index, $el := . -}}
                                 <a class="tag"
