@@ -43,7 +43,7 @@ weight = 5
 [[menu.main]]
 identifier = "archive"
 name = "Archive"
-url = "/archive/"
+url = "/blog/archive/"
 weight = 6
 
 [outputFormats.RSS]
@@ -101,10 +101,10 @@ title = "Home"
 url = "mailto:jacob.hilker2@gmail.com"
 
 [permalinks]
-blog = "/:section/:year/:month/:day/:slug/"
-dgst101 = "/blog/:section/:year/:month/:day/:slug/"
-#blog = "/:section/:year/:month/:slug/"
-#dgst101 = "/blog/:section/:year/:month/:slug/"
+#blog = "/:section/:year/:month/:day/:slug/"
+#dgst101 = "/blog/:section/:year/:month/:day/:slug/"
+blog = "/:section/:year/:month/:slug/"
+dgst101 = "/blog/:section/:year/:month/:slug/"
 page = "/:slug/"
 archive = "/blog/:section"
 
