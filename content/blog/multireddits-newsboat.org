@@ -6,7 +6,7 @@
 #+type: post
 #+draft: false
 #+options: ^:nil
-#+categories: Tutorials
+#+categories[]: Tutorials
 #+tags[]: rss newsboat reddit
 
 On Reddit, multireddits are a way of grouping multiple subreddits into a grouped feed. It's a nice way to keep my reddit organized so I can view the content that I really want to. 
