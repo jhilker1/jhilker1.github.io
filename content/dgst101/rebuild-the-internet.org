@@ -5,4 +5,8 @@
 #+draft: true
 #+tags[]: dgst101 rebuild_the_internet
 
-Pariatur aute ipsum non culpa nostrud. Do consectetur amet laborum nostrud ipsum excepteur officia do reprehenderit sint voluptate. Aliquip minim ex magna qui quis cupidatat. Reprehenderit ea est labore consequat mollit velit cillum sint do exercitation aute velit veniam elit. In ullamco cillum dolore sint consequat do labore veniam et consequat esse qui officia. Sint in excepteur culpa est sint eiusmod labore occaecat anim aute ea sit nostrud eiusmod. Qui id minim eu dolor deserunt duis deserunt ex.
+I feel like the Internet is paradoxical. That seems to not make any sense at all at first - the internet is only one thing, how can it be paradoxical? However, when you start to break down various aspects of the internet, it becomes apparently just how much seems to be both true and false about it at the same time. 
+
+First up, it might seem obvious, but the internet is both private and public at the same time. It's private in the sense that you can create usernames on websites where you can hide your actual name. At the same time, many companies, such as Facebook, Twitter, and Google, are gathering information about you and selling it to the highest advertiser. 
+
+We've also seen just how essential the internet has become, especially with the pandemic. Online classes have become much more commonplace than before (I know I've joked about graduating from "Zoom University" with my sisters) in addition to things such as job searching or looking for apartments or ordering something from Amazon. I also know that I've personally been much more easily distracted with online classes, being able to have my switch right next to me, or being able to play some /Destiny/ after a class. It also doesn't help being able to browse websites that much more easily during a class, since I could watch the lecture videos the professor posts after class.
