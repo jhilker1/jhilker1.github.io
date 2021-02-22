@@ -1,4 +1,5 @@
 #+title: Featuring Blog Posts and Projects in Hugo
+#+summary: Also known as learning to develop shortcodes to modularize my code.
 #+date:
 #+layout: single
 #+type: post
@@ -6,4 +7,38 @@
 #+featured: true
 #+tags[]: hugo #webdev
 
-I recently found that the layout for my index page here was cluttered - I had content both in the org-mode file where I would write a post, as well as in the 
+I recently found that the layout for my index page here was cluttered - I had content both in the org-mode file where I would write a post, as well as in the =index.html= file that actually rendered content to the page. I knew I wanted to have a shortcode so that I could more easily use that content again, if I needed to. However, I also knew that I'd want to have a list of both featured posts that I thought were my best work, as well as a list of recent posts on the page.
+
+created a list of 5 recent posts with this code
+{{<highlight html>}}
+<ul class="posts-list">
+      {{ range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  }}
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="posts-list-item-description">
+            {{ .Date.Format "02 Jan." }}
+          </span>
+        </li>
+      {{ end }}
+    </ul>
+    {{</highlight>}}
+
+    created featured posts with this code - uses a parameter in each post called "featured"
+    {{<highlight html>}}
+     <ul class="posts-list">
+      {{/* range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  */}}
+    {{range first 5 (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" "true") }}
+
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="posts-list-item-description">
+            {{ .Date.Format "02 Jan." }}
+          </span>
+        </li>
+      {{ end }}
+    </ul>
+    {{ </highlight> }}
+
+    didn't get job done - featured post was still showing up in recent posts, and it felt redundant to have the same post show up in both lists. (some redundancy can be helpful, but that is too much IMO)
+
+    
