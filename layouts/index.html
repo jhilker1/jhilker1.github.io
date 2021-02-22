@@ -15,18 +15,6 @@
             </div>
 
             {{ .Content }} 
-            <h3>RECENT WRITINGS</h3>
-            <p>Interested in some of the things I write on my blog? Check them out here.</p>
-            <ul class="posts-list">
-      {{ range first 5 (where .Paginator.Pages "Section" "blog").ByDate.Reverse  }}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            {{ .Date.Format "02 Jan." }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
         <div class="post-footer">
             <div class="info">
                 {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}

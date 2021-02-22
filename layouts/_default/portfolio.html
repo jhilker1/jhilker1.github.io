@@ -10,13 +10,13 @@
         {{ .Content }}
     </div>
 
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "project") }}
+    {{ $paginator := .Paginate (where (where .Site.RegularPages "Section" "projects") "Type" "==" "featured") }}
     {{ range ($paginator.Pages.ByParam "percDone").Reverse }}
 
                                     {{ $srcIcon := lower (.Page.Params.srclang) }}
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
             <div class="project-title">
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <h3><a href="{{ .RelPermalink }}">{{ upper .Title }}</a>
                                     <!-- <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
                 </h3>
             </div>
@@ -45,7 +45,4 @@
             </div>
         </div>
     {{ end }}
-    <div class="pagination">
-        {{ template "_internal/pagination.html" . }}
-    </div>
 {{ end }}

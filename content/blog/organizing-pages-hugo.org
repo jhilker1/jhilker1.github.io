@@ -1,0 +1,9 @@
+#+title: Featuring Blog Posts and Projects in Hugo
+#+date:
+#+layout: single
+#+type: post
+#+draft: true
+#+featured: true
+#+tags[]: hugo #webdev
+
+I recently found that the layout for my index page here was cluttered - I had content both in the org-mode file where I would write a post, as well as in the 
