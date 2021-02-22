@@ -15,36 +15,42 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.main]]
 identifier = "resume"
 name = "Resumé"
 url = "/resume/"
-weight = 2
+weight = 3
 
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/projects/"
-weight = 3
+weight = 4
 
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/blog/"
-weight = 4
+weight = 5
 
 
 [[menu.main]]
 identifier = "DGST101"
 name = "Digital Studies"
 url = "/dgst101/"
-weight = 5
+weight = 6
 
 
 [[menu.main]]
 identifier = "archive"
 name = "Archive"
 url = "/blog/archive/"
-weight = 6
+weight = 7
 
 [outputFormats.RSS]
 baseName = "feed"
