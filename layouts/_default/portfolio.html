@@ -10,7 +10,7 @@
         {{ .Content }}
     </div>
 
-    {{ $paginator := .Paginate (where (where .Site.RegularPages "Section" "projects") "Type" "==" "featured") }}
+    {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "project") ".Params.featured" "==" "true") }}
     {{ range ($paginator.Pages.ByParam "percDone").Reverse }}
 
                                     {{ $srcIcon := lower (.Page.Params.srclang) }}

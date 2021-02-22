@@ -1,0 +1,12 @@
+ <ul class="posts-list">
+      {{/* range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  */}}
+    {{range first 5 (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" "true") }}
+
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="posts-list-item-description">
+            {{ .Date.Format "02 Jan." }}
+          </span>
+        </li>
+      {{ end }}
+    </ul>
