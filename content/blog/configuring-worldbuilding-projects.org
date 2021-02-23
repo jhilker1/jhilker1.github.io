@@ -1,0 +1,7 @@
+#+title: Configuring Worldbuilding Projects with Hugo and Gitlab Pages
+#+date:
+#+layout: single
+#+type: post
+#+draft: true
+#+categories[]: Hugo
+#+tags[]:  
