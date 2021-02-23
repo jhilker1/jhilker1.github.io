@@ -4,4 +4,4 @@
 #+type: page
 #+layout: single
 
-Hi! I'm Jacob, currently a senior at the University of Mary Washington. I'll update this page asap.
+Hi! I'm Jacob, currently a senior at the University of Mary Washington. I'm part of the class of 2021, majoring in Computer Science and minoring in Cybersecurity. 
