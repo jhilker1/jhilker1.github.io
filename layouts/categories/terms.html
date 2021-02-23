@@ -5,7 +5,7 @@
                 {{ range .Pages }}
                     <ul class="listing">
                         <div class="listing-item">
-                            <div class="listing-post"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }} {{ len .Pages }}</a>
+                            <div class="listing-post"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }} ({{ len .Pages }})</a>
                             </div>
                         </div>
                     </ul>
