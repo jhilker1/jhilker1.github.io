@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <div class="archive animated fadeInDown">
+        <ul class="list-with-title">
+                    <h1>{{ upper "Categories" }}</h1>
+                {{ range .Pages }}
+                    <ul class="listing">
+                        <div class="listing-item">
+                            <div class="listing-post"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+                                <div class="post-time"><span class="date">{{len .Pages}}</span></div>
+                            </div>
+                        </div>
+                    </ul>
+                
+            {{ end }}
+        </ul>
+    </div>
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+{{ end }}
