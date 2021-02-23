@@ -4,4 +4,4 @@
 #+type: post
 #+draft: true
 #+categories[]: Hugo
-#+tags[]:  
+#+tags[]:  hugo webdev worldbuilding 
