@@ -10,7 +10,7 @@
         {{ .Content }}
     </div>
     
-    {{ $paginator := .Paginate (where .Pages "Section" "dgst101") 10 }}
+    {{ $paginator := .Paginate (where (where .Pages "Section" "dgst101") "Type" "post") 10 }}
     {{ range $paginator.Pages }}
 
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
