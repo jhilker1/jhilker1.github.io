@@ -5,7 +5,7 @@
          {{ range .Data.Terms.ByCount}}
          <ul class="listing">
              <div class="listing-item">
-                 <div class="listing-post"><a href="{{ .Page.Permalink }}" title="#{{ .Page.Title }}">{{ .Page.Title }}
+                 <div class="listing-post"><a href="{{ .Page.Permalink }}" title="{{ .Page.Title }}">#{{ .Page.Title }}
                          ({{ len .Pages }})</a>
                  </div>
              </div>
