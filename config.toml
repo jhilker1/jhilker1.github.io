@@ -45,7 +45,6 @@ name = "Digital Studies"
 url = "/dgst101/"
 weight = 6
 
-
 [[menu.main]]
 identifier = "archive"
 name = "Archive"
