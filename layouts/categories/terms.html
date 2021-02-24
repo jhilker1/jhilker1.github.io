@@ -1,0 +1,17 @@
+ {{ define "main" }}
+ <div class="archive animated fadeInDown">
+     <ul class="list-with-title">
+         <h1 class="title is-4 has-text-weight-normal">{{ upper "Categories" }}</h1>
+         {{ range .Data.Terms.ByCount}}
+         <ul class="listing">
+             <div class="listing-item">
+                 <div class="listing-post"><a href="{{ .Page.Permalink }}" title="{{ .Page.Title }}">{{ .Page.Title }}
+                         ({{ len .Pages }})</a>
+                 </div>
+             </div>
+         </ul>
+         {{end}}
+         </ul>
+        </div>
+
+         {{ end }}
