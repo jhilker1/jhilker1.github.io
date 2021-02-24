@@ -2,7 +2,7 @@
 #+date:
 #+layout: single
 #+type: post
-#+draft: false
+#+draft: true
 #+tags[]: dgst101
 
 
