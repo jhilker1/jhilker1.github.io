@@ -1,13 +1,19 @@
 #+title: Making Gifs For 'The Social Network'
-#+date:
+#+date: 2021-02-25 14:08:46
 #+layout: single
 #+type: post
-#+draft: true
-#+tags[]: dgst101
+#+draft: false
+#+tags[]: dgst101 facebook social_network
 
 
-Although my gifs more directly relate to Facebook currently than when it was founded (like in /The Social Network/), I still feel like they are relevant to my thoughts on Facebook generally as a whole (even if the Epic Rap Battles of History video came out before I saw the movie.)
+All my gifs came from the [[https://www.youtube.com/watch?v=a2GVxYfKSxA][Zuckerburg v. Musk Epic Rab Battle Of History]]. And although my gifs more directly relate to Facebook currently than when it was founded (like in /The Social Network/), I still feel like they are relevant to my thoughts on Facebook generally as a whole (even if the Epic Rap Battles of History video came out before I saw the movie.) 
 
 On a side note, I'm absolutely awful at making gifs, so I apologize in advance.
 
+[[https://media.giphy.com/media/WkYWrHaI1kedA7O8dL/giphy.gif]]
 
+This first gif, to me at least, seems fairly obvious but at the same time sort of represents the truth - how major companies like Facebook and Google are all gathering so much data on you, while some of it you post yourself, such as where you are going on a vacation when you check in to a certain place. They then use that data and sell it to the highest bider for targeted advertising. Overall, a massive invasion of privacy.
+
+[[https://media.giphy.com/media/zagVBNfKqmThajhich/giphy.gif]]
+
+I feel like this second gif speaks pretty well for itself, but primarily I feel like this works for talking about the Cambridge Analytica scandal and how Facebook illicitly harvested data that had been gathered by Cambridge analytica through an application a data scientist had made. Not only that, but the "social nyet-work" joke talks about how the Trump campaign not only supposedly used help from the Russians to win the election with misinformation, but then used the information that Facebook had gathered to target voters with specific ads for his campaign.

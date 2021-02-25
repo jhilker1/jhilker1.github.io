@@ -51,6 +51,11 @@ name = "Archive"
 url = "/blog/archive/"
 weight = 7
 
+[[menu.main]]
+identifier = "dgst101feed"
+name = "DGST101 Feed"
+url = "/dgst101/feed.xml"
+
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
