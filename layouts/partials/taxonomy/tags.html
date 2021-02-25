@@ -1,3 +1,4 @@
+<i class="fas fa-tags"></i>
 <span class="separator">
 {{- range $index, $el := . -}}
     <a class="tag" href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>

@@ -9,18 +9,16 @@
                       <em class="fas fa-calendar-day"></em>
                       <span>&nbsp;</span>
                       <span class="date">Posted: {{ .Date.Format "Mon, 02 Jan. 2006" }}</span>
-                      {{ if ne .Lastmod .Date}}
-                        <br>
-                        <br>
-    <em class="fas fa-calendar-day"></em>
-                      <span>&nbsp;</span>
-                      <span class="date">Last updated: {{ .Lastmod.Format "15:04, Mon. 02 Jan. 2006" }}</span>
-                    {{ end }}
 					<span>|</span>
                         <em class="fas fa-stopwatch"></em>
                         <!--<span>&nbsp;</span>-->
                         <span class="reading-time">{{ i18n "reading_time" .ReadingTime }}</span>
-
+                {{ if ne .Lastmod .Date}}
+                <span>|</span>
+    <em class="fas fa-calendar-day"></em>
+                      <span>&nbsp;</span>
+                      <span class="date">Last updated: {{ .Lastmod.Format "Mon, 02 Jan. 2006" }}</span>
+                    {{ end }}
 
                     </div>
                 {{ end }}

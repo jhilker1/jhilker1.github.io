@@ -1,6 +1,7 @@
 #+title: Featuring Blog Posts and Projects in Hugo
 #+summary: Also known as learning to develop shortcodes with simple filters to modularize my code.
 #+date: 2021-02-23 16:25:33
+#+lastMod: 2021-02-25 14:40:02
 #+layout: single
 #+type: post
 #+draft: false
