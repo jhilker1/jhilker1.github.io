@@ -3,7 +3,7 @@
 #+layout: single
 #+type: post
 #+slug: configuring-worldbuilding-projects-hugo
-#+draft: false
+#+draft: true
 #+categories[]: Hugo
 #+tags[]:  hugo webdev worldbuilding 
 
