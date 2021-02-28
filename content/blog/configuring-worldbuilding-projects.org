@@ -2,6 +2,15 @@
 #+date:
 #+layout: single
 #+type: post
-#+draft: true
+#+slug: configuring-worldbuilding-projects-hugo
+#+draft: false
 #+categories[]: Hugo
 #+tags[]:  hugo webdev worldbuilding 
+
+
+* Gitlab Pages
+
+* Hugo Website
+
+* Shortcodes
+Explain about shortcodes here.
