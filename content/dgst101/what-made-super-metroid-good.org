@@ -3,8 +3,9 @@
 #+layout: single
 #+type: post
 #+draft: true
+#+dgstArchive: true
+#+dgstLink: dgst101/2020/12/what-made-super-metroid-so-good/
 #+tags[]: dgst101 super_metroid game_design
 #+categories[]: dgst101
 
-[[https://upload.wikimedia.org/wikipedia/commons/4/4e/Super-Metroid-Logo.png]]
 Looking ahead on the syllabus, I saw that we would have to play the game [[https://store.steampowered.com/app/48000/LIMBO/]["Limbo"]] and would analyze the game at some point. Recently, I've been playing "Super Metroid" from the SNES, and wanted to analyze what I feel makes Super Metroid one of the best, if not /the/ best, games ever released.
