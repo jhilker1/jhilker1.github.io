@@ -1,9 +1,13 @@
 #+title: Rebuild The Internet
-#+date:
+#+date: 2021-03-02 18:55:12
 #+layout: single
 #+type: post
-#+draft: true
+#+draft: false
+#+featuredImg: /pics/dgst101/RebuildTheInternet.png
+#+summary: How would I best describe the internet?
 #+tags[]: dgst101 rebuild_the_internet
+
+{{<figure src="/pics/dgst101/RebuildTheInternet.png" caption="I realize that this is hot garbage, but then again, I have zero art skill whatsoever." height="40%">}}
 
 I feel like the Internet is paradoxical. That seems to not make any sense at all at first - the internet is only one thing, how can it be paradoxical? However, when you start to break down various aspects of the internet, it becomes apparently just how much seems to be both true and false about it at the same time. 
 
@@ -11,4 +15,9 @@ First up, it might seem obvious, but the internet is both private and public at 
 
 We've also seen just how essential the internet has become, especially with the pandemic. Online classes have become much more commonplace than before (I know I've joked about graduating from "Zoom University" with my sisters) in addition to things such as job searching or looking for apartments or ordering something from Amazon. I also know that I've personally been much more easily distracted with online classes, being able to have my switch right next to me, or being able to play some /Destiny/ after a class. It also doesn't help being able to browse websites that much more easily during a class, since I could watch the lecture videos the professor posts after class.
 
-The internet has also been a helpful place for me at least. Being able to look up an error I get with some code allows me to figure out how I can fix an error. But at the same time, the rise of misinformation has allowed for
+The internet has also been a helpful place for me at least. Being able to look up an error I get with some code allows me to figure out how I can fix an error, or looking up how to get past a certain section in a game. But at the same time, the rise of misinformation has allowed for "fake news" and violent conspiracy theories like the birther movement and QAnon to gain much more prominence than if the internet didn't exist.
+
+* HOW I MADE THIS
+Although the project description said to only use analog tools, I had no idea where to even start representing a paradox and a lot of contrast. In addition, I have zero art skills, so I decided to use [[https://diagrams.net][draw.io]] for creating my idea. I started by adding three blue arrows to form a circle in one direction, and then have three arrows in red to look like they are rotating in the opposite direction. I also added a yin-yang to really emphasize the idea of contrast and paradox, although by definition a paradox[fn:1] is very hard to represent. I had played around with adding social media icons to make everything look more interconnected, but when I tried that with what I had, I found that it just looked too busy for what I thought looked good. Overall, while I'm not very satisfied with it, I feel like a lot of that is because I've never been good at art and was really busy with work this week, so I didn't have a lot of time to really plan out this project.
+
+[fn:1] Wikipedia: A paradox, also known as an antinomy, is a logically self-contradictory statement or a statement that runs contrary to one's expectation. It is a statement that, despite apparently valid reasoning from true premises, leads to a seemingly self-contradictory or a logically unacceptable conclusion.
