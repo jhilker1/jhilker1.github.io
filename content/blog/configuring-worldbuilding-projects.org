@@ -1,5 +1,5 @@
 #+title: Configuring Worldbuilding Projects with Hugo and Gitlab Pages
-#+date:
+#+date: 2021-03-02 21:04:39
 #+layout: single
 #+type: post
 #+slug: configuring-worldbuilding-projects-hugo
@@ -9,8 +9,8 @@
 
 
 * Gitlab Pages
-
+Talk about Gitlab Pages
 * Hugo Website
-
+Talk about Hugo
 * Shortcodes
 Explain about shortcodes here.

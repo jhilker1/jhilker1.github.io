@@ -1,11 +1,14 @@
 #+title: Newsfeed
 #+draft: true
+#+srcicon: python
 #+srclang: Python
 #+summary: Newsfeed is a terminal RSS reader written in Python. It is currently a work in progress.
 #+type: project
 #+layout: single
 #+percDone: 10
+#+featured: false
 #+lastUpdated: 2020-12-17T14:03:20-0500 
+
 
 
 Newsfeed is an RSS reader written in Python. 

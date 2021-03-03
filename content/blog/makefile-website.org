@@ -1,0 +1,12 @@
+#+title: Using a Makefile With My Website
+#+date: 2021-03-02T20:41:53-05:00
+#+layout: single
+#+type: post
+#+draft: true
+#+dgstArchive: false
+#+dgstLink: 
+#+featured: true
+#+slug: using-makefiles-with-website
+#+tags[]: Makefile software hugo
+#+categories[]: Hugo
+

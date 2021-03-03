@@ -13,7 +13,6 @@
     {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "project") ".Params.featured" "==" "true") }}
     {{ range ($paginator.Pages.ByParam "percDone").Reverse }}
 
-                                    {{ $srcIcon := lower (.Page.Params.srclang) }}
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
             <div class="project-title">
                 <h3><a href="{{ .RelPermalink }}">{{ upper .Title }}</a>
@@ -21,12 +20,19 @@
                 </h3>
             </div>
             <div class="project-content">
+                
                 <div class="p_part"><p>{{ .Summary }}</p></div>
             </div>
             <div class="project-footer">
                 <div class="meta">
                     <div class="info">
-                     <i class="devicon-{{$srcIcon}}-plain"></i>
+                        {{ if ( not (isset .Page.Params "srcicon" )) }}
+                        {{ $srcicon := lower (.Page.Params.srclang) }}
+                    
+                     <i class="devicon-{{$srcicon}}-plain"></i>
+                     {{ else }}
+                     <i class="devicon-{{lower .Page.Params.srcicon}}-plain"></i>
+                     {{end}}
         <span class="src" style="font-size: 14px;"><a href="{{.Page.Params.docs}}">{{ .Page.Params.srclang }}</a></span>
 
                 <!--<div class="project-pic"><img src="{{.Page.Params.image}}"></div>-->
