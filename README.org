@@ -1,0 +1,10 @@
+#+title: jhilker.gitlab.io
+
+
+This is the README for my website. It hosts minor notes for each section of my website.
+
+* Projects
+To have a project show up in the list, set the =featured= parameter to "true".
+
+* Blog
+To have a blog post be featured on the home page, set the =featured= parameter to "true".
