@@ -1,0 +1,12 @@
+#+title: Pyronsworn
+#+draft: false
+#+srclang: Python
+#+srcicon: python
+#+summary: Pyronsworn is a Python module for managing character sheets for the tabletop rpg Ironsworn.
+#+type: project
+#+featured: true
+#+layout: single
+#+percDone: 0
+#+lastUpdated: 2021-03-06 15:48:31
+#+docs: https://pyronsworn.readthedocs.io/en/latest/
+
