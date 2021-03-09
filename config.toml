@@ -38,18 +38,23 @@ name = "Blog"
 url = "/blog/"
 weight = 5
 
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/blog/archive/"
+weight = 6
 
 [[menu.main]]
 identifier = "DGST101"
 name = "Digital Studies"
 url = "/dgst101/"
-weight = 6
+weight = 7
 
 [[menu.main]]
-identifier = "archive"
-name = "Archive"
-url = "/blog/archive/"
-weight = 7
+identifier = "dgstarchive"
+name = "Digital Studies Archive"
+url = "/dgst101/archive/"
+weight = 8 
 
 [[menu.main]]
 identifier = "dgst101feed"
