@@ -52,7 +52,7 @@ weight = 7
 
 [[menu.main]]
 identifier = "dgstarchive"
-name = "Digital Studies Archive"
+name = "DGST101 Archive"
 url = "/dgst101/archive/"
 weight = 8 
 
@@ -60,6 +60,7 @@ weight = 8
 identifier = "dgst101feed"
 name = "DGST101 Feed"
 url = "/dgst101/feed.xml"
+weight = 9
 
 [outputFormats.RSS]
 baseName = "feed"
