@@ -8,5 +8,5 @@
 #+layout: single
 #+percDone: 0
 #+lastUpdated: 2021-03-06 15:48:31
-#+docs: https://pyronsworn.readthedocs.io/en/latest/
+#+docs: https://jhilker.gitlab.io/pyronsworn-docs/
 

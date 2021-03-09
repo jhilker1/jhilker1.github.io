@@ -6,7 +6,7 @@
 #+type: project
 #+layout: single
 #+percDone: 0
-#+featured: true
+#+featured: false
 #+lastUpdated: 2020-12-17T14:03:20-0500 
 
 

@@ -4,7 +4,7 @@
 #+srcIcon: python
 #+summary: Chronicler for CK3 is a tool for managing after-action reports (AARs) for Crusader Kings 3 written in Python.
 #+type: project
-#+featured: true
+#+featured: false
 #+layout: single
 #+percDone: 1
 #+lastUpdated: 
