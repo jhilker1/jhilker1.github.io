@@ -15,9 +15,24 @@
 
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
             <div class="project-title">
-                <h3><a href="{{ .RelPermalink }}">{{ upper .Title }}</a>
+                <h3><a href="{{ .Page.Params.site }}">{{ upper .Title }}</a>
+                    
                                     <!-- <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
                 </h3>
+                    <span class="project-social">
+                        <a href={{.Page.Params.site}}><i class="fas fa-globe"></i> Website </a>
+                        &nbsp;
+                        &nbsp;
+                        <a href={{.Page.Params.docs}}><i class="fas fa-book"></i> Docs</a>
+                        &nbsp;
+                        &nbsp;
+                        <a href={{.Page.Params.github}}><i class="fab fa-github"></i> Github</a>
+                        &nbsp;
+                        &nbsp;
+                        <a href={{.Page.Params.gitlab}}><i class="fab fa-gitlab"></i> Gitlab</a>
+
+
+                    </span>
             </div>
             <div class="project-content">
                 
