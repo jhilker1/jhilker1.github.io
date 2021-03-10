@@ -16,19 +16,22 @@ It shouldn't be a surprise that I use Hugo as a static site generator. Not only 
 Ultimately, I found that when I was starting to create layouts and templates, typing the full =hugo server -D --navigateToChanged= was just long to type (yes, lazy, I know), especially when I was debugging an error with my shortcodes and templates. Being able just to type =make server= makes it much faster for me to debug code but also to get previews of code. 
 
 * Not Just For Debugging
-Hugo also allows for content to be created with a certain [[https://gohugo.io/content-management/archetypes/][archetype]] - by default, this matches the directory you are creating the content for. As an example, if I had an archetype called =blog.org=, if I ran =hugo new blog/hello-world.org= the file =content/blog/hello-world.org= would be created, with all the content needed for a blog post. As an example, here's what my org-mode post archetype looks like:
+Hugo also allows for content to be created with a certain [[https://gohugo.io/content-management/archetypes/][archetype]] - by default, this matches the directory you are creating the content for. As an example, if I had an archetype called =blog.org=, if I ran =hugo new blog/hello-world.org= the file =content/blog/hello-world.org= would be created, with all the content needed for a blog post. As an example, here's what my org-mode project archetype looks like:
 
 #+begin_example
 #+title: 
-#+date: {{ .Date }}
-#+layout: single
-#+type: post
 #+draft: true
-#+dgstArchive: false
-#+dgstLink: 
-#+featured:
-#+slug:
-#+tags[]: 
-#+categories[]:
+#+srclang: 
+#+srcicon: 
+#+summary: 
+#+type: project
+#+featured: 
+#+layout: single
+#+percDone: 0
+#+lastUpdated: 
+#+docs:
+#+site:
+#+gitlab:
+#+github:
 #+end_example
 
