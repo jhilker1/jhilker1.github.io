@@ -30,8 +30,11 @@
                         &nbsp;
                         &nbsp;
                         <a href={{.Page.Params.gitlab}}><i class="fab fa-gitlab"></i> Gitlab</a>
-
-
+                        {{ if ( isset .Page.Params "trello") }}
+                        &nbsp;
+                        &nbsp;
+                        <a href={{.Page.Params.trello}}><i class="fab fa-trello"></i> Roadmap</a>
+                        {{ end }}
                     </span>
             </div>
             <div class="project-content">
