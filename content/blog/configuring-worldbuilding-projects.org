@@ -1,11 +1,11 @@
-#+title: Configuring Worldbuilding Projects with Hugo and Gitlab Pages
+#+title: Configuring Worldbuilding Projects and Campaign Wikis with Hugo and Gitlab Pages
 #+date: 2021-03-02 21:04:39
 #+layout: single
 #+type: post
 #+slug: configuring-worldbuilding-projects-hugo
 #+draft: true
 #+categories[]: Hugo
-#+tags[]:  hugo webdev worldbuilding 
+#+tags[]:  hugo webdev worldbuilding tabletop
 
 
 * Gitlab Pages
