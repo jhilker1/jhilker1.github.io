@@ -14,3 +14,4 @@ To have a blog post be featured on the home page, set the =featured= parameter t
 ** Blog Shortcodes
 *** Featured and Recent posts
 You must pass a parameter called =count= to the shortcodes, otherwise the site will fail.
+
