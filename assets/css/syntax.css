@@ -13,7 +13,7 @@
 /* KeywordPseudo */ .chroma .kp { color: #719e07 }
 /* KeywordReserved */ .chroma .kr { color: #268bd2 }
 /* KeywordType */ .chroma .kt { color: #dc322f }
-/* Name */ .chroma .n {  }
+/* Name */ .chroma .n {color: #9a9a9a;  }
 /* NameAttribute */ .chroma .na {  }
 /* NameBuiltin */ .chroma .nb { color: #b58900 }
 /* NameBuiltinPseudo */ .chroma .bp { color: #268bd2 }
@@ -59,7 +59,7 @@
 /* LiteralNumberOct */ .chroma .mo { color: #2aa198 }
 /* Operator */ .chroma .o { color: #719e07 }
 /* OperatorWord */ .chroma .ow { color: #719e07 }
-/* Punctuation */ .chroma .p {  }
+/* Punctuation */ .chroma .p {color: #93a1a1;  }
 /* Comment */ .chroma .c { color: #586e75 }
 /* CommentHashbang */ .chroma .ch { color: #586e75 }
 /* CommentMultiline */ .chroma .cm { color: #586e75 }
