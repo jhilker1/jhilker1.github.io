@@ -8,4 +8,6 @@ post:
 
 project:
 	@echo "Enter the file name (include the suffix): " && read filename; hugo new projects/$$filename -k project
-	
+
+dgst:
+	@echo "Enter the file name (include the suffix): " && read filename; hugo new dgst101/$$filename -k post	
