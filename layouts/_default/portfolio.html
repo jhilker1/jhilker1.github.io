@@ -15,31 +15,44 @@
 
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
             <div class="project-title">
-                <h3><a href="{{ .Page.Params.site }}">{{ upper .Title }}</a>
+                <h3><a href="{{ .Page.Params.projectSite }}">{{ upper .Title }}</a>
                     
                                     <!-- <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
                 </h3>
                     <span class="project-social">
-                        <a href={{.Page.Params.site}}><i class="fas fa-globe"></i> Website </a>
-                        &nbsp;
-                        &nbsp;
+                        
                         <a href={{.Page.Params.docs}}><i class="fas fa-book"></i> Docs</a>
                         &nbsp;
                         &nbsp;
+                        {{ if ( isset .Page.Params "github") }}
                         <a href={{.Page.Params.github}}><i class="fab fa-github"></i> Github</a>
                         &nbsp;
                         &nbsp;
-                        <a href={{.Page.Params.gitlab}}><i class="fab fa-gitlab"></i> Gitlab</a>
-                        {{ if ( isset .Page.Params "trello") }}
-                        &nbsp;
-                        &nbsp;
-                        <a href={{.Page.Params.trello}}><i class="fab fa-trello"></i> Roadmap</a>
                         {{ end }}
-                    </span>
+                        {{ if (isset .Page.Params "gitlab")}}
+                        <a href={{.Page.Params.gitlab}}><i class="fab fa-gitlab"></i> Gitlab</a>
+                        &nbsp;
+                        &nbsp;
+                        {{ end }}
+                        {{ if (isset .Page.Params "bitbucket")}}
+                        <a href={{.Page.Params.bitbucket}}><i class="devicon-bitbucket-original"></i> Bitbucket</a>
+                        &nbsp;
+                        &nbsp;
+                        {{ end }}
+                        {{ if ( isset .Page.Params "trello") }}
+                        <a href={{.Page.Params.trello}}><i class="fab fa-trello"></i> Trello</a>
+                        &nbsp;
+                        &nbsp;
+                        {{ end }}
+                        </span>
             </div>
             <div class="project-content">
                 
                 <div class="p_part"><p>{{ .Summary }}</p></div>
+                {{ $readMore := lower .Page.Params.readmore}}
+                {{ if eq $readMore "true" }}
+                <a href="{{ .RelPermalink }}">Read More…</a>
+                {{ end }}
             </div>
             <div class="project-footer">
                 <div class="meta">
@@ -51,7 +64,7 @@
                      {{ else }}
                      <i class="devicon-{{lower .Page.Params.srcicon}}-plain"></i>
                      {{end}}
-        <span class="src" style="font-size: 14px;"><a href="{{.Page.Params.docs}}">{{ .Page.Params.srclang }}</a></span>
+        <span class="src" style="font-size: 14px;">{{ .Page.Params.srclang }}</a></span>
 
                 <!--<div class="project-pic"><img src="{{.Page.Params.image}}"></div>-->
                                             

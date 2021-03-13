@@ -1,5 +1,5 @@
 ---
-title: {{ replace .Name "-" " " | title }}
+title: {{ replace .Name "-" " " | title }} 
 draft: true
 srclang: 
 srcicon: 
@@ -10,7 +10,9 @@ layout: single
 percDone: 0
 lastUpdated: 
 docs:
-site:
+projectSite:
 gitlab:
 github:
+bitbucket:
+readmore: false 
 ---
