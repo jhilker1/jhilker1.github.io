@@ -8,8 +8,11 @@
 #+layout: single
 #+percDone: 5
 #+lastUpdated: 2021-03-06 15:48:31
-#+projectSite: https://jhilker.gitlab.io/pyronsworn-docs/
+#+projectSite: https://jhilker.gitlab.io/pyronsworn/
 #+docs: https://jhilker.gitlab.io/pyronsworn-docs/
+#+docBadge: https://readthedocs.org/projects/pyronsworn/badge/?version=latest&style=flat-square
 #+github: https://github.com/jhilker1/pyronsworn
 #+gitlab: https://gitlab.com/jhilker/pyronsworn 
+#+badgeImg: https://gitlab.com/jhilker/pyronsworn/badges/pages/pipeline.svg?key_text=pages&style=flat-square
+#+badgeUrl: https://gitlab.com/jhilker/pyronsworn/-/commits/pages
 #+readmore: false

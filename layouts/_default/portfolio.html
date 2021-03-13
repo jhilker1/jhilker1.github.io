@@ -10,7 +10,8 @@
         {{ .Content }}
     </div>
 
-    {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "project") ".Params.featured" "==" "true") }}
+      <!-- {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "project") ".Params.featured" "==" "true") }}  -->
+      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "project" ) }}
     {{ range ($paginator.Pages.ByParam "percDone").Reverse }}
 
         <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
