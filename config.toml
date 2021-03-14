@@ -1,4 +1,4 @@
-baseURL = "https://jhilker.gitlab.io"
+baseURL = "/"
 languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
