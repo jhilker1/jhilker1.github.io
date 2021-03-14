@@ -14,11 +14,11 @@ name = "Home"
 url = "/"
 weight = 1
 
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about"
-weight = 2
+#[[menu.main]]
+#identifier = "about"
+#name = "About"
+#url = "/about"
+#weight = 2
 
 [[menu.main]]
 identifier = "resume"
@@ -50,17 +50,17 @@ name = "Digital Studies"
 url = "/dgst101/"
 weight = 7
 
-[[menu.main]]
-identifier = "dgstarchive"
-name = "DGST101 Archive"
-url = "/dgst101/archive/"
-weight = 8 
+#[[menu.main]]
+#identifier = "dgstarchive"
+#name = "DGST101 Archive"
+#url = "/dgst101/archive/"
+#weight = 8 
 
 [[menu.main]]
 identifier = "dgst101feed"
 name = "DGST101 Feed"
 url = "/dgst101/feed.xml"
-weight = 9
+weight = 8
 
 [outputFormats.RSS]
 baseName = "feed"
