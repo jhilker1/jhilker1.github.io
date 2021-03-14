@@ -5,6 +5,7 @@
 #+thumbnail: https://images.unsplash.com/photo-1580323434723-3edb667414a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
 #+draft: false
 #+summary: My personal thoughts on the Internet, and what exactly it is.
+#+categories[]: dgst101
 #+tags[]: dgst101
 
 The Internet, to me at least, is so many different things that it's difficult to nail down what /exactly/ it is. While obviously there's the technical definition of what it is, I've had so much experience using the internet and interacting with people on it that it's really difficult to pin down what exactly it is.

@@ -3,6 +3,7 @@
 #+layout: single
 #+type: post
 #+draft: false
+#+categories[]: dgst101
 #+tags[]: dgst101 facebook social_network
 
 

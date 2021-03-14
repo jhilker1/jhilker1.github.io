@@ -5,6 +5,7 @@
 #+draft: false
 #+featuredImg: /pics/dgst101/RebuildTheInternet.png
 #+summary: How would I best describe the internet?
+#+categories[]: dgst101
 #+tags[]: dgst101 rebuild_the_internet
 
 {{<figure src="/pics/dgst101/RebuildTheInternet.png" caption="I realize that this is hot garbage, but then again, I have zero art skill whatsoever." height="40%">}}

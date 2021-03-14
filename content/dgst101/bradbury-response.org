@@ -4,6 +4,7 @@
 #+type: post
 #+draft: false
 #+summary: My personal thoughts on Ray Bradbury's 'There Will Come Soft Rains'.
+#+categories[]: dgst101
 #+tags[]: dgst101
 
 [[/pics/dgst101/soft-rain.jpg][]]
