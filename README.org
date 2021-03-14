@@ -15,3 +15,5 @@ To have a blog post be featured on the home page, set the =featured= parameter t
 *** Featured and Recent posts
 You must pass a parameter called =count= to the shortcodes, otherwise the site will fail.
 
+* The Navbar
+To include a section or page in the navbar, you must have the following / added to the =url= in the relevant section in =config.toml=.
