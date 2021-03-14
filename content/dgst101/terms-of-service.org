@@ -10,4 +10,4 @@
 #+tags[]: dgst101
 #+categories[]: dgst101 
 
-I think that we've all been eager to try out a new piece of software and haven't really taken the time to read about the terms of service or usage with that software.
+I think that we've all been eager to try out a new piece of software and haven't really taken the time to read about the terms of service or usage with that software. However, after some of the readings we've doone this week, along with the 
