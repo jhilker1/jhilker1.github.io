@@ -3,7 +3,7 @@
 #+layout: single
 #+type: post
 #+draft: true
-#+dgstArchive: false
+#+dgstArchive: true
 #+dgstLink: 
 #+featured:
 #+slug:

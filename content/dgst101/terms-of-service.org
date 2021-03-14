@@ -1,13 +1,18 @@
 #+title: Terms of Service
-#+date: 2021-03-12T21:45:50-05:00
+#+date: 2021-03-13 22:44:56
 #+layout: single
 #+type: post
-#+draft: true
+#+draft: false
 #+dgstArchive: false
 #+dgstLink: 
-#+featured:
+#+featured: 
 #+slug:
+#+summary: Should we really read them? Or is a summary good enough?
 #+tags[]: dgst101
 #+categories[]: dgst101 
 
-I think that we've all been eager to try out a new piece of software and haven't really taken the time to read about the terms of service or usage with that software. However, after some of the readings we've doone this week, along with the 
+I think that we've all been eager to try out a new piece of software and haven't really taken the time to read about the terms of service or usage with that software. However, after some of the readings we've done this week, along with the movie we watched, I feel like everyone should at least take the time to get familiar with the terms of service, even if it's through a website or browser extension like [[https://tosdr.org/][TOS; DR]].
+
+I personally had installed TOS; DR before the class, and had been using it for about a year before the class started. Although I would like to say that I had used it frequently, I would often dismiss the notifications that would pop up that talked about how a website's terms were unsafe or had a low grade. After we watched /The Social Dilemma/, though, I wanted to take the time to look into more of the services and sites I use (such as Spotify and Reddit), and I found that (at least with TOS; DR) many of them had a Fail rating (or an E grade, on the website/extension specifically). In turn this has made me want to look for alternatives, although I don't know any good privacy-minded email clients or streaming services for music. 
+
+I guess overall, my thoughts are that while convenience is nice, that comes at the cost of your data. I'd encourage anyone to take the time to look into your services beyond just a website and browser extension. Try a free tier while you look into it, if at all possible.
