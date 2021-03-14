@@ -1,7 +1,6 @@
 #+title: About Me
 #+date: 2021-02-22 14:29:29 
 #+draft: false
-#+type: page
 #+layout: single
 
 Hello! I'm Jacob, currently a senior at the University of Mary Washington. I'm part of the class of 2021, majoring in Computer Science and minoring in Cybersecurity. Outside of the classwork I have, I have a deep love of games, both tabletop and video games. If you had to ask me what my favorite video game is, I would have to say Super Metroid, from the SNES. I feel like a lot of it boils down to the individual elements, rather than the game as a whole. 
