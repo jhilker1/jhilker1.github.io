@@ -30,11 +30,11 @@ jobs:
           publish_dir: ./public
 
       - name: Create Awesome Badge
-         uses: schneegans/dynamic-badges-action@v1.0.0
-         with:
-           auth: ${{ secrets.BADGE_SECRET }}
-           gistID: 4c0073f81843377605fed0737c7c40aa
-           filename: jhilker_website.json
-           label: Hello
-           message: World
-           color: orange
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.BADGE_SECRET }}
+          gistID: 4c0073f81843377605fed0737c7c40aa
+          filename: jhilker_website.json
+          label: Hello
+          message: World
+          color: orange
