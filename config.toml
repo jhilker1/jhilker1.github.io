@@ -62,6 +62,12 @@ name = "DGST101 Feed"
 url = "/dgst101/feed.xml"
 weight = 8
 
+[[menu.main]]
+identifier = "gitlab"
+name = "Source"
+url = "https://gitlab.com/jhilker/jhilker.gitlab.io"
+weight = 9
+
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
