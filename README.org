@@ -1,6 +1,6 @@
 #+title: jhilker.gitlab.io
 
-[[https://github.com/jhilker1/jhilker1.github.io/actions/workflows/pages.yml/badge.svg][https://img.shields.io/github/workflow/status/jhilker1/jhilker1.github.io/github%20pages?style=flat-square&label=GitHub%20Pages%20CI/CD&logo=github]]  [[https://gitlab.com/jhilker/jhilker.gitlab.io/-/commits/main][https://img.shields.io/gitlab/pipeline/jhilker/jhilker.gitlab.io/main.svg?style=flat-square&label=Gitlab%20Pages%20CI%2fCD&logo=gitlab&color=blue]]
+[[https://github.com/jhilker1/jhilker1.github.io/actions/workflows/pages.yml][https://img.shields.io/github/workflow/status/jhilker1/jhilker1.github.io/github%20pages.svg?style=flat-square&label=GitHub%20Pages%20CI/CD&logo=github&color=blue]] [[https://gitlab.com/jhilker/jhilker.gitlab.io/-/commits/main][https://img.shields.io/gitlab/pipeline/jhilker/jhilker.gitlab.io/main.svg?style=flat-square&label=Gitlab%20Pages%20CI%2fCD&logo=gitlab&color=blue]]
 
 This is the README for my website. It hosts minor notes for each section of my website.
 
