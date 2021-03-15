@@ -29,12 +29,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
       
-      - name: Dynamic Badges
-        uses: Schneegans/dynamic-badges-action@v1.0.0
-        with:
-                auth: ${{ secrets.GIST_SECRET }}
-                gistID: 62f971724c714c6857fd6eb382f840c7
-                filename: test.json
-                label: Hello
-                message: World
-                color: orange
