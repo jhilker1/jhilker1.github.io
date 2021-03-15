@@ -76,6 +76,8 @@ mainSections = ["blog", "project"]
 profilePicture = "pics/jhilker.jpg"
 title = "Jacob's Website"
 
+## M10C
+#avatar = "pics/jhilker.jpg"
 ## M10C Nord Config
 #[params.style]
 #  darkestColor = "#2e3440"
