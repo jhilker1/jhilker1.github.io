@@ -1,7 +1,7 @@
 .PHONY: server post project
 
 server:
-	@hugo server -D --navigateToChanged --verbose 
+	@hugo server -D --navigateToChanged --verbose -b "http://localhost:1313"
 
 post:
 	@echo "Enter the file name (include the suffix): " && read filename; hugo new blog/$$filename -k post
