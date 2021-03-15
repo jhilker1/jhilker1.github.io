@@ -1,6 +1,5 @@
 #+title: jhilker.gitlab.io
 
-[[https://github.com/jhilker1/jhilker1.github.io/actions/workflows/pages.yml][https://github.com/jhilker1/jhilker1.github.io/actions/workflows/pages.yml/badge.svg?branch=main]]
 
 
 This is the README for my website. It hosts minor notes for each section of my website.
