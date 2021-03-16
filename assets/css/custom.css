@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Lato&family=Roboto+Slab:wght@400;700&family=Inconsolata:wght@400&display=swap');
 
+:root {
+    --dark-accent-color: #455A64;
+}
 .posts-list, .projects-list {
     list-style: none;
 }
@@ -114,22 +117,24 @@ hr {
 
 .progbar {
   width: 60%;
-  height: 5px;
+  height: 8px;
   background-color: var(--secondary-bg-color);
   border-radius: 3px;
   float: right;
   margin-top: 0.6em;
   display: inline;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
   .progbar .fill {
     border-radius: 3px 0 0 3px;
     width: 100%;
-    height: 5px;
+    height: 8px;
     background-color: #065A7F;
     background-image: -webkit-linear-gradient(-405deg, #065A7F, #065A7F);
-    background-image: linear-gradient(135deg,#065A7F, #065A7F); }
+    background-image: linear-gradient(135deg,#065A7F, #065A7F);
+  }
 
     .dgst-note {
         font-style: italic;
