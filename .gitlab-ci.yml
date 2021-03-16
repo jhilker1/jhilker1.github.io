@@ -9,13 +9,13 @@ variables:
 
 test:
   script:
-    - hugo --enableGitInfo
+    - hugo 
   except:
     - main
 
 pages:
   script:
-    - hugo --enableGitInfo
+    - hugo 
 
   artifacts:
     paths:
