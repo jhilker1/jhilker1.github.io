@@ -7,6 +7,7 @@ theme = "anatole"
 title = "Jacob's Website"
 linenos = true
 pygmentsOptions = "linenos=table"
+enableGitInfo = true
 
 [[menu.main]]
 identifier = "home"
