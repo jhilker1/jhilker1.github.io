@@ -1,6 +1,6 @@
 #+title: jhilker.gitlab.io
 
-[[https://github.com/jhilker1/jhilker1.github.io/actions/workflows/pages.yml][https://img.shields.io/github/workflow/status/jhilker1/jhilker1.github.io/github%20pages.svg?style=flat-square&label=Github%20Pages%20CI/CD&logo=github]] [[https://gitlab.com/jhilker/jhilker.gitlab.io/-/commits/main][https://img.shields.io/gitlab/pipeline/jhilker/jhilker.gitlab.io/main.svg?style=flat-square&label=Gitlab%20Pages%20CI%2fCD&logo=gitlab]]
+[[https://github.com/jhilker1/jhilker1.github.io/actions/workflows/pages.yml][https://img.shields.io/github/workflow/status/jhilker1/jhilker1.github.io/github%20pages.svg?style=flat-square&label=Github%20Pages%20CI/CD&logo=github]] [[https://gitlab.com/jhilker/jhilker.gitlab.io/-/commits/main][https://img.shields.io/gitlab/pipeline/jhilker/jhilker.gitlab.io/main.svg?style=flat-square&label=Gitlab%20Pages%20CI%2fCD&logo=gitlab&]]
 
 This is the README for my website. It hosts minor notes for each section of my website.
 
@@ -12,7 +12,7 @@ To have a project show up in the list, set the =featured= parameter to "true".
 To have a blog post be featured on the home page, set the =featured= parameter to "true".
 
 * Shortcodes
-** Blog Shrs
+** Blog Shortcodes
 *** Featured and Recent posts
 You must pass a parameter called =count= to the shortcodes, otherwise the site will fail.
 

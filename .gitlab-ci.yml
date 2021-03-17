@@ -9,16 +9,16 @@ variables:
 
 
 test:
-  #before_script:
-  #  - apk add --update --no-cache git
+  before_script:
+    - apk add --update --no-cache git
   script:
     - hugo --enableGitInfo
   except:
     - main
 
 pages:
-  #before_script:
-  #  - apk add --update --no-cache git
+  before_script:
+    - apk add --update --no-cache git
   script:
     - hugo --enableGitInfo
 
