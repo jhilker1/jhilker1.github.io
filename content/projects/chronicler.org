@@ -1,14 +1,14 @@
-#+title: Chronicler for CK3
-#+draft: false
+#+title: Chronicler
+#+draft: true
 #+srclang: Python
-#+srcIcon: python
+#+srcicon: python
 #+summary: Chronicler for CK3 is a tool for managing after-action reports (AARs) for Crusader Kings 3 written in Python.
 #+type: project
-#+featured: false
+#+featured: true 
 #+layout: single
-#+percDone: 1
-#+lastUpdated: 
-#+docs: https://chronicle-ck3.readthedocs.io/en/latest/
-
-Chronicler for CK3 is a tool for managing after-action reports (AARs) for Crusader Kings 3 written in Python. A TUI is in progress, and after that I will work on a GUI if there is sufficient interest.
-
+#+percDone: 2
+#+lastUpdated: 2021-03-20 21:50:44
+#+docs: https://chroniclerck3.readthedocs.io/en/latest
+#+projectSite: https://jhilker.gitlab.io/chroniclerCK3
+#+gitlab: https://gitlab.com/jhilker/chroniclerCK3
+#+readmore: false 
