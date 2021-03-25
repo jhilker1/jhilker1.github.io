@@ -83,7 +83,7 @@ mainSections = ["blog", "project"]
 profilePicture = "pics/jhilker.jpg"
 title = "Jacob's Website"
 [params.blog]
-commentSrc = "utterances"
+commentSrc = "graphcomment"
 ## M10C
 #avatar = "pics/jhilker.jpg"
 ## M10C Nord Config
