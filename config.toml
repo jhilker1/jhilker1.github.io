@@ -130,7 +130,7 @@ url = "mailto:jacob.hilker2@gmail.com"
 #blog = "/:section/:year/:month/:day/:slug/"
 #dgst101 = "/blog/:section/:year/:month/:day/:slug/"
 blog = "/:section/post/:year/:month/:slug/"
-dgst101 = "/blog/:section/post/:year/:month/:slug/"
+dgst101 = "/blog/:section/:year/:month/:slug/"
 page = "/:slug/"
 archive = "/blog/:section"
 
