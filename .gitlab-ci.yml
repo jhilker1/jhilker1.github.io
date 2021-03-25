@@ -12,7 +12,7 @@ test:
   before_script:
     - apk add --update --no-cache git
   script:
-    - hugo --enableGitInfo
+    - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
   except:
     - main
 
@@ -20,7 +20,7 @@ pages:
   before_script:
     - apk add --update --no-cache git
   script:
-    - hugo --enableGitInfo
+    - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
 
   artifacts:
     paths:
