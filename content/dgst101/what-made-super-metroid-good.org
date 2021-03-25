@@ -1,28 +1,24 @@
 #+title: What Made "Super Metroid" So Good?
-#+date: 2020-12-29T15:29:11-0500
+#+date: 2021-03-25 14:21:41
 #+layout: single
 #+type: post
 #+draft: true
 #+dgstArchive: false
 #+dgstLink: dgst101/2020/12/what-made-super-metroid-so-good/
-#+tags[]: dgst101 super_metroid game_design
+#+tags[]: dgst101 super-metroid game-design
 #+categories[]: dgst101
-
-
-
 
 {{< figure src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Super-Metroid-Logo.png"  width=40% >}}
 
-Recently, I finished my first playthrough of /Super Metroid/, one of the most iconic games from the SNES (though my run was not very good, with 12 hours 21 minutes in game time and only 72% of the items collected).  Looking ahead on the syllabus, I saw that we would have to play the game [[https://store.steampowered.com/app/48000/LIMBO/][Limbo]] and analyze it for one of our assignments. I wanted to go ahead and explain my thoughts for why I feel Super Metroid is such a good game. 
 
-* 1. World Design 
+* World Design 
 Mark Brown talked about the world design of the game extensively on his Youtube miniseries Boss Keys[fn:1], and I share many of his thoughts.
 
 {{< youtube id="nn2MXwplMZA" title="The World Design of Super Metroid">}}
 
 Personally, I found that the interconnected world was my favorite part of the game. Although I haven't finished /Dark Souls/ yet, I loved how interconnected the world was and how everything just sort of fit together. 
 
-* 2. Atmosphere and Horror
-
+* Atmosphere and Tone
+Another major part of what makes a game good is the atmosphere and tone, and how well that game presents it's tone. Let me give an example of what I mean. When /Destiny 2/ first launched in 2017,  
 
 [fn:1] Although this specific series is on world and level design, his channel is an excellent resource for anyone interested in game development. 
