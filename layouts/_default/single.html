@@ -39,17 +39,19 @@
         </div>
 
         {{ if eq .Type "post"}}
-            {{ if .Site.DisqusShortname -}}
+          {{ if eq .Site.Params.blog.commentSrc "graphcomment"}}
+            {{ partial "comments/graphcomment.html" .}}
+        {{ else if (eq .Site.Params.blog.commentSrc "disqus") }}
+             {{ if .Site.DisqusShortname -}}
                 <div id="fb_comments_container">
                     <h2>{{ i18n "comments" }}</h2>
                     {{ template "_internal/disqus.html" . }}
                 </div>
             {{- end }}
+        {{ else if (eq .Site.Params.blog.commentSrc "utterances") }}
+            {{ partial "comments/utterances.html" . }}
         {{ end }}
-    </div>
-    {{ if eq .Type "post"}}
-    {{ partial "comments/graphcomment.html" . }}
-    {{ end }}
+        {{ end }}
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}

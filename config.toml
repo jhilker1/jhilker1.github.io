@@ -7,6 +7,7 @@ theme = "anatole"
 title = "Jacob's Website"
 linenos = true
 pygmentsOptions = "linenos=table"
+disqusShortname = "jhilker"
 
 [[menu.main]]
 identifier = "home"
@@ -81,7 +82,8 @@ keywords = ""
 mainSections = ["blog", "project"]
 profilePicture = "pics/jhilker.jpg"
 title = "Jacob's Website"
-
+[params.blog]
+commentSrc = "utterances"
 ## M10C
 #avatar = "pics/jhilker.jpg"
 ## M10C Nord Config
