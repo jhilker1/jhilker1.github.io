@@ -156,3 +156,18 @@ hr {
     font-size: 14px;
 }
 
+
+blockquote > p::before {
+  content: open-quote;
+}
+blockquote > p::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  border-left: 2px solid var(--border-color);
+}
+
+blockquote > p {
+    color: var(--body-color);
+}

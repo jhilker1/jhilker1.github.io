@@ -1,8 +1,9 @@
 #+title: What Made "Super Metroid" So Good?
-#+date: 2021-03-25 14:21:41
+#+date: 2021-03-28 00:05:08
 #+layout: single
+#+summary: This post is my response to playing Limbo this week, as well as my thoughts on '/Super Metroid/'.
 #+type: post
-#+draft: true
+#+draft: false
 #+dgstArchive: false
 #+dgstLink: dgst101/2020/12/what-made-super-metroid-so-good/
 #+tags[]: dgst101 super-metroid game-design
@@ -10,7 +11,7 @@
 
 {{< figure src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Super-Metroid-Logo.png"  width=40% >}}
 
-After playing through Limbo for this week, I had a few concerning thoughts about the game as a whole. Specifically, this is what I had to say about the game:
+After playing through Limbo for this week, I had a few concerning thoughts about the game as a whole. Specifically, this is what I had to say about the game on the Slack:
 
 #+begin_quote
 Although the game is very grim, I don't want to focus on the tone for my thoughts - instead I want to focus on mechanics and gameplay. I feel like the lack of color added to the bleak tone but it also made it harder with the lack of contrast in the darker areas of the game. The controls overall felt clunky to me, and the game overall felt clunky to me, for lack of a better word. It seems like the kind of game to play once to say you did and then not play it again.
@@ -34,6 +35,11 @@ As an example, let's look at the Wrecked Ship. When you first arrive there, the 
 ** Sound Design and Music
 Although not the only thing that contributes to the atmosphere of the game, the music most certainly helps contribute to the atmosphere, and contributes most heavily to the feel of the game. 
 
-As an example, when you fight Ridley in Ceres Station, 
+The first few bosses you fight, namely [[https://youtu.be/TUGBW3Qc4K4][Spore Spawn]] and [[https://youtu.be/KrqOWscpiCo][Kraid]], both have themes that feel scary, with the dissonance and heavier focus on bass. [[https://youtu.be/lIZutuA3aPI][Ridley]]'s theme is definitely the more upbeat, intense, "you-want-a-fight-then-catch-these-hands" type song that hypes you up when you fight Ridley at the very beginning of the game, and ultimately lets you almost relive how far you've come since the beginning of the game. Finally, the [[https://youtu.be/Bwt740KznHE][Mother Brain]] boss theme doesn't feel upbeat or creepy at all. Instead, it focuses more on dread, with the slow tempo, the chord choices, and the 7/4 time signature.
+
+
+Although I overall have several issues with 'Super Metroid' (progression, particularly in the Lower Brinstar/Upper Norfair section of the game, /"swooshy"/ jumping, and somewhat clunky controls), I can look past those issues because the rest of the game feels so good. 
+
+
 
 [fn:1] Although this specific series is on world and level design, his channel is an excellent resource for anyone interested in game development. 
