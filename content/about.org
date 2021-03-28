@@ -7,3 +7,5 @@ Hello! I'm Jacob, currently a senior at the University of Mary Washington. I'm p
 
 
 I also enjoy worldbuilding. My two most recent projects are [[https://jhilker.gitlab.io/brokenThrones/][Broken Thrones]], an alt-history/low fantasy setting, and [[https://jhilker.gitlab.io/shatteredSkies/][Shattered Skies]], a Metroid-meets-Halo-meets-Destiny, gritty sci-fi setting.
+
+Outside of games and worldbuilding, I also develop themes for the static site generator [[https://gohugo.io][Hugo]]. I'm currently working on two at the moment - an all-in-one blog, portfolio, and CV theme, and then a wiki theme.
