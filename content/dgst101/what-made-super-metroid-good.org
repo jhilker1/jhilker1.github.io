@@ -10,6 +10,14 @@
 
 {{< figure src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Super-Metroid-Logo.png"  width=40% >}}
 
+After playing through Limbo for this week, I had a few concerning thoughts about the game as a whole. Specifically, this is what I had to say about the game:
+
+#+begin_quote
+Although the game is very grim, I don't want to focus on the tone for my thoughts - instead I want to focus on mechanics and gameplay. I feel like the lack of color added to the bleak tone but it also made it harder with the lack of contrast in the darker areas of the game. The controls overall felt clunky to me, and the game overall felt clunky to me, for lack of a better word. It seems like the kind of game to play once to say you did and then not play it again.
+#+end_quote
+
+Although I have several issues with Super Metroid, it gets so many things right from a gameplay and progression perspective that it makes it easier to look past those issues, and I felt that "Limbo" didn't get those things right. But enough of focusing on the bad of Limbo, on to Super Metroid.
+
 
 * World Design 
 Mark Brown talked about the world design of the game extensively on his Youtube miniseries Boss Keys[fn:1], and I share many of his thoughts.
@@ -19,6 +27,13 @@ Mark Brown talked about the world design of the game extensively on his Youtube 
 Personally, I found that the interconnected world was my favorite part of the game. Although I haven't finished /Dark Souls/ yet, I loved how interconnected the world was and how everything just sort of fit together. 
 
 * Atmosphere and Tone
-Another major part of what makes a game good is the atmosphere and tone, and how well that game presents it's tone. Let me give an example of what I mean. When /Destiny 2/ first launched in 2017,  
+Another major part of what makes a game good is the atmosphere and tone, and how well that game presents it's tone. Let me give an example of what I mean. When /Destiny 2/ first launched in 2017, it tried to present itself as a serious game with a fairly gritty tone. But because the characters were cracking so many jokes, it took away from the serious tone that the developers wanted to present. I don't think that having humor in a dark atmosphere is necessarily a bad thing - in fact, I think it can offer a nice break if the atmosphere is particularly heavy - but at the same time, the humor needs to be balanced with the more serious aspects of the universe.
+
+As an example, let's look at the Wrecked Ship. When you first arrive there, the power is out, and if you stay in one area for too long, a ghost will spawn and attack you. But once you defeat Phantoom, the boss in the Wrecked Ship, the power comes back on, alarms are going off, etc. If the game continued with the feeling from before fighting Phantoom (which I feel like Limbo did), I feel like the game as a whole would be less enjoyable (at least for me).
+
+** Sound Design and Music
+Although not the only thing that contributes to the atmosphere of the game, the music most certainly helps contribute to the atmosphere, and contributes most heavily to the feel of the game. 
+
+As an example, when you fight Ridley in Ceres Station, 
 
 [fn:1] Although this specific series is on world and level design, his channel is an excellent resource for anyone interested in game development. 
