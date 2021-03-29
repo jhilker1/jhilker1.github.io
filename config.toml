@@ -137,3 +137,4 @@ archive = "/blog/:section"
 [taxonomies]
   tag = "tags"
   category = "categories"
+  series = "series"
