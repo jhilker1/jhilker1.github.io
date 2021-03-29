@@ -6,7 +6,7 @@
 #+type: project
 #+featured: true 
 #+layout: single
-#+percDone: 2
+#+percDone: 60
 #+lastUpdated: 2021-03-20 21:50:44
 #+docs: https://chroniclerck3.readthedocs.io/en/latest
 #+projectSite: https://jhilker.gitlab.io/chroniclerCK3
