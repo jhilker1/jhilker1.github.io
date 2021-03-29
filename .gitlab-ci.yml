@@ -12,7 +12,8 @@ test:
   before_script:
     - apk add --update --no-cache git
   script:
-    - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
+    # - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
+    - hugo -b "https://jhilker.gitlab.io"
   except:
     - main
 
@@ -20,8 +21,8 @@ pages:
   before_script:
     - apk add --update --no-cache git
   script:
-    - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
-
+  #  - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
+  - hugo -b "https://jhilker.gitlab.io"
   artifacts:
     paths:
       - public
