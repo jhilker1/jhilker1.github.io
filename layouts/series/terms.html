@@ -1,0 +1,18 @@
+{{ define "main" }}
+ <div class="archive animated fadeInDown">
+     <ul class="list-with-title">
+         <h1 class="title is-4 has-text-weight-normal">{{ upper "Series" }}</h1>
+         {{ range .Site.Taxonomies.series}}
+         <ul class="listing">
+             <div class="listing-item">
+                 <div class="listing-post"><a href="{{ .Page.Permalink }}" title="{{ .Page.Title }}">{{ .Page.Title }}</a>
+                <div class="post-time"><span class="date">{{.Count }} {{if eq .Count 1}} Post {{ else }} Posts {{ end }}</span></div> 
+                </div>
+                 
+                </div>
+         </ul>
+         {{end}}
+         </ul>
+        </div>
+
+         {{ end }}
