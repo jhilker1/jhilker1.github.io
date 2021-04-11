@@ -1,0 +1,14 @@
+#+title: Writing A CV Template in Latex
+#+date: 2021-04-11T14:29:24-04:00
+#+math: true
+#+layout: single
+#+type: post
+#+draft: true
+#+dgstArchive: false
+#+dgstLink: 
+#+featured:
+#+slug:
+#+tags[]: LaTeX cv software
+#+categories[]: LaTex Software
+
+I've wanted to try and write my own resume template in \(LaTeX\)
