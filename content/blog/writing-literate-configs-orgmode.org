@@ -1,0 +1,13 @@
+#+title: How To Use Literate Config Files with Org Mode
+#+date: 2021-04-20T21:27:47-04:00
+#+layout: single
+#+type: post
+#+draft: true
+#+dgstArchive: false
+#+dgstLink: 
+#+featured: true
+#+slug: writing-literate-config-files-orgmode
+#+tags[]: orgmode config emacs
+#+categories[]: Emacs Orgmode
+
+One of the features I 
