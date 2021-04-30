@@ -1,6 +1,7 @@
 .PHONY: server post project
 
-hugo := hugo.exe
+#hugo := hugo.exe
+hugo := hugo
 server:
 	@$(hugo) server -D --navigateToChanged --verbose -b "http://localhost:1313"
 
