@@ -1,4 +1,4 @@
-#+title: Final Project (Redefine The Internet)
+#+title: The New Internet (Final Project)
 #+date: 2021-04-24T15:45:25-04:00
 #+layout: single
 #+type: post
@@ -7,5 +7,9 @@
 #+dgstLink: 
 #+featured:
 #+slug:
-#+tags[]: 
-#+categories[]: 
+#+tags[]: dgst101
+#+categories[]: dgst101 webdev
+
+Personally, I really had no idea where to start with regards to the final
+project simply because the prompt was so vague. I decided to set up a
+[[https://jhilker.gitlab.io/the-new-internet/][website]]
