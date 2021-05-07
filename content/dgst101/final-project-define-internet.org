@@ -12,4 +12,6 @@
 
 Personally, I really had no idea where to start with regards to the final
 project simply because the prompt was so vague. I decided to set up a
-[[https://jhilker.gitlab.io/the-new-internet/][website]] with ways the average user could improve their time on the internet. However, so much of it comes down to government breaking up monopolies and forcing harsher punishmments on companies, as well as protecting people's data that it's hard to use 
+[[https://jhilker.gitlab.io/the-new-internet/][website]] with ways the average user could improve their time on the internet. However, so much of it comes down to government breaking up monopolies and forcing harsher punishmments on companies, as well as protecting people's data that it's hard to really improve the internet when it would effectively require a re-write from the ground up to protect both a user's data and their privacy.
+
+
