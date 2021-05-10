@@ -3,7 +3,6 @@ languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 theme = "anatole"
-#theme = "m10c"
 title = "Jacob's Website"
 linenos = true
 pygmentsOptions = "linenos=table"
