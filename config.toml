@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://jhilker.com"
 languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
