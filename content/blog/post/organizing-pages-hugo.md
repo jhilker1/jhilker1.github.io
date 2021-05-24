@@ -6,7 +6,6 @@ tags: ["Web Dev"]
 categories: ["Hugo"]
 type: "post"
 draft: false
-enableToc: true
 featured: true
 ---
 
