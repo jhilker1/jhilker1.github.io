@@ -1,0 +1,48 @@
+#+hugo_base_dir: ~/Projects/jhilker.gitlab.io
+#+hugo_section: projects
+#+hugo_type: project
+
+* Chronicler for CK3
+:properties:
+:export_file_name: chronicler
+:export_hugo_custom_front_matter: :featured true :srclang Python :icon devicon-python-plain :status In Development :projectrepo https://gitlab.com/jhilker/chroniclerCK3.git :projectsite https://chroniclerck3.readthedocs.io/en/latest/ :weight 1
+ :end:
+Chronicler is a terminal application for managing after-action reports (AARs) for Crusader Kings 3.
+
+* All for One
+:properties:
+:export_file_name: hugo-all-for-one
+:export_hugo_custom_front_matter: :featured true :icon devicon-html5-plain :srclang HTML/CSS/JS :status Available Now :projectsite https://jhilker1.github.io/hugo-all-for-one :projectrepo https://github.com/jhilker1/hugo-all-for-one :weight 2
+ :end:
+All for One is a Hugo theme that covers several uses for a personal website - a blog, portfolio, and CV.
+
+
+* Pyronsworn
+:properties:
+:export_file_name: pyronsworn
+:export_hugo_custom_front_matter: :featured true :srclang Python :icon devicon-python-plain :status In Development :projectrepo https://gitlab.com/jhilker/pyronsworn :projectsite https://pyronsworn.readthedocs.io/en/latest/
+ :end:
+Pyronsworn is a Python module for managing character sheets for the tabletop rpg [[https://ironswornrpg.com][Ironsworn]]. 
+
+* TODO Newsfeed
+:properties:
+:export_file_name: newsfeed
+:export_hugo_custom_front_matter: :srclang Python :icon devicon-python-plain :status Planning 
+:end:
+Newsfeed is an RSS reader written in Python. 
+
+
+* TODO Startpages
+:properties:
+:export_file_name: startpages
+:export_hugo_custom_front_matter: :icon devicon-html5-plain :srclang HTML/CSS/JS :status Planning 
+ :end:
+A collection of startpages I've made.
+
+
+* Scribe
+:properties:
+:export_file_name: hugo-scribe
+:export_hugo_custom_front_matter: :icon devicon-html5-plain :srclang HTML/CSS/JS :status In Development 
+ :end:
+Scribe is a Hugo theme intended for worldbuilding wikis.

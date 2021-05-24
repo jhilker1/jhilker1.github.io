@@ -1,9 +1,0 @@
-
-#+title: Startpages
-#+draft: false
-#+srclang: HTML5
-#+summary: A collection of startpages I've made.
-#+type: project
-#+layout: single
-#+percDone: 1
-#+lastUpdated: 

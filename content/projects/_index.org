@@ -1,3 +1,2 @@
 #+title: Projects
-#+date: <2020-12-07 Mon>
 #+layout: portfolio
