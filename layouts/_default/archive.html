@@ -1,43 +1,32 @@
-{{ define "main" }}
-    <div class="archive animated fadeInDown">
-        <ul class="list-with-title">
+{{ define "main"}}
+<div>
+    <article>
+        <header>
+            <div class="pl-20 pt-10">
 
-      {{ $type := "post" }}
-      {{ $.Scratch.Set "count" 1 }}
-        <!-- {{/* range (.Site.RegularPages.GroupByDate "2006") */}} -->
-        {{ range (where .Site.RegularPages "Section" "blog").GroupByDate "2006" }}
-          {{ if (gt .Key 2000) }}
-
-            {{ range (where .Pages "Type" $type) }}
-              {{ if (eq ($.Scratch.Get "count") 1) }}
-                {{ $.Scratch.Set "count" 0 }}
-                <h1 class="title is-4 has-text-weight-normal">{{ .Date.Format "2006" }}</h1>
-              {{ end }}
-            {{ end }}
-
-            {{ $.Scratch.Set "count" 1 }}
-
-              <ul class="listing">
-              {{ range (where .Pages "Type" $type) }}
-                {{ if (ne .Params.hidden true) }}
-                  <li class="archive-item">
-                       <span class="listing-post"> <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
- 
-                      <span class="post-date">{{ .Date.Format "02 Jan." }}</span>
-                    </a>
-                  </li>
+            <h1>{{.Title | upper }}</h1>
+            </div>
+        </header>
+        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+        {{.Content}}
+    </article>
+    <ul id="list" class="pl-20" style="line-height: 0.5em;">
+        <!-- Ranges through content/posts/*.md -->
+        {{ range (where .Site.RegularPages "Type" "post").GroupByDate "2006" }}
+        <h3>{{.Key}}</h3>
+        {{ range .Pages }}
+        <li class="pl-20" style="list-style: none;">
+            <a href={{.Permalink}}>{{.Title}}</a>
+            <span style="float:right; padding-right:2em;">
+                {{ if isset .Site.Params "listdateformat" }}
+                {{ .Date.Format .Site.Params.listDateFormat }}
+                {{ else }} 
+                {{.Date.Format "02 Jan"}}
                 {{ end }}
-              {{ end }}
-              </ul>
-          
-            <br>
-
+            </span>
+        </li>
         {{ end }}
-      {{ end }}
-
-      </div>
-    </div>
-  </div>
-</section>
+        {{ end }}
+    </ul>
+</div>
 {{ end }}
-

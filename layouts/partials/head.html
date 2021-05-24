@@ -1,99 +1,33 @@
 <head>
-    <title> {{ if .IsHome }}Home | {{ else }}{{ if .Page.Title }}{{ .Page.Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
-
-    <!-- Meta -->
-    <meta charset="utf-8">
-    {{- hugo.Generator -}}
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="{{ .Site.Params.description }}">
-    {{- if .Site.Params.googleSiteVerify }}
-    <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerify }}">
-    {{- end -}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+     <!-- Favicon and title -->
+     {{ if isset .Site.Params "favicon"}}
+     <link ref="icon" href="{{.Site.Params.favicon | relURL}}" /> 
+     {{ end }}
+     <title>{{ if .IsHome }} Home | {{ else }}{{ if .Page.Title}} {{ .Page.Title}} | {{end}}{{end}}{{.Site.Title}}</title>
 
     <!-- CSS -->
+    {{ $halfmoon := resources.Get "css/halfmoon-variables.css" | resources.Minify | resources.Fingerprint }}
     {{ $style := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet"
-          href="{{ $style.Permalink }}"
-          integrity="{{ $style.Data.Integrity }}"
-          crossorigin="anonymous"
-          type="text/css">
-    {{ $markupHighlightStyle := resources.Get "css/markupHighlight.css" | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet"
-        href="{{ $markupHighlightStyle.Permalink }}"
-        integrity="{{ $markupHighlightStyle.Data.Integrity }}"
-        crossorigin="anonymous"
-        type="text/css">
-    {{ range .Site.Params.customCss }}
-        {{ $minstyles := resources.Get . }}
-        {{ $styles := $minstyles | resources.Minify | resources.Fingerprint }}
-        <link rel="stylesheet"
-        href="{{ $styles.Permalink }}"
-        integrity="{{ $styles.Data.Integrity }}"
-        crossorigin="anonymous"
-        media="screen" />
+    {{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
+
+    <link href="{{ $halfmoon.RelPermalink }}" rel="stylesheet" />
+    <link href="{{ $style.RelPermalink}}" rel="stylesheet" />
+    <link href="{{ $syntax.RelPermalink}}" rel="stylesheet" />
+
+    {{ range .Site.Params.customCss}}
+    {{ $style := resources.Get . | resources.Minify | resources.Fingerprint }}
+    <link href="{{$style.RelPermalink}}" rel="stylesheet" />
     {{ end }}
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
-    crossorigin="anonymous" />
+    <!-- Icons -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 
-    <!-- Devicons -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ .Site.Params.favicon | absURL }}favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.favicon | absURL }}favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.favicon | absURL }}favicon-16x16.png">
+          <!-- Twitter Cards -->
+          {{ template "_internal/twitter_cards.html" . }}
 
-    <link rel="canonical" href="{{ .Permalink }}">
-
-    <!-- RSS -->
-    {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-
-    <!-- JavaScript -->
-    {{ $anatoleHeader := resources.Get "js/anatole-header.js" }}
-    {{ $secureHeaderJS := $anatoleHeader |  resources.Minify | resources.Fingerprint }}
-    <script type="text/javascript"
-            src="{{ $secureHeaderJS.Permalink }}"
-            integrity="{{ $secureHeaderJS.Data.Integrity }}"
-            crossorigin="anonymous"></script>
-
-
-    {{ if not .Site.Params.disableThemeSwitcher }}
-        {{ $anatoleThemeSwitcher := resources.Get "js/anatole-theme-switcher.js" }}
-        {{ $secureThemeSwitcherJS := $anatoleThemeSwitcher |  resources.Minify | resources.Fingerprint }}
-        <script type="text/javascript"
-                src="{{ $secureThemeSwitcherJS.Permalink }}"
-                integrity="{{ $secureThemeSwitcherJS.Data.Integrity }}"
-                crossorigin="anonymous"></script>
-    {{ end }}
-
-    {{- $js := "" -}}
-    {{- range .Site.Params.customJs -}}
-        {{- if or (in . "http://") (in . "https://") -}}
-            <script src="{{ . | relURL }}"></script>
-        {{- else -}}
-            {{- $customJS := resources.Get . -}}
-            {{- if $customJS -}}
-                {{- if eq $js "" -}}
-                    {{- $js = $customJS -}}
-                {{- else -}}
-                    {{- $js = slice $js $customJS | resources.Concat "js/custom.js" -}}
-                {{- end -}}
-            {{- end -}}
-        {{- end -}}
-    {{- end -}}
-
-    {{- if ne $js "" -}}
-    {{- $secureJS := $js |  resources.Minify | resources.Fingerprint -}}
-    <script type="text/javascript"
-            src="{{ $secureJS.Permalink }}"
-            integrity="{{ $secureJS.Data.Integrity }}"
-            crossorigin="anonymous"></script>
-    {{- end -}}
-
-    <!-- Twitter Cards -->
-    {{ template "_internal/twitter_cards.html" . }}
+          {{ partial "math.html" . }}
 </head>

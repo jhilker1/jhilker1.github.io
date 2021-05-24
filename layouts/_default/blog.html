@@ -1,49 +1,60 @@
 {{ define "main" }}
-
-    <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
-        <!-- (Optional) Home
-            -- on top of `mainSections` content (aka posts) ;
-            -- as declared in content/_index.md
-
-            One can set `mainSections = [""]` and have the content/_index.md specified here
-        -->
-        {{ .Content }}
-    </div>
-    
-    {{ $paginator := .Paginate (where (where .Pages "Section" "blog") ".Params.type" "post") 10 }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
+<div class="col-lg-12">
+  <div class="content">
+    <h1>{{ upper .Title}}</h1>
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
     {{ range $paginator.Pages }}
-
-        <div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
-            <div class="post-title">
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h3>
-            </div>
-            <div class="post-content">
-                <div class="p_part"><p>{{ .Summary }}</p></div>
-            </div>
-            <div>
-        <a href="{{ .RelPermalink }}">Read More…</a>
-      </div>
-            <div class="post-footer">
-                <div class="meta">
-         
-                    <div class="info"><em class="fas fa-calendar-day"></em><span
-                                class="date">{{ .Date.Format "Mon, 02 Jan. 2006" }}</span>
-                                                        {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
-                        {{ with .Params.tags }}
-                            <i class="fas fa-tags"></i>    
-                            {{- range $index, $el := . -}}
-                                <a class="tag"
-                                   href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
-                            {{- end -}}
-                        {{ end }}
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    {{ end }}
-    <div class="pagination">
-        {{ template "_internal/pagination.html" . }}
-    </div>
+    <div class="card w-70 mw-100 shadow-lg">
+      <a href={{.RelPermalink}}>
+        <h2 class="card-title">{{.Title}}</h2>
+      </a>
+      {{ if eq .Type "post"}}
+      <span class="postInfo">
+        
+        <i class="fas fa-calendar"></i> 
+            {{ if isset .Site.Params "indexdateformat"}}
+                {{.Date.Format .Site.Params.indexdateformat}}
+            {{ else }}
+                {{ .Date.Format "02 Jan 2006"}}
+            {{ end }}
+            &nbsp;
+            &nbsp;
+            <i class='fas fa-stopwatch'></i> 
+            {{ .ReadingTime }}-minute read
+            &nbsp;
+            &nbsp;
+            {{ if or (eq .Site.Params.enableWordCount true) (eq .Params.enableWordCount true) }}
+            <i class="fas fa-book"></i>
+            {{ .WordCount }} words
+            {{ end }}
+        {{ end }}
+        </span>
+        <p>
+        {{.Summary}}
+        </p>
+        {{ if eq .Type "post"}}
+        <span class="mb-0">
+            <!-- 
+            Post Categories and Tags
+            Since it calls the range in the partial it doesn't need to be called here.
+            -->
+            {{ if isset .Params "categories"}}
+                {{ partial "post/categories.html" . }}
+            {{ end }}
+            {{ if isset .Params "tags"}}
+            <span class="text-right">
+                {{ partial "post/tags.html" . }}
+            </span>
+            {{ end }}
+        </span>
+        {{ end }}
+     </div>
+     {{ end }}
+     <div class="pagination-rounded text-center">
+         {{/* partial "pagination.html" . */}}
+         {{ template "_internal/pagination.html" . }}
+     </div>
+     </div>
+</div>
 {{ end }}

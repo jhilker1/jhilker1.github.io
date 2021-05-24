@@ -1,11 +1,10 @@
 {{ $count := .Get "count"}}
-<ul class="posts-list">
-      {{/* range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  */}}
-    {{range  first $count (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" "true") }}
+<ul class="featured-list" style="list-style:none;">
+    {{range  first $count (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" true) }}
 
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
+        <li class="featured-list-item">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <span style="float:right;">
             {{ .Date.Format "02 Jan." }}
           </span>
         </li>

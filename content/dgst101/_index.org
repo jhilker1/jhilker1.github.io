@@ -1,2 +1,0 @@
-#+title: Digital Studies
-#+layout: dgst101

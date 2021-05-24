@@ -2,58 +2,41 @@
 #+date: <2020-12-04 Fri>
 #+draft: false
 #+layout: resume
+#+location: Crozet, VA
+#+phone: 434-409-3789
+#+email: jacob.hilker2@gmail.com
+#+interests[]: Worldbuilding Writing Games Songwriting Drums Bass Guitar
 
-
-* Details
-  05 Dec, 1998 \\
-  Crozet, Virginia \\
-  434-409-3789 \\
-  [[mailto:jacob.hilker2@gmail.com][jacob.hilker2@gmail.com]]
-
-* Profile
-  Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but especially enjoys writing in Python.
+* Profile 
+#+begin_cvwrapper
+Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but especially enjoys writing in Python.
+#+end_cvwrapper
 
 * Education
-** B.S., Computer Science
-    Aug 2017 - exp. May 2021 \\
-    University of Mary Washington - Fredericksburg, VA \\
-    Minor in Cybersecurity
-*** _Relevant Coursework_
-         Applications of Databases \\
-         Data Science \\
-         Artificial Neural Networks \\
-         Software Security
+#+begin_cvwrapper
+{{<resume/degree uni="University of Mary Washington - Fredericksburg, VA" deg="B.Sc., Computer Science" start="22 Aug 2017" end="09 May 2021">}}
+
+**Minor In Cybersecurity**
+
+**Relevant Coursework**
+- Applications of Databases
+- Data Science
+- Artificial Neural Networks
+- Software Security
+{{</resume/degree>}}
+#+end_cvwrapper
 
 * Experience
-** Library Volunteer
-   Jun 2014 - Jul 2017\\
-   Performed various tasks, such as shelving books, planning programs, and organizing projects in order to support the Crozet library and local community.
-** Impact Richmond
-   Jul 2012 - Jul 2017\\
-   Participated in week-long volunteer sessions to refurbish homes in disadvantaged neighborhoods in Richmond, VA.
+#+begin_cvwrapper
+{{<resume/experience title="Library Volunteer" comp="Crozet Library - Crozet, VA" start="07 Jul 2014" end="17 Jul 2017">}}
+Performed various tasks, such as shelving books, planning programs, and organizing projects in order to support the Crozet library and local community.
+{{</resume/experience>}}
+#+begin_export html
+<hr />
+#+end_export
+{{<resume/experience title="Impact Richmond Volunteer" comp="Impact Richmond - Richmond, VA" start="07 Jul 2012" end="17 Jul 2017">}}
+Participated in week-long volunteer sessions to refurbish homes in disadvantaged neighborhoods in Richmond, VA.
+{{</resume/experience>}}
+#+end_cvwrapper
 
-* Languages
-** Programming Languages
-   Python \\
-   Shell Scripts (Bash/ZSH) \\
-   Java \\
-   HTML & CSS \\
-   JavaScript \\
-   SQL
-** Markup Languages
-    Markdown \\
-    Org \\
-    Groff (MS Macros) \\
-    Latex 
-** Packages
-   Numpy \\
-   Pandas \\
-   Matplotlib \\
-   Scikit-Learn
-** Frameworks
-   React \\
-   NextJS
 * Skills
-  Git \\
-  Google Cloud Platform \\
-  Linux 

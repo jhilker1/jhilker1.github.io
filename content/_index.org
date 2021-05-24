@@ -12,8 +12,8 @@
 
 * FEATURED POSTS
 These posts are the ones that I find the most interesting.
-{{<featured count=3 >}}
+{{< featured count="3" >}}
 
 * RECENT POSTS
 Interested in some of the things I write on my blog? Check them out here.
-{{<recents count=3 >}}
+{{< recents count="3" >}}

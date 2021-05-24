@@ -1,9 +1,0 @@
-#+title: I Was Wrong About Multireddits... Sort Of
-#+date: 2020-12-29T15:29:11-0500
-#+layout: single
-#+type: post
-#+draft: true
-#+tags[]: rss newsboat reddit
-#+publishDate:
-
-If you saw [[/blog/2020/12/multireddits-with-newsboat][this post]] from a while ago,

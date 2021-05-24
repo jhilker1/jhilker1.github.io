@@ -1,5 +1,0 @@
-#+title: Adding Custom Pagination in Hugo
-#+date: 2020-12-15T15:22:55-0500
-#+type: post
-#+draft: true
-

@@ -2,11 +2,38 @@ baseURL = "https://jhilker.com"
 languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-theme = "anatole"
+theme = "all-for-one"
 title = "Jacob's Website"
 linenos = true
 pygmentsOptions = "linenos=table"
 disqusShortname = "jhilker"
+paginate = 5
+
+[params]
+title = "Jacob's Website"
+author = "Jacob Hilker"
+customCss = []
+description = "This is a website."
+themePref = "dark"
+keywords = ""
+profilePic = "pics/jhilker.jpg"
+commentsrc = "utterances"
+mainSections=['post']
+
+[params.math]
+enable = true
+use = "mathjax"
+
+[params.utterances]
+repo = "jhilker1/website-comments"
+theme = "preferred-color-scheme"
+issueMap = "pathname"
+
+
+[outputFormats.RSS]
+baseName = "feed"
+mediatype = "application/rss"
+
 
 [[menu.main]]
 identifier = "home"
@@ -38,102 +65,61 @@ name = "Blog"
 url = "/blog/"
 weight = 5
 
+
+[[menu.main]]
+identifier = "recents"
+name = "Recent Posts"
+url = "/blog/"
+parent = "blog"
+weight = 1
+
 [[menu.main]]
 identifier = "archive"
-name = "Archive"
+name = "Blog Archive"
 url = "/blog/archive/"
-weight = 6
+parent = "blog"
+weight = 2
 
 [[menu.main]]
-identifier = "DGST101"
-name = "Digital Studies"
-url = "/dgst101/"
-weight = 7
+identifier = "feed"
+name = "RSS Feed"
+url = "/blog/feed.xml"
+parent = "blog"
+weight = 3
 
-#[[menu.main]]
-#identifier = "dgstarchive"
-#name = "DGST101 Archive"
-#url = "/dgst101/archive/"
-#weight = 8 
 
 [[menu.main]]
-identifier = "dgst101feed"
-name = "DGST101 Feed"
-url = "/dgst101/feed.xml"
-weight = 8
-
-[[menu.main]]
-identifier = "gitlab"
+identifier = "Source"
 name = "Source"
 url = "https://gitlab.com/jhilker/jhilker.gitlab.io"
-weight = 9
+weight = 6
 
-[outputFormats.RSS]
-baseName = "feed"
-mediatype = "application/rss"
 
-[params]
-author = "Jacob Hilker"
-customCss = ["css/custom.css", "css/syntax.css"]
-description = "This is a website."
-displayMode = "dark"
-keywords = ""
-mainSections = ["blog", "project"]
-profilePicture = "pics/jhilker.jpg"
-title = "Jacob's Website"
-[params.blog]
-commentSrc = "graphcomment"
-## M10C
-#avatar = "pics/jhilker.jpg"
-## M10C Nord Config
-#[params.style]
-#  darkestColor = "#2e3440"
-#  darkColor = "#3b4252"
-#  lightColor = "#d8dee9"
-#  lightestColor = "#eceff4"
-#  primaryColor = "#b16286"
-
-[params.math]
-enable = true
-use = "katex"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fab fa-gitlab"
 title = "GitLab"
 url = "https://gitlab.com/jhilker"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/jhilker1"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
 url = "https://linkedin.com/in/jhilker"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fab fa-dev"
 title = "Dev.to"
 url = "https://dev.to/jhilker"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fab fa-codepen"
 title = "CodePen"
 url = "https://codepen.io/hilkerj"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fas fa-rss"
 title = "RSS Feed"
 url = "/blog/feed.xml"
-[[params.socialIcons]]
+[[params.socials]]
 icon = "fas fa-envelope"
 title = "Home"
 url = "mailto:jacob.hilker2@gmail.com"
-
-[permalinks]
-#blog = "/:section/:year/:month/:day/:slug/"
-#dgst101 = "/blog/:section/:year/:month/:day/:slug/"
-blog = "/:section/post/:year/:month/:slug/"
-dgst101 = "/blog/:section/:year/:month/:slug/"
-page = "/:slug/"
-archive = "/blog/:section"
-
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  series = "series"
