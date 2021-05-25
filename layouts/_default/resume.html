@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="container-fluid pl-20 mr-20 pr-10" id="resume">
+    <div class="row">
+        <div class="col-md-9 pr-10">
+            <div class="d-lg-none">
+                <h1>Contact</h1>
+                <div class="wrapper">
+                    <ul class="contactInfo">
+                        <li><i class="fas fa-home"></i>&nbsp;&nbsp;{{.Page.Params.location}}</li>
+                        <li><i class="fas fa-phone"></i>&nbsp;&nbsp;{{.Page.Params.phone}}</li>
+                        <li style="padding-right: 0.5em;">
+                            <i class="fas fa-envelope"></i>
+                            &nbsp;<a href="mailto:jsmith@somesite.com" id="email">
+                                {{.Page.Params.email}}</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="pt-15">
+            {{ .Content }}
+            </div>
+        </div>
+         <div class="col-3 border-left hidden-md-and-down" id="detailsCol">
+              <br />
+              <ul class="contactInfo">
+                  <li><i class="fas fa-home"></i>&nbsp; {{.Page.Params.location}}</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; {{.Page.Params.phone}}</li>
+                <li>
+                  <i class="fas fa-envelope"></i>&nbsp;
+                  <a href="mailto:{{.Page.Params.email}}" class="text-wrap">
+                    {{.Page.Params.email}}
+                  </a>
+                </li>
+              </ul>
+              <!-- <br /> -->
+              {{ partial "resume/skills.html" . }}
+              <br />
+             {{ partial "resume/interests.html" . }} 
+         </div>
+    </div>
+</div>
+{{ end }}
