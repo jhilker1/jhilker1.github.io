@@ -69,7 +69,7 @@ weight = 5
 [[menu.main]]
 identifier = "recents"
 name = "Recent Posts"
-url = "/blog/"
+url = "/blog/post/"
 parent = "blog"
 weight = 1
 
@@ -94,32 +94,40 @@ name = "Source"
 url = "https://gitlab.com/jhilker/jhilker.gitlab.io"
 weight = 6
 
-
 [[params.socials]]
 icon = "fab fa-gitlab"
 title = "GitLab"
 url = "https://gitlab.com/jhilker"
+
 [[params.socials]]
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/jhilker1"
+
 [[params.socials]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
 url = "https://linkedin.com/in/jhilker"
+
 [[params.socials]]
 icon = "fab fa-dev"
 title = "Dev.to"
 url = "https://dev.to/jhilker"
+
 [[params.socials]]
 icon = "fab fa-codepen"
 title = "CodePen"
 url = "https://codepen.io/hilkerj"
+
 [[params.socials]]
 icon = "fas fa-rss"
 title = "RSS Feed"
 url = "/blog/feed.xml"
+
 [[params.socials]]
 icon = "fas fa-envelope"
 title = "Home"
 url = "mailto:jacob.hilker2@gmail.com"
+
+[permalinks]
+blog = "/:section/post/:year/:month/:slug/"
