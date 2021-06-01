@@ -87,12 +87,38 @@ url = "/blog/feed.xml"
 parent = "blog"
 weight = 3
 
+[[menu.main]]
+identifier = "conworld"
+name = "Worldbuilding"
+url = "/conworld"
+weight = 6
 
 [[menu.main]]
-identifier = "Source"
+identifier = "brokenthrones"
+name = "Broken Thrones"
+url = "https://brokenthrones.jhilker.com"
+parent = "conworld"
+weight = 1
+
+[[menu.main]]
+identifier = "shatteredskies"
+name = "Shattered Skies"
+url = "https://shatteredskies.jhilker.com"
+parent = "conworld"
+weight = 2
+
+[[menu.main]]
+identifier = "notes"
+name = "Notes"
+url = "https://braindump.jhilker.com"
+weight = 7
+
+
+[[menu.main]]
+identifier = "source"
 name = "Source"
 url = "https://gitlab.com/jhilker/jhilker.gitlab.io"
-weight = 6
+weight = 7
 
 [[params.socials]]
 icon = "fab fa-gitlab"
