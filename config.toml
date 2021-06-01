@@ -69,7 +69,7 @@ weight = 5
 [[menu.main]]
 identifier = "recents"
 name = "Recent Posts"
-url = "/blog/post/"
+url = "/blog/"
 parent = "blog"
 weight = 1
 
