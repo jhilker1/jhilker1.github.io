@@ -5,10 +5,6 @@
 #+seq_todo: TODO DRAFT | DONE
 
 * Org-Mode                                                 :@Org__Mode:Emacs:
-** DRAFT My Org-Mode Workflow
-:properties:
-:export_file_name: my-org-mode-workflow
-:end:
 ** DRAFT Why I Built My Emacs Config
 :properties:
 :export_file_name: why-i-built-my-emacs-config
