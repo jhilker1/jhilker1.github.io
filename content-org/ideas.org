@@ -1,0 +1,16 @@
+
+* TODO My Org-Mode Workflow
+:properties:
+:EXPORT_FILE_NAME: my-org-mode-workflow
+:export_date: <2021-06-01 Tue>
+:export_hugo_custom_front_matter: :featured true
+:end:
+
+Although I briefly describe my workflows in the [[https://braindump.jhilker.com][notes section]] of my website, I wanted to go far more in-depth here on my blog vs. in the notes file. I think of it this way - a note is a quick reminder of something, while something like an article or post is more in-depth.
+* TODO Why I Built My Emacs Config
+:properties:
+:EXPORT_FILE_NAME: why-i-built-my-emacs
+:export_date: <2021-06-01 Tue>
+:export_hugo_custom_front_matter: :featured false
+:end:
+
