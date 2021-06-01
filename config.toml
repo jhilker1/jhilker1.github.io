@@ -49,7 +49,7 @@ weight = 2
 
 [[menu.main]]
 identifier = "resume"
-name = "ResumÃ©"
+name = "Resumé"
 url = "/resume/"
 weight = 3
 
@@ -113,12 +113,17 @@ name = "Notes"
 url = "https://braindump.jhilker.com"
 weight = 7
 
+[[menu.main]]
+identifier = "config"
+name = "Configs"
+url = "https://config.jhilker.com"
+weight = 8
 
 [[menu.main]]
 identifier = "source"
 name = "Source"
 url = "https://gitlab.com/jhilker/jhilker.gitlab.io"
-weight = 7
+weight = 9
 
 [[params.socials]]
 icon = "fab fa-gitlab"
