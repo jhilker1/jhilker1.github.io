@@ -22,7 +22,7 @@ mainSections=['post']
 
 [params.math]
 enable = true
-use = "mathjax"
+use = "katex"
 
 [params.utterances]
 repo = "jhilker1/website-comments"
