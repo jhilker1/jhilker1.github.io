@@ -3,7 +3,7 @@
     {{range  first $count (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" true) }}
 
         <li class="featured-list-item">
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           <span style="float:right;">
             {{ .Date.Format "02 Jan." }}
           </span>
