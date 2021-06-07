@@ -1,7 +1,7 @@
 #+title: Resume
 #+date: <2020-12-04 Fri>
 #+draft: false
-#+layout: resume
+#+layout: single
 #+location: Crozet, VA
 #+phone: 434-409-3789
 #+email: jacob.hilker2@gmail.com

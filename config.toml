@@ -2,7 +2,7 @@ baseURL = "https://jhilker.com"
 languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-theme = "all-for-one"
+theme = "m10c"
 title = "Jacob's Website"
 linenos = true
 pygmentsOptions = "linenos=table"
