@@ -107,18 +107,24 @@ url = "https://shatteredskies.jhilker.com"
 parent = "conworld"
 weight = 2
 
+[[menu.main]]
+identifier = "braindump"
+name = "Notes"
+url = "https://braindump.jhilker.com"
+weight = 8
+
 
 [[menu.main]]
 identifier = "config"
 name = "Configs"
 url = "https://config.jhilker.com"
-weight = 7
+weight = 8
 
 [[menu.main]]
 identifier = "source"
 name = "Source"
 url = "https://gitlab.com/jhilker/jhilker.gitlab.io"
-weight = 8
+weight = 9
 
 [[params.socials]]
 icon = "fab fa-gitlab"
