@@ -2,7 +2,7 @@ baseURL = "https://jhilker.com"
 languageCode = "en-us"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-theme = "m10c"
+theme = "all-for-one"
 title = "Jacob's Website"
 linenos = true
 pygmentsOptions = "linenos=table"
@@ -163,3 +163,6 @@ url = "mailto:jacob.hilker2@gmail.com"
 
 [permalinks]
 blog = "/:section/post/:year/:month/:slug/"
+
+[markup.goldmark.renderer]
+unsafe= true

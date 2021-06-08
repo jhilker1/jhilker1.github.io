@@ -1,2 +1,2 @@
 #+title: Projects
-#+layout: single
+#+layout: portfolio
