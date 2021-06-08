@@ -50,3 +50,8 @@ I've been trying to recently get my personal projects more in order with org-mod
 :EXPORT_FILE_NAME: how-i-use-org-roam-with-hugo
 :export_hugo_custom_front_matter: :featured true
 :end:
+* TODO Using Org-roam with Hugo
+:properties:
+:EXPORT_FILE_NAME: use-org-roam-with-hugo
+:export_hugo_custom_front_matter: :featured true
+:end:
