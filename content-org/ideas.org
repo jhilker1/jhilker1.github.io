@@ -44,14 +44,19 @@ Explain about shortcodes here.
 :export_hugo_custom_front_matter: :featured true
 :end:
 
-I've been trying to recently get my personal projects more in order with org-mode.
-* TODO How I Use Org-roam with Hugo
+I've been trying to recently get my personal projects more in order with org-mode - while they are mostly small scale projects, some of them are more ambitious than others (such as Chronicler, my terminal application for managing after-action reports in CK3 and similar games).
+* TODO Using Org-roam with Hugo
 :properties:
 :EXPORT_FILE_NAME: how-i-use-org-roam-with-hugo
 :export_hugo_custom_front_matter: :featured true
 :end:
-* TODO Using Org-roam with Hugo
+* TODO My Org-mode Blogging Workflow
 :properties:
-:EXPORT_FILE_NAME: use-org-roam-with-hugo
-:export_hugo_custom_front_matter: :featured true
+:EXPORT_FILE_NAME: my-org-mode-blog-workflow
+:export_hugo_custom_front_matter: :featured false
+:end:
+* TODO How I Plan a Hugo Theme
+:properties:
+:EXPORT_FILE_NAME: how-i-plan-a-hugo-theme
+:export_hugo_custom_front_matter: :featured false
 :end:
