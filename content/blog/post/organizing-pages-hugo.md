@@ -2,6 +2,7 @@
 title: "Featuring Blog Posts and Pages in Hugo"
 author: ["Jacob Hilker"]
 date: 2021-02-23T16:25:00-05:00
+lastmod: 2021-06-12T20:47:00-04:00
 tags: ["Web Dev"]
 categories: ["Hugo"]
 type: "post"
