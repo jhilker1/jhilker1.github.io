@@ -4,8 +4,9 @@
 #+hugo_front_matter_format: yaml
 #+seq_todo: TODO DRAFT | DONE
 #+hugo_auto_set_lastmod: t
-* Org-Mode                                :@Org__Mode:Emacs:@Emacs:Org__Mode:
-** DONE My Org-Mode Workflow
+#+hugo_custom_front_matter: :enableToc true
+* Org-Mode                                :@Emacs:@Org_mode:Emacs:Org_mode:
+** DONE My Org-Mode Workflow                                 :GTD:
 CLOSED: [2021-06-12 Sat 20:46]
 :properties:
 :EXPORT_FILE_NAME: my-org-mode-workflow
@@ -70,7 +71,11 @@ Overall, my workflow looks a little something like this.
 Although I am not a very good writer, I do enjoy worldbuilding and writing campaign ideas. This is still very much in progress, but the idea is to capture an idea to a file called =writing.org= in my Dropbox which acts as a sort of inbox for any writing ideas I have. It's not perfect at all, but I am still figuring out the right workflow to have for this sort of thing. It acts fairly similarly to the way my task system does, where I review it at the end of the week and apply it to any relevant worldbuilding or writing projects I'm working on. I might try something with capturing into the current buffer I'm in, but I'm not entirely sure, though.
 
 
-* Hugo                                                       :@Hugo:Web__Dev:
+
+* Emacs                                                   :@Emacs:Emacs:
+
+
+* Hugo                                                       :@Hugo:Web_Dev:
 ** Featuring Blog Posts and Pages in Hugo
 :PROPERTIES:
 :EXPORT_FILE_NAME: organizing-pages-hugo
@@ -227,3 +232,9 @@ Here is what it looks like when browsing a query feed:
 :end:
 If you saw [[/blog/2020/12/multireddits-with-newsboat][this post]] from a while ago,
 ** LaTeX                                                            :@LaTeX:
+
+* Footnotes
+* COMMENT Local Variables                          :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

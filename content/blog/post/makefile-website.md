@@ -2,11 +2,12 @@
 title: "Using A Makefile With My Website"
 author: ["Jacob Hilker"]
 date: 2021-03-12T17:47:00-05:00
-lastmod: 2021-06-12T20:47:01-04:00
-tags: ["Web Dev"]
+lastmod: 2021-06-14T20:54:21-04:00
+tags: ["Web-Dev"]
 categories: ["Hugo"]
 type: "post"
 draft: false
+enableToc: true
 ---
 
 It shouldn't be a surprise that I use Hugo as a static site generator. Not only is it fast, but it is also incredibly customizable, which is something that I find useful considering my website has so much stuff on it. In addition, being able to create shortcodes to avoid reusing code on certain pages is such a helpful tool for wikis. Finally, having support for Emacs' [Org-Mode](https://orgmode.org/) is what initially drew me to Hugo in the first place. I had tried using org-publish to try and set up a website, but had so many little issues with it that I decided to scrap it and keep looking around for a better way to set up a website. That was when I found Hugo, and decided to try it out.

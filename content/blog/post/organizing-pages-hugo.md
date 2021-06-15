@@ -2,12 +2,13 @@
 title: "Featuring Blog Posts and Pages in Hugo"
 author: ["Jacob Hilker"]
 date: 2021-02-23T16:25:00-05:00
-lastmod: 2021-06-12T20:47:00-04:00
-tags: ["Web Dev"]
+lastmod: 2021-06-14T20:55:39-04:00
+tags: ["Web-Dev"]
 categories: ["Hugo"]
 type: "post"
 draft: false
 featured: true
+enableToc: true
 ---
 
 I recently found that the layout for my index page here was cluttered - I had content both in the org-mode file where I would write a post, as well as in the `index.html` file that actually rendered content to the page. I knew I wanted to have a shortcode so that I could more easily use that content again, if I needed to. However, I also knew that I'd want to have a list of both featured posts that I thought were my best work, as well as a list of recent posts on the page. I first used part of the list layout from the theme I'm using here, and created a shortcode for only getting posts from my personal blog, and limiting it to the 5 most recent posts.

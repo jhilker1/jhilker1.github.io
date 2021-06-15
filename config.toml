@@ -138,3 +138,12 @@ blog = "/:section/post/:year/:month/:slug/"
 
 [markup.goldmark.renderer]
 unsafe= true
+[related]
+  includeNewer= true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+
