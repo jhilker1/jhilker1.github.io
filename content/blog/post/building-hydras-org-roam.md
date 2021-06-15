@@ -1,12 +1,11 @@
 ---
 title: "Learning Elisp by Building Hydras for Org-roam"
 author: ["Jacob Hilker"]
-lastmod: 2021-06-14T22:14:20-04:00
+date: 2021-06-14T22:43:00-04:00
 tags: ["Emacs", "Org-mode", "Org-roam", "worldbuilding", "wikis"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
-draft: true
-featured: true
+draft: false
 ---
 
 I've recently been playing around with [Org-roam](https://github.com/org-roam/org-roam), a note-taking package for Emacs and Org-mode based on the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) method of taking notes, and interconnecting those notes by means of backlinks, and one place this style of note-taking is very common on is the [Roam Research](https://roamresearch.com) website. In the little bit of time that I've gotten to try this line of research, I've found it much more helpful with regards to actually remembering things rather than my old method of just writing it down in a notebook - having backlinks where I can go back and reference any information I've gotten is very helpful. Despite my love of this way of keeping myself organized, I wanted to be able to quickly capture ideas for any worldbuilding ideas I had - something which I feel like would fall into one of the worldbuilding wikis I maintain for myself, rather than the notes I use by default (for things such as software or any books I've read). I wanted to try and do more with Emacs-lisp, and so I found that trying to write a hydra for it might be a good place to start. Although I had found that the idea in the documentation of creating a `.dir-locals.el` in the directory where I needed a roam database was a good place to start, I found that it ultimately forced me to have to be in that directory to capture an idea if I suddenly came up with one, which I feel like sort of goes against the entire workflow I have set up at this point. I knew that I needed to do three things with my "Roam hydra":
@@ -48,4 +47,56 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
 ("q" nil))
 ```
 
-Once I had that, I knew I could just replace `org-roam-find-file` with `org-roam-capture` or whatever I needed
+Once I had that, I knew I could just replace `org-roam-find-file` with `org-roam-capture` or whatever I needed to call. Although I am reusing a lot of code for this, in time I will try to clean it up. If you need the other hydras I use on a daily basis for roam notes, here they are.
+
+To actually use the hydra, bind `jh/find-org-roam-file-hydra/body` to a keybinding (I use `SPC n r f`) in my configs for both vanilla Emacs and Doom Emacs, and you should be set.
+
+
+## Capturing Hydra {#capturing-hydra}
+
+```emacs-lisp
+(defun jh/org-roam-capture (directory)
+  "Sets the org-roam directory and database and captures to file."
+  (let* ((org-roam-directory (concat directory "content-org/"))
+         (org-roam-db-location (concat directory "org-roam.db")))
+    (org-roam-capture)))
+
+(defhydra jh/org-roam-capture-hydra (:hint nil :exit t)
+ "
+^Default^            ^Conworlds^             ^Campaigns^
+^^^^^^^^------------------------------------------------------------
+_d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
+_q_: Quit            _s_: Shattered Skies    ^ ^
+"
+
+("d" (jh/org-roam-capture "~/org/roam/"))
+("b" (jh/org-roam-capture "~/Projects/conworlds/brokenThrones/"))
+("s" (jh/org-roam-capture "~/Projects/conworlds/shatteredSkies/"))
+("e" (jh/org-roam-capture "~/Projects/campaigns/mirkwoodCampaign/"))
+("q" nil))
+```
+
+
+## Insertion Hydra {#insertion-hydra}
+
+```emacs-lisp
+(defun jh/org-roam-insert (directory)
+  "Sets the org-roam directory and database and inserts link to file."
+  (let* ((org-roam-directory (concat directory "content-org/"))
+         (org-roam-db-location (concat directory "org-roam.db")))
+    (org-roam-insert)))
+
+(defhydra jh/org-roam-insert-hydra (:hint nil :exit t)
+ "
+^Default^            ^Conworlds^             ^Campaigns^
+^^^^^^^^------------------------------------------------------------
+_d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
+_q_: Quit            _s_: Shattered Skies    ^ ^
+"
+
+("d" (jh/org-roam-insert "~/org/roam/"))
+("b" (jh/org-roam-insert "~/Projects/conworlds/brokenThrones/"))
+("s" (jh/org-roam-insert "~/Projects/conworlds/shatteredSkies/"))
+("e" (jh/org-roam-insert "~/Projects/campaigns/mirkwoodCampaign/"))
+("q" nil))
+```
