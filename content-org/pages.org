@@ -57,3 +57,9 @@ Need to reach out to me? Fill out this form, and I'll get back to you as quickly
 </div>
 #+end_export
 
+* Projects
+:PROPERTIES:
+:EXPORT_HUGO_LAYOUT: portfolio
+:export_hugo_section: projects/
+:export_file_name: _index
+:END:

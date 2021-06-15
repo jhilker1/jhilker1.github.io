@@ -8,7 +8,7 @@ srclang = "Python"
 icon = "devicon-python-plain"
 status = "In Development"
 projectrepo = "https://gitlab.com/jhilker/chroniclerCK3.git"
-projectsite = "https://chroniclerck3.readthedocs.io/en/latest/"
+projectsite = "https://chronicler.readthedocs.io/en/latest/"
 weight = 1
 +++
 

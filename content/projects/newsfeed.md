@@ -2,7 +2,7 @@
 title = "Newsfeed"
 author = ["Jacob Hilker"]
 type = "project"
-draft = false
+draft = true
 srclang = "Python"
 icon = "devicon-python-plain"
 status = "Planning"

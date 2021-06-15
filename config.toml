@@ -20,6 +20,7 @@ profilePic = "pics/jhilker.jpg"
 commentsrc = "utterances"
 mainSections=['post']
 enableToc = true
+portfolio_paginate = 2
 
 [params.math]
 enable = true

@@ -1,11 +1,11 @@
-#+hugo_base_dir: ~/Projects/jhilker.gitlab.io
-#+hugo_section: projects
+#+hugo_base_dir: ../
+#+hugo_section: projects/
 #+hugo_type: project
 
 * Chronicler for CK3
 :properties:
 :export_file_name: chronicler
-:export_hugo_custom_front_matter: :featured true :srclang Python :icon devicon-python-plain :status In Development :projectrepo https://gitlab.com/jhilker/chroniclerCK3.git :projectsite https://chroniclerck3.readthedocs.io/en/latest/ :weight 1
+:export_hugo_custom_front_matter: :featured true :srclang Python :icon devicon-python-plain :status In Development :projectrepo https://gitlab.com/jhilker/chroniclerCK3.git :projectsite https://chronicler.readthedocs.io/en/latest/ :weight 1
  :end:
 Chronicler is a terminal application for managing after-action reports (AARs) for Crusader Kings 3.
 
