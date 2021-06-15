@@ -19,6 +19,7 @@ keywords = ""
 profilePic = "pics/jhilker.jpg"
 commentsrc = "utterances"
 mainSections=['post']
+enableToc = true
 
 [params.math]
 enable = true

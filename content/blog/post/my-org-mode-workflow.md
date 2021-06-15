@@ -2,7 +2,7 @@
 title: "My Org-Mode Workflow"
 author: ["Jacob Hilker"]
 date: 2021-06-12T20:46:00-04:00
-lastmod: 2021-06-14T21:01:58-04:00
+lastmod: 2021-06-14T21:29:02-04:00
 tags: ["Emacs", "Org-mode", "GTD"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
