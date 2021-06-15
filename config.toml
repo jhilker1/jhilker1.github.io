@@ -148,3 +148,17 @@ unsafe= true
     name = "categories"
     weight = 80
 
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+
+  [[related.indices]]
+    name = "series"
+    weight = 80
+
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
