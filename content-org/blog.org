@@ -5,8 +5,10 @@
 #+seq_todo: TODO DRAFT | DONE
 #+hugo_auto_set_lastmod: t
 #+startup: overview
-* Org-Mode                                  :@Emacs:@Org_mode:Emacs:Org_mode:
-** DONE My Org-Mode Workflow                                 :GTD:
+
+* Emacs                                                               :Emacs:@Emacs:
+** Org-Mode                                             :@Org_mode:Org_mode:
+*** DONE My Org-Mode Workflow                                         :GTD:
 CLOSED: [2021-06-12 Sat 20:46]
 :properties:
 :EXPORT_FILE_NAME: my-org-mode-workflow
@@ -19,7 +21,7 @@ I use org-mode for most of my stuff now - if I am writing a README as an example
 
 The best feature of all this is my extensive use of capturing ideas, tasks, and events with =org-capture=. This way, I can still heavily focus on the current task I'm working on, while still getting ideas down if I need them.
 
-*** My Agenda Workflow
+**** My Agenda Workflow
 One of the nicest features of org-mode is the ability to create custom agenda commands for different views. And in these views, you can have different files for different sections of an agenda, or for each individual agenda view. I currently have a few org-mode files in my dropbox that I use as agenda files. 
 
 | Filename       | Purpose                                                          |
@@ -38,7 +40,7 @@ As an example, I currently have a custom agenda view that I call a dashboard - a
 This is my "daily dashboard" view - everything at the top is everything with a date for today. Underneath that, I have a list of the inbox items I need to review. Underneath that, I have anything I need to follow up or read from my email, and lastly, I have a list of general todo items. Although GTD normally has you set deadlines for every little item, I feel like if I set an arbitrary deadline for something where it wouldn't be necessary, it's much easier for me to ignore that deadline, which in turn makes it easier for me to ignore all my deadlines. I'd rather something take longer and eventually get finished, rather than me forcing arbitrary dates on myself and eventually ignoring that date.
 
 
-*** For Tasks 
+**** For Tasks 
 As far as actually organizing myself, my workflow is a mix of both Getting Things Done, the Pomodoro method, and my own thing, although I use both GTD and Pomodoro for slightly different reasons. I used to be more of a "just get it done, don't worry about logging it" sort of person, but now I feel like it's a lot easier for me to just record a task or an idea if something comes up.
 
 1. Capture a task using =org-capture= and save it to the inbox.
@@ -47,12 +49,12 @@ As far as actually organizing myself, my workflow is a mix of both Getting Thing
 4. At the end of the day, review the inbox, and refile with a [[https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/][hydra]] as appropriate.
 
 I mostly use it like this because I have had trouble focusing in the past, and now I can quickly get an idea into my head and into a file so that I can get back to work and review it later. Other than that, I'll set a pomodoro timer, clock in the task, and get to work.
-*** For Note-Taking
+**** For Note-Taking
 This, along with the task management system I described above, is what makes classes easier, although I'm disappointed that I didn't implement org-mode sooner until now. I am currently using [[https://github.com/org-roam/org-roam/][org-roam]] to get a similar setup to what I had in [[https://notion.so/][Notion]] or [[https://obsidian.md/][Obsidian]] so that I can connect notes to past information I've learned.  Although this is still currently in progress (mainly trying to figure out campaign notes with a similar system to what I have for my primary note-taking system), I will update this when I get something working.
 
-*** For Writing
+**** For Writing
 Org-mode, in addition to being an excellent productivity tool, is also a very nice markup language. This means that it's not too difficult to write something in org-mode, and export to something like a Word document or a PDF with \(\LaTeX\) or Groff if you need a manuscript.
-**** For The Blog
+***** For The Blog
 I have a few capture templates set up for various things on my site - namely, a blog post and a potential project. I am currently using [[https://github.com/kaushalmodi/ox-hugo][Ox-Hugo]] for publishing my org-mode files to the relevant Hugo Markdown files in the correct directory. Inside my website folder for org-files, I have two separate files for handling different parts of my site.
 
 | Filename     | Purpose                               |
@@ -67,12 +69,12 @@ Overall, my workflow looks a little something like this.
 4. Publish the post with =org-export=.
 5. Commit the changes, and push to my gitlab.
 
-**** For Outlining Longer Works (Campaigns, Novels, etc).
+***** For Outlining Longer Works (Campaigns, Novels, etc).
 Although I am not a very good writer, I do enjoy worldbuilding and writing campaign ideas. This is still very much in progress, but the idea is to capture an idea to a file called =writing.org= in my Dropbox which acts as a sort of inbox for any writing ideas I have. It's not perfect at all, but I am still figuring out the right workflow to have for this sort of thing. It acts fairly similarly to the way my task system does, where I review it at the end of the week and apply it to any relevant worldbuilding or writing projects I'm working on. I might try something with capturing into the current buffer I'm in, but I'm not entirely sure, though.
 
 
 
-** DONE Building Hydras for Org-roam          :Org_roam:Worldbuilding:Wikis:
+*** DONE Building Hydras for Org-roam        :Org_roam:Worldbuilding:Wikis:
 CLOSED: [2021-06-14 Mon 22:43]
 :PROPERTIES:
 :export_file_name: building-hydras-org-roam
@@ -86,7 +88,7 @@ I've recently been playing around with [[https://github.com/org-roam/org-roam][O
 
 And so, I decided to set up my first hydra for finding files. I figured I didn't want to set one up where I could add a file, but finding a file seemed like a good place to start.
 
-*** The Base Hydra - Finding Files 
+**** The Base Hydra - Finding Files 
 I figured fairly early on that once I had one function and hydra down, I would effectively have all three down, but I would just need to update the function I needed to call (such as =org-roam-find-file= or =org-roam-capture=). I started by looking over the code from the excellent blog post on [[https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/][refiling Org-mode items with a hydra]]. Spoilers - I'm not very good at Elisp, so when I saw his macro with all the backticks and commas, I found it fairly hard to follow along, at least until I found a cheatsheet for elisp earlier today. I first overwrote the function with a simple =(let*)= before I called =org-roam-find-file= and ran it in a simple scratch buffer. I was using the wiki I have for my alt-history setting [[https://brokenthrones.jhilker.com][Broken Thrones]] as an example, since that has become one of my main passion projects in my off-time, but feel free to use any hugo-site with [[https://github.com/kaushalmodi/ox-hugo][Ox-Hugo]] set up as an example. I am using a directory called =content-org= in that hugo site, but use whatever you want.
 #+begin_src emacs-lisp
 (defun jh/find-org-roam-file (directory)
@@ -116,7 +118,7 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
 Once I had that, I knew I could just replace =org-roam-find-file= with =org-roam-capture= or whatever I needed to call. Although I am reusing a lot of code for this, in time I will try to clean it up. If you need the other hydras I use on a daily basis for roam notes, here they are.
 
 To actually use the hydra, bind =jh/find-org-roam-file-hydra/body= to a keybinding (I use =SPC n r f=) in my configs for both vanilla Emacs and Doom Emacs, and you should be set.
-*** Capturing Hydra
+**** Capturing Hydra
 #+begin_src emacs-lisp
 (defun jh/org-roam-capture (directory)
   "Sets the org-roam directory and database and captures to file."
@@ -139,7 +141,7 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
 ("q" nil))
 #+end_src
 
-*** Insertion Hydra
+**** Insertion Hydra
 #+begin_src emacs-lisp
 (defun jh/org-roam-insert (directory)
   "Sets the org-roam directory and database and inserts link to file."
@@ -323,8 +325,10 @@ Here is what it looks like when browsing a query feed:
 :export_date: <2020-12-29 Tue 15:29>
 :end:
 If you saw [[/blog/2020/12/multireddits-with-newsboat][this post]] from a while ago,
-** LaTeX                                                            :@LaTeX:
 
+* LaTeX                                                              :@LaTeX:
+
+* Python
 * Footnotes
 * COMMENT Local Variables                          :ARCHIVE:
 # Local Variables:
