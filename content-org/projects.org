@@ -4,36 +4,52 @@
 
 * Chronicler for CK3
 :properties:
-:export_file_name: chronicler
-:export_hugo_custom_front_matter: :featured true :srclang Python :icon devicon-python-plain :status In Development :projectrepo https://gitlab.com/jhilker/chroniclerCK3.git :projectsite https://chronicler.readthedocs.io/en/latest/ :weight 1
+:export_hugo_bundle: chronicler
+:export_file_name: index.md
+:export_hugo_custom_front_matter: :featured true :status "In Development"
+:export_hugo_custom_front_matter+: :srclang Python :icon devicon-python-plain
+:export_hugo_custom_front_matter+: :projectsite https://chronicler.readthedocs.io/en/latest :projectrepo https://gitlab.com/jhilker/chroniclerCK3
+:export_hugo_weight: 1
  :end:
 Chronicler is a terminal application for managing after-action reports (AARs) for Crusader Kings 3.
 
 * All for One
 :properties:
-:export_file_name: hugo-all-for-one
-:export_hugo_custom_front_matter: :featured true :icon devicon-html5-plain :srclang HTML/CSS/JS :status Available Now :projectsite https://jhilker1.github.io/hugo-all-for-one :projectrepo https://github.com/jhilker1/hugo-all-for-one :weight 2
+:export_hugo_bundle: hugo-all-for-one
+:export_file_name: index.md
+:export_hugo_custom_front_matter: :featured true :status "Available Now"
+:export_hugo_custom_front_matter+: :srclang HTML/CSS/JS :icon devicon-html5-plain
+:export_hugo_custom_front_matter+: :projectrepo https://github.com/jhilker1/hugo-all-for-one :projectsite https://jhilker1.github.io/hugo-all-for-one
+:export_hugo_weight: 2
  :end:
-All for One is a Hugo theme that covers several uses for a personal website - a blog, portfolio, and CV.
 
+All for One is a Hugo theme that covers several uses for a personal website - a blog, portfolio, and CV.
 
 * Pyronsworn
 :properties:
-:export_file_name: pyronsworn
-:export_hugo_custom_front_matter: :featured true :srclang Python :icon devicon-python-plain :status In Development :projectrepo https://gitlab.com/jhilker/pyronsworn :projectsite https://pyronsworn.readthedocs.io/en/latest/
+:export_hugo_bundle: pyronsworn
+:export_file_name: index.md
+:export_hugo_custom_front_matter: :featured true :status "In Development"
+:export_hugo_custom_front_matter+: :srclang Python :icon devicon-python-plain
+:export_hugo_custom_front_matter+: :projectsite https://pyronsworn.readthedocs.io/en/latest :projectrepo https://gitlab.com/jhilker/pyronsworn
  :end:
 Pyronsworn is a Python module for managing character sheets for the tabletop rpg [[https://ironswornrpg.com][Ironsworn]]. 
 
 * Newsfeed
 :properties:
-:export_file_name: newsfeed
-:export_hugo_custom_front_matter: :srclang Python :icon devicon-python-plain :status Planning 
+:export_hugo_bundle: newsfeed
+:export_file_name: index.md
+:export_hugo_custom_front_matter: :featured false :status Planning
+
+:export_hugo_custom_front_matter+: :srclang Python :icon devicon-python-plain
 :end:
 Newsfeed is an RSS reader written in Python. Currently in planning.
 
 * Halfmoon Wiki
 :properties:
-:export_file_name: hugo-halfmoon-wiki
-:export_hugo_custom_front_matter: :icon devicon-html5-plain :srclang HTML/CSS/JS :status Planning
+:export_hugo_bundle: hugo-all-for-one
+:export_file_name: index.md
+:export_hugo_custom_front_matter: :featured true :status "In Development"
+:export_hugo_custom_front_matter+: :srclang HTML/CSS/JS :icon devicon-html5-plain
  :end:
-Halfmoon Wiki is a theme for Hugo meant to facilitate building wikis, whether personal or for documentation.
+Halfmoon Wiki is a theme for Hugo meant to facilitate building wikis. 

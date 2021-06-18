@@ -1,4 +1,4 @@
-#+hugo_base_dir: ~/Projects/jhilker.gitlab.io
+#+hugo_base_dir: ../
 #+hugo_section: blog/post
 #+hugo_type: post
 #+hugo_front_matter_format: yaml
@@ -11,8 +11,9 @@
 *** DONE My Org-Mode Workflow                                         :GTD:
 CLOSED: [2021-06-12 Sat 20:46]
 :properties:
-:EXPORT_FILE_NAME: my-org-mode-workflow
 :export_hugo_custom_front_matter: :featured true
+:export_hugo_bundle: my-org-mode-workflow
+:export_file_name: index.md
 :end:
 
 Although I briefly describe my workflows in the [[https://braindump.jhilker.com][notes section]] of my website, I wanted to go far more in-depth here on my blog vs. in the notes file. I think of it this way - a note is a quick reminder of something, while something like an article or post is more in-depth. 
@@ -34,7 +35,7 @@ One of the nicest features of org-mode is the ability to create custom agenda co
 As an example, I currently have a custom agenda view that I call a dashboard - although I don't include any projects in it, I give my projects their own dashboard since some of them can get quite big for a solo project. Excuse the windows laptop, my Linux machine is currently being repaired.
 
 #+attr_html: :width 80%
-[[/pics/blog/post/org-mode-workflow-dashboard.png]]
+[[file:img/org-mode-workflow-dashboard.png]]
 
 
 This is my "daily dashboard" view - everything at the top is everything with a date for today. Underneath that, I have a list of the inbox items I need to review. Underneath that, I have anything I need to follow up or read from my email, and lastly, I have a list of general todo items. Although GTD normally has you set deadlines for every little item, I feel like if I set an arbitrary deadline for something where it wouldn't be necessary, it's much easier for me to ignore that deadline, which in turn makes it easier for me to ignore all my deadlines. I'd rather something take longer and eventually get finished, rather than me forcing arbitrary dates on myself and eventually ignoring that date.
@@ -73,12 +74,12 @@ Overall, my workflow looks a little something like this.
 Although I am not a very good writer, I do enjoy worldbuilding and writing campaign ideas. This is still very much in progress, but the idea is to capture an idea to a file called =writing.org= in my Dropbox which acts as a sort of inbox for any writing ideas I have. It's not perfect at all, but I am still figuring out the right workflow to have for this sort of thing. It acts fairly similarly to the way my task system does, where I review it at the end of the week and apply it to any relevant worldbuilding or writing projects I'm working on. I might try something with capturing into the current buffer I'm in, but I'm not entirely sure, though.
 
 
-
 *** DONE Building Hydras for Org-roam        :Org_roam:Worldbuilding:Wikis:
 CLOSED: [2021-06-14 Mon 22:43]
 :PROPERTIES:
-:export_file_name: building-hydras-org-roam
 :export_hugo_custom_front_matter: :featured true :series "Configuring Worldbuilding Wikis with Hugo and Org-Roam"
+:export_hugo_bundle: building-hydras-for-org-roam
+:export_file_name: index.md
 :END:
 I've recently been playing around with [[https://github.com/org-roam/org-roam][Org-roam]], a note-taking package for Emacs and Org-mode based on the [[wiki:Zettelkasten][Zettelkasten]] method of taking notes, and interconnecting those notes by means of backlinks, and one place this style of note-taking is very common on is the [[https://roamresearch.com][Roam Research]] website. In the little bit of time that I've gotten to try this line of research, I've found it much more helpful with regards to actually remembering things rather than my old method of just writing it down in a notebook - having backlinks where I can go back and reference any information I've gotten is very helpful. Despite my love of this way of keeping myself organized, I wanted to be able to quickly capture ideas for any worldbuilding ideas I had - something which I feel like would fall into one of the worldbuilding wikis I maintain for myself, rather than the notes I use by default (for things such as software or any books I've read). I wanted to try and do more with Emacs-lisp, and so I found that trying to write a hydra for it might be a good place to start. Although I had found that the idea in the documentation of creating a =.dir-locals.el= in the directory where I needed a roam database was a good place to start, I found that it ultimately forced me to have to be in that directory to capture an idea if I suddenly came up with one, which I feel like sort of goes against the entire workflow I have set up at this point. I knew that I needed to do three things with my "Roam hydra":
 
@@ -164,13 +165,12 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
 ("q" nil))
 #+end_src
 
-
-
 * Hugo                                                       :@Hugo:Web_Dev:
-** Featuring Blog Posts and Pages in Hugo
+** Featuring Site Content in Hugo
 :PROPERTIES:
-:EXPORT_FILE_NAME: organizing-pages-hugo
-:EXPORT_DATE: <2021-02-23 Tue 16:25>
+:export_hugo_bundle: featuring-content-in-hugo
+:export_file_name: index.md
+:export_date: <2021-02-23 Tue 16:25>
 :export_hugo_custom_front_matter: :featured true
 :END:
 
@@ -189,7 +189,7 @@ I recently found that the layout for my index page here was cluttered - I had co
     </ul>
     {{</highlight>}}
   
- Once I had created that simple list, I decided it might be nice to have a short list of all the posts I'd want to feature on my index page, sort of as a showcase. I kept trying lots of different ideas, but ultimately found this code to be the simplest and easiest.[fn:org-pages-1]
+ Once I had created that simple list, I decided it might be nice to have a short list of all the posts I'd want to feature on my index page, sort of as a showcase. I kept trying lots of different ideas, but ultimately found this code to be the simplest and easiest.[fn:feat-content-1]
     
     {{<highlight html>}}
      <ul class="posts-list">
@@ -223,13 +223,13 @@ Overall I had to nest one more =where= clause into my recent posts shortcode. Wh
     </ul>
     {{</highlight>}}
 
-[fn:org-pages-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
-
+[fn:feat-content-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
 
 
 ** Using A Makefile With My Website
 :PROPERTIES:
-:export_file_name: makefile-website
+:export_hugo_bundle: makefile-website
+:export_file_name: index.md
 :export_date: <2021-03-12 Fri 17:47> 
 :END:
 
@@ -280,11 +280,16 @@ project:
 	@echo "Enter the file name (include the suffix): " && read filename; hugo new projects/$$filename -k project
 #+end_src
 
-* Software                                                        :@Software:
+
+* LaTeX                                                              :@LaTeX:
+
+* Python
+* Other Software                                                  :@Software:
 ** Newsboat                                                       :@Newsboat:
 *** Using Multireddits with Newsboat                  :rss:reddit:newsboat:
 :PROPERTIES:
-:EXPORT_FILE_NAME: multireddits-newsboat
+:export_hugo_bundle: multireddits-newsboat
+:export_file_name: index.md
 :export_date: <2020-12-23 Wed 19:12> 
 :END:
 On Reddit, multireddits are a way of grouping multiple subreddits into a grouped feed. It's a nice way to keep my reddit organized so I can view the content that I really want to. 
@@ -292,8 +297,7 @@ On Reddit, multireddits are a way of grouping multiple subreddits into a grouped
 As an example, here is what my gaming-related feed in newsboat looks like:
 
 #+attr_html: :width 60%
-[[/pics/blog/subreddit_query.png]]
-
+[[file:img/subreddit_query.png]]
 That is incredibly overwhelming, even if it is sorted by the date the post was published.
 
 In my opinion, even keeping all the gaming subreddits I follow in a query feed could quickly become overwhelming since I follow a lot of game-related subreddits. 
@@ -307,18 +311,18 @@ Once you add your individual subreddits to your multireddit, it's incredibly eas
 Now, simply add the RSS url to your newsboat URLs file (usually =~/.newsboat/urls=) and you will get this when you view your multireddit feed (with my config, at least - yours may differ based on your =articlelist-view.=):
 
 #+attr_html: :width 60%
-[[/pics/blog/default_multi.png]]
+[[file:img/default_multi.png]]
 
 While I'd like to print the exact subreddit each post is from, I am not entirely sure how to do that without adding some sort of tag for each multireddit. If I find a way to do that, I'll update this post.
 
 Finally, I want to group my multireddits based on a certain category. Here is an example of what mine looks like, but yours may vary based on your configuration:
 
 #+attr_html: :width 60%
-[[/pics/blog/group_multi_index.png]]
+[[file:img/group_multi_index.png]]
 
 Here is what it looks like when browsing a query feed:
 #+attr_html: :width 60%
-[[/pics/blog/multi_feed_view.png]]
+[[file:img/multi_feed_view.png]]
 *** DRAFT I Was Wrong About Multireddits... Sort Of
 :properties:
 :export_file_name: wrong-about-multis
@@ -326,9 +330,6 @@ Here is what it looks like when browsing a query feed:
 :end:
 If you saw [[/blog/2020/12/multireddits-with-newsboat][this post]] from a while ago,
 
-* LaTeX                                                              :@LaTeX:
-
-* Python
 * Footnotes
 * COMMENT Local Variables                          :ARCHIVE:
 # Local Variables:

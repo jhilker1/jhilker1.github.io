@@ -1,8 +1,8 @@
 ---
-title: "Featuring Blog Posts and Pages in Hugo"
+title: "Featuring Site Content in Hugo"
 author: ["Jacob Hilker"]
 date: 2021-02-23T16:25:00-05:00
-lastmod: 2021-06-14T22:13:46-04:00
+lastmod: 2021-06-18T18:49:00-04:00
 tags: ["Web-Dev"]
 categories: ["Hugo"]
 type: "post"

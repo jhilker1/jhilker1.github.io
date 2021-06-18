@@ -1,3 +1,0 @@
-* TODO Why I Have No Favorite Text Editor
-
-* TODO Building Mediawiki Style Infoboxes with Hugo and Halfmoon CSS

@@ -1,5 +1,5 @@
 +++
-title = "Jacob's Blog"
+title = "Archive"
 author = ["Jacob Hilker"]
 draft = false
 +++

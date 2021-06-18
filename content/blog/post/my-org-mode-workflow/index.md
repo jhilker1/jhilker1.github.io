@@ -2,7 +2,7 @@
 title: "My Org-Mode Workflow"
 author: ["Jacob Hilker"]
 date: 2021-06-12T20:46:00-04:00
-lastmod: 2021-06-14T21:29:02-04:00
+lastmod: 2021-06-18T18:48:58-04:00
 tags: ["Emacs", "Org-mode", "GTD"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
@@ -30,7 +30,7 @@ One of the nicest features of org-mode is the ability to create custom agenda co
 
 As an example, I currently have a custom agenda view that I call a dashboard - although I don't include any projects in it, I give my projects their own dashboard since some of them can get quite big for a solo project. Excuse the windows laptop, my Linux machine is currently being repaired.
 
-{{< figure src="/pics/blog/post/org-mode-workflow-dashboard.png" width="80%" >}}
+{{< figure src="img/org-mode-workflow-dashboard.png" width="80%" >}}
 
 This is my "daily dashboard" view - everything at the top is everything with a date for today. Underneath that, I have a list of the inbox items I need to review. Underneath that, I have anything I need to follow up or read from my email, and lastly, I have a list of general todo items. Although GTD normally has you set deadlines for every little item, I feel like if I set an arbitrary deadline for something where it wouldn't be necessary, it's much easier for me to ignore that deadline, which in turn makes it easier for me to ignore all my deadlines. I'd rather something take longer and eventually get finished, rather than me forcing arbitrary dates on myself and eventually ignoring that date.
 

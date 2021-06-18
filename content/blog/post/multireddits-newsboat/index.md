@@ -2,7 +2,7 @@
 title: "Using Multireddits with Newsboat"
 author: ["Jacob Hilker"]
 date: 2020-12-23T19:12:00-05:00
-lastmod: 2021-06-14T21:29:07-04:00
+lastmod: 2021-06-18T18:49:03-04:00
 tags: ["rss", "reddit", "newsboat"]
 categories: ["Software", "Newsboat"]
 type: "post"
@@ -13,8 +13,7 @@ On Reddit, multireddits are a way of grouping multiple subreddits into a grouped
 
 As an example, here is what my gaming-related feed in newsboat looks like:
 
-{{< figure src="/pics/blog/subreddit_query.png" width="60%" >}}
-
+<img src="img/subreddit_query.png" alt="subreddit_query.png" width="60%" />
 That is incredibly overwhelming, even if it is sorted by the date the post was published.
 
 In my opinion, even keeping all the gaming subreddits I follow in a query feed could quickly become overwhelming since I follow a lot of game-related subreddits.
@@ -27,14 +26,14 @@ Once you add your individual subreddits to your multireddit, it's incredibly eas
 
 Now, simply add the RSS url to your newsboat URLs file (usually `~/.newsboat/urls`) and you will get this when you view your multireddit feed (with my config, at least - yours may differ based on your `articlelist-view.`):
 
-{{< figure src="/pics/blog/default_multi.png" width="60%" >}}
+{{< figure src="img/default_multi.png" width="60%" >}}
 
 While I'd like to print the exact subreddit each post is from, I am not entirely sure how to do that without adding some sort of tag for each multireddit. If I find a way to do that, I'll update this post.
 
 Finally, I want to group my multireddits based on a certain category. Here is an example of what mine looks like, but yours may vary based on your configuration:
 
-{{< figure src="/pics/blog/group_multi_index.png" width="60%" >}}
+{{< figure src="img/group_multi_index.png" width="60%" >}}
 
 Here is what it looks like when browsing a query feed:
 
-{{< figure src="/pics/blog/multi_feed_view.png" width="60%" >}}
+{{< figure src="img/multi_feed_view.png" width="60%" >}}

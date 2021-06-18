@@ -2,6 +2,7 @@
 title: "Building Hydras for Org-roam"
 author: ["Jacob Hilker"]
 date: 2021-06-14T22:43:00-04:00
+lastmod: 2021-06-18T18:48:59-04:00
 tags: ["Emacs", "Org-mode", "Org-roam", "Worldbuilding", "Wikis"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
