@@ -2,12 +2,13 @@
 title: "My Org-Mode Workflow"
 author: ["Jacob Hilker"]
 date: 2021-06-12T20:46:00-04:00
-lastmod: 2021-06-18T22:57:12-04:00
+lastmod: 2021-06-19T12:48:27-04:00
 tags: ["Emacs", "Org-mode", "GTD"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
 draft: false
 featured: true
+enableToc: true
 ---
 
 Although I briefly describe my workflows in the [notes section](https://braindump.jhilker.com) of my website, I wanted to go far more in-depth here on my blog vs. in the notes file. I think of it this way - a note is a quick reminder of something, while something like an article or post is more in-depth.

@@ -2,7 +2,7 @@
 title: "Featuring Site Content in Hugo"
 author: ["Jacob Hilker"]
 date: 2021-02-23T16:25:00-05:00
-lastmod: 2021-06-18T22:57:15-04:00
+lastmod: 2021-06-19T12:50:36-04:00
 tags: ["Web-dev", "Hugo"]
 categories: ["Hugo"]
 type: "post"
