@@ -1,19 +1,32 @@
 #+title: Resume
 #+hugo_base_dir: ../
-#+hugo_section: ./
-#+export_file_name: index
-#+hugo_bundle: resume
+#+hugo_section: resume
+#+export_file_name: _index.md
 #+hugo_layout: resume
 #+hugo_custom_front_matter: :email jacob.hilker2@gmail.com :location "Crozet, VA" :phone "434-409-3789"
-#+hugo_custom_front_matter+: :skills '(Python "Shell Scripts (Bash/ZSH)" Java HTML/CSS JavaScript PostgreSQL Markdown Org-mode Groff) 
+#+hugo_custom_front_matter: :skills '(Python "Shell Scripts (Bash/ZSH)" Java HTML/CSS JavaScript PostgreSQL Markdown Org-mode Groff) 
 #+hugo_custom_front_matter: :soft_skills '("Problem Solving" "Critical Thinking" Creativity Adaptability)
 #+hugo_custom_front_matter: :interests '("Audio Engineering" "Sound Design" Worldbuilding Writing Games Songwriting Drums Bass Guitar)
-
 
 * Profile
 #+begin_cvwrapper
 Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but especially enjoys writing in Python.
 #+end_cvwrapper
+
+* Education
+#+begin_cvwrapper
+{{<resume/exp name="B.Sc., Computer Science" place="University of Mary Washington" city="Fredericksburg, VA" start="22 Aug 2017" end="09 May 2021">}}
+*Minor In Cybersecurity*
+
+*<ins>Relevant Coursework</ins>*
+- Applications of Databases
+- Data Science
+- Artificial Neural Networks
+- Software Security
+{{</resume/exp>}}
+
+#+end_cvwrapper
+
 
 * Experience
 #+begin_cvwrapper
@@ -30,10 +43,3 @@ Participated in week-long volunteer sessions to refurbish homes in disadvantaged
 {{</resume/exp>}}
 
 #+end_cvwrapper
-
-
-* Footnotes
-* COMMENT Local Variables                          :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:

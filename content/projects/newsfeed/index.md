@@ -3,6 +3,7 @@ title = "Newsfeed"
 author = ["Jacob Hilker"]
 type = "project"
 draft = false
+weight = 1
 featured = false
 status = "Planning"
 srclang = "Python"

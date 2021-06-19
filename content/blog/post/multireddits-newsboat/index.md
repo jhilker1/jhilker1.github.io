@@ -2,7 +2,7 @@
 title: "Using Multireddits with Newsboat"
 author: ["Jacob Hilker"]
 date: 2020-12-23T19:12:00-05:00
-lastmod: 2021-06-18T18:49:03-04:00
+lastmod: 2021-06-18T22:57:20-04:00
 tags: ["rss", "reddit", "newsboat"]
 categories: ["Software", "Newsboat"]
 type: "post"

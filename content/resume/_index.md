@@ -6,6 +6,7 @@ draft = false
 email = "jacob.hilker2@gmail.com"
 location = "Crozet, VA"
 phone = "434-409-3789"
+skills = ["Python", "Shell Scripts (Bash/ZSH)", "Java", "HTML/CSS", "JavaScript", "PostgreSQL", "Markdown", "Org-mode", "Groff"]
 soft_skills = ["Problem Solving", "Critical Thinking", "Creativity", "Adaptability"]
 interests = ["Audio Engineering", "Sound Design", "Worldbuilding", "Writing", "Games", "Songwriting", "Drums", "Bass", "Guitar"]
 +++
@@ -16,6 +17,26 @@ interests = ["Audio Engineering", "Sound Design", "Worldbuilding", "Writing", "G
   <div></div>
 
 Inquisitive, energetic software developer pursuing a position in software development. Skilled in multiple languages, but especially enjoys writing in Python.
+
+</div>
+
+
+## Education {#education}
+
+<div class="cvwrapper">
+  <div></div>
+
+{{<resume/exp name="B.Sc., Computer Science" place="University of Mary Washington" city="Fredericksburg, VA" start="22 Aug 2017" end="09 May 2021">}}
+**Minor In Cybersecurity**
+
+**<ins>Relevant Coursework</ins>**
+
+-   Applications of Databases
+-   Data Science
+-   Artificial Neural Networks
+-   Software Security
+
+{{</resume/exp>}}
 
 </div>
 

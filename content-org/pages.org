@@ -7,7 +7,7 @@
 :EXPORT_HUGO_LAYOUT: index
 :END:
 ** HELLO WORLD
-  Hello there, and welcome to my website. This currently houses my resume (both as a webpage and as a [[/uploads/resume.pdf][PDF]]), as well as some of the projects I’ve been working on. I’m working on a blog currently, but that will be up sometime in the future. This site was written in Emacs’ Org-Mode, using Hugo as a static site generator. This site is using a modified version of the [[https://github.com/lxndrblz/anatole][Anatole]] theme for Hugo, as well as the wrapper from Luis Fuentes' [[https://gitlab.com/luisfuentes/resume/][resume project]] on Gitlab. 
+  Hello there, and welcome to my website. This currently houses my resume (both as a webpage and as a [[/uploads/resume.pdf][PDF]]), as well as some of the projects I’ve been working on. I’m working on a blog currently, but that will be up sometime in the future. This site was written in Emacs’ Org-Mode, using Hugo as a static site generator. This site is using my own [[https://github.com/jhilker1/hugo-all-for-one][All for One]] theme for Hugo (though with some very minor modifications and CSS changes), as well as the wrapper from Luis Fuentes' [[https://gitlab.com/luisfuentes/resume/][resume project]] on Gitlab. 
 
 ** ABOUT ME
   I graduated from the University of Mary Washington in May 2021, with a Bachelor's of Science in computer science, and a minor in cybersecurity.
@@ -24,8 +24,8 @@ Interested in some of the things I write on my blog? Check them out here.
 
 * About Me
 :PROPERTIES:
-:EXPORT_FILE_NAME: index.md
-:export_hugo_bundle: about
+:EXPORT_FILE_NAME: _index.md
+:export_hugo_section: about
 :EXPORT_HUGO_LAYOUT: about
 :END:
 Hello! I'm Jacob, a former student of the University of Mary Washington. I graduated with a major in Computer Science with a minor in cybersecurity.  Although I majored in cybersecurity, I found that it really wasn't what I was looking for - my original plan was to minor in political science, but the closest thing the university had was International Relations, which wasn't exactly what I was looking for - this was also around the time the [[wiki:Facebook%E2%80%93Cambridge_Analytica_data_scandal][Facebook-Cambridge Analytica scandal]] was coming to light, and so I figured that cybersecurity was going to become very quickly involved with political science.
@@ -65,7 +65,6 @@ Need to reach out to me? Fill out this form, and I'll get back to you as quickly
 :export_file_name: _index
 :END:
 
-
 * Jacob's Blog
 :PROPERTIES:
 :export_hugo_section: blog
@@ -74,6 +73,7 @@ Need to reach out to me? Fill out this form, and I'll get back to you as quickly
 
 * Archive
 :PROPERTIES:
-:export_file_name: _index.md
 :export_hugo_section: blog/archive/
+:export_hugo_layout: archive
+:export_file_name: _index.md
 :END:

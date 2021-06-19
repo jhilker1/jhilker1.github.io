@@ -7,7 +7,7 @@ draft = false
 
 ## HELLO WORLD {#hello-world}
 
-Hello there, and welcome to my website. This currently houses my resume (both as a webpage and as a [PDF](/uploads/resume.pdf)), as well as some of the projects I’ve been working on. I’m working on a blog currently, but that will be up sometime in the future. This site was written in Emacs’ Org-Mode, using Hugo as a static site generator. This site is using a modified version of the [Anatole](https://github.com/lxndrblz/anatole) theme for Hugo, as well as the wrapper from Luis Fuentes' [resume project](https://gitlab.com/luisfuentes/resume/) on Gitlab.
+Hello there, and welcome to my website. This currently houses my resume (both as a webpage and as a [PDF](/uploads/resume.pdf)), as well as some of the projects I’ve been working on. I’m working on a blog currently, but that will be up sometime in the future. This site was written in Emacs’ Org-Mode, using Hugo as a static site generator. This site is using my own [All for One](https://github.com/jhilker1/hugo-all-for-one) theme for Hugo (though with some very minor modifications and CSS changes), as well as the wrapper from Luis Fuentes' [resume project](https://gitlab.com/luisfuentes/resume/) on Gitlab.
 
 
 ## ABOUT ME {#about-me}

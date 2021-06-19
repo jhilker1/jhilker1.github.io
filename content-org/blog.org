@@ -165,7 +165,7 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
 ("q" nil))
 #+end_src
 
-* Hugo                                                       :@Hugo:Web_Dev:
+* Hugo                                                       :@Hugo:Web_dev:Hugo:
 ** Featuring Site Content in Hugo
 :PROPERTIES:
 :export_hugo_bundle: featuring-content-in-hugo

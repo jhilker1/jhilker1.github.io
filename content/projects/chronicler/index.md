@@ -8,8 +8,8 @@ featured = true
 status = "In Development"
 srclang = "Python"
 icon = "devicon-python-plain"
-projectsite = "https://chronicler.readthedocs.io/en/latest"
 projectrepo = "https://gitlab.com/jhilker/chroniclerCK3"
+projectsite = "https://chronicler.readthedocs.io/en/latest/"
 +++
 
 Chronicler is a terminal application for managing after-action reports (AARs) for Crusader Kings 3.

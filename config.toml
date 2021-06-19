@@ -12,7 +12,7 @@ paginate = 5
 [params]
 title = "Jacob's Website"
 author = "Jacob Hilker"
-customCss = []
+customCss = ["css/custom.css"]
 description = "This is a website."
 themePref = "dark"
 keywords = ""
