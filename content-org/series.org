@@ -2,10 +2,14 @@
 #+hugo_base_dir: ../
 #+hugo_section: series/
 
-* TODO Building Wikis with Hugo and Org-Roam 
+* DONE Building Wikis with Hugo and Org-Roam 
+CLOSED: [2021-06-21 Mon 00:36]
 :PROPERTIES:
 :export_hugo_bundle: building-wikis-with-hugo-and-org-roam
 :EXPORT_FILE_NAME: _index.md
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-06-21 Mon 00:36]
 :END:
 Although I highly respect tools like [[https://worldanvil.com][World Anvil]] for providing a place to start organizing worldbuilding and campaign wikis, I find that I have several issues with it. Normally I can just ignore these, but there is one issue I have with regards to data - paying to keep your content private. With what seems like the sheer number of data leaks that happen each year, I strongly believe that the end user needs to be in control of their data, and that privacy should not simply be for those who can afford it. And because a wiki (to me at least) is a bunch of interconnected backlinks with information (like a Zettelkasten), it shouldn't be too difficult to implement in Hugo with Org-roam (or with something like Obsidian, though I would much rather use org-roam because I'm already in Emacs.) By the end of this series, you should hopefully be able to have a basic configured wiki with search and with infoboxes (like from Wikipedia), and you should hopefully be able to capture ideas quickly and add them to the wiki.
 
