@@ -4,7 +4,7 @@
 #+hugo_front_matter_format: yaml
 #+seq_todo: TODO DRAFT | DONE
 #+hugo_auto_set_lastmod: t
-#+startup: overview
+#+startup: overview noptag
 
 * Emacs                                                               :Emacs:@Emacs:
 ** Org-Mode                                             :@Org_mode:Org_mode:
@@ -80,7 +80,7 @@ CLOSED: [2021-06-14 Mon 22:43]
 :PROPERTIES:
 :export_hugo_custom_front_matter: :featured true 
 :export_hugo_custom_front_matter+: :enableToc true 
-:export_hugo_custom_front_matter+: :series "Configuring Worldbuilding Wikis with Hugo and Org-Roam"
+:export_hugo_custom_front_matter+: :series "Building Wikis with Hugo and Org-Roam"
 :export_hugo_bundle: building-hydras-for-org-roam
 :export_file_name: index.md
 :END:
@@ -168,8 +168,10 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
 ("q" nil))
 #+end_src
 
-* Hugo                                                       :@Hugo:Web_dev:Hugo:
-** Featuring Site Content in Hugo
+
+* Webdev :Web_dev:@Web_dev:
+** Hugo                                                         :@Hugo:Hugo:
+*** Featuring Site Content in Hugo
 :PROPERTIES:
 :export_hugo_bundle: featuring-content-in-hugo
 :export_file_name: index.md
@@ -229,7 +231,7 @@ Overall I had to nest one more =where= clause into my recent posts shortcode. Wh
 [fn:feat-content-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
 
 
-** Using A Makefile With My Website
+*** Using A Makefile With My Website
 :PROPERTIES:
 :export_hugo_bundle: makefile-website
 :export_file_name: index.md
@@ -241,7 +243,7 @@ It shouldn't be a surprise that I use Hugo as a static site generator. Not only 
 
 Ultimately, I found that when I was starting to create layouts and templates, typing the full =hugo server -D --navigateToChanged= was just long to type (yes, lazy, I know), especially when I was debugging an error with my shortcodes and templates. Being able just to type =make server= makes it much faster for me to debug code but also to get previews of code. 
 
-*** Not Just For Debugging
+**** Not Just For Debugging
 Hugo also allows for content to be created with a certain [[https://gohugo.io/content-management/archetypes/][archetype]] - by default, this matches the directory you are creating the content for. As an example, if I had an archetype called =project.org=, if I ran =hugo new project/hello-world.org= the file =content/project/hello-world.org= would be created, with all the content needed for a blog post. Here's what my org-mode project archetype looks like:
 
 #+begin_src org

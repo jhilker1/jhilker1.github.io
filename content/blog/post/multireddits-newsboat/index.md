@@ -2,12 +2,11 @@
 title: "Using Multireddits with Newsboat"
 author: ["Jacob Hilker"]
 date: 2020-12-23T19:12:00-05:00
-lastmod: 2021-06-19T12:39:11-04:00
+lastmod: 2021-06-20T13:04:58-04:00
 tags: ["rss", "reddit", "newsboat"]
 categories: ["Software", "Newsboat"]
 type: "post"
 draft: false
-enableToc: false
 ---
 
 On Reddit, multireddits are a way of grouping multiple subreddits into a grouped feed. It's a nice way to keep my reddit organized so I can view the content that I really want to.

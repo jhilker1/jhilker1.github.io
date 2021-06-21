@@ -1,0 +1,11 @@
+
+{{ define "main"}}
+<div class="content">
+  <h3>{{.Title}}</h3>
+<ul>
+    {{ range .Data.Terms.ByCount }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> <span class="float-right">{{ .Count }} Post{{ if gt .Count 1}}s{{end}}</span></li>
+    {{ end }}
+</ul>
+</div>
+{{ end }}

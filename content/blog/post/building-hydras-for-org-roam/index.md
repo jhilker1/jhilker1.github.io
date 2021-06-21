@@ -2,14 +2,14 @@
 title: "Building Hydras for Org-roam"
 author: ["Jacob Hilker"]
 date: 2021-06-14T22:43:00-04:00
-lastmod: 2021-06-19T12:49:24-04:00
+lastmod: 2021-06-20T23:57:12-04:00
 tags: ["Emacs", "Org-mode", "Org-roam", "Worldbuilding", "Wikis"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
 draft: false
 featured: true
 enableToc: true
-series: "Configuring Worldbuilding Wikis with Hugo and Org-Roam"
+series: "Building Wikis with Hugo and Org-Roam"
 ---
 
 I've recently been playing around with [Org-roam](https://github.com/org-roam/org-roam), a note-taking package for Emacs and Org-mode based on the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) method of taking notes, and interconnecting those notes by means of backlinks, and one place this style of note-taking is very common on is the [Roam Research](https://roamresearch.com) website. In the little bit of time that I've gotten to try this line of research, I've found it much more helpful with regards to actually remembering things rather than my old method of just writing it down in a notebook - having backlinks where I can go back and reference any information I've gotten is very helpful. Despite my love of this way of keeping myself organized, I wanted to be able to quickly capture ideas for any worldbuilding ideas I had - something which I feel like would fall into one of the worldbuilding wikis I maintain for myself, rather than the notes I use by default (for things such as software or any books I've read). I wanted to try and do more with Emacs-lisp, and so I found that trying to write a hydra for it might be a good place to start. Although I had found that the idea in the documentation of creating a `.dir-locals.el` in the directory where I needed a roam database was a good place to start, I found that it ultimately forced me to have to be in that directory to capture an idea if I suddenly came up with one, which I feel like sort of goes against the entire workflow I have set up at this point. I knew that I needed to do three things with my "Roam hydra":

@@ -2,9 +2,9 @@
 title: "Using A Makefile With My Website"
 author: ["Jacob Hilker"]
 date: 2021-03-12T17:47:00-05:00
-lastmod: 2021-06-19T12:40:37-04:00
+lastmod: 2021-06-20T13:04:56-04:00
 tags: ["Web-dev", "Hugo"]
-categories: ["Hugo"]
+categories: ["Web-dev", "Hugo"]
 type: "post"
 draft: false
 ---
