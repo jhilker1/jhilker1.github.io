@@ -2,7 +2,7 @@
 title: "My Org-Mode Workflow"
 author: ["Jacob Hilker"]
 date: 2021-06-12T20:46:00-04:00
-lastmod: 2021-06-20T13:04:47-04:00
+lastmod: 2021-07-15T15:59:39-04:00
 tags: ["Emacs", "Org-mode", "GTD"]
 categories: ["Emacs", "Org-mode"]
 type: "post"
@@ -22,12 +22,15 @@ The best feature of all this is my extensive use of capturing ideas, tasks, and 
 
 One of the nicest features of org-mode is the ability to create custom agenda commands for different views. And in these views, you can have different files for different sections of an agenda, or for each individual agenda view. I currently have a few org-mode files in my dropbox that I use as agenda files.
 
-| Filename         | Purpose                                                          |
-|------------------|------------------------------------------------------------------|
-| `gtd.org`        | Keeping track of general todo items, as well as calendar events. |
-| `inbox.org`      | Where any ideas I have come in.                                  |
-| `orgzly.org`     | Same as `inbox.org`, but for any ideas I have on my phone.       |
-| `projects/*.org` | Where I manage projects.                                         |
+| Filename        | Purpose                                                    |
+|-----------------|------------------------------------------------------------|
+| `inbox.org`     | Where any ideas I have come in.                            |
+| `orgzly.org`    | Same as `inbox.org`, but for any ideas I have on my phone. |
+| `todo.org`      | Keeping track of general todo items.                       |
+| `gcal.org`      | My personal calendar events.                               |
+| `projects.org`  | Where I manage small to medium size personal projects.     |
+| `work.org`      | My work-related todo list.                                 |
+| `work-gcal.org` | My work-related calendar.                                  |
 
 As an example, I currently have a custom agenda view that I call a dashboard - although I don't include any projects in it, I give my projects their own dashboard since some of them can get quite big for a solo project. Excuse the windows laptop, my Linux machine is currently being repaired.
 

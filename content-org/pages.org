@@ -73,7 +73,7 @@ Need to reach out to me? Fill out this form, and I'll get back to you as quickly
 
 * Archive
 :PROPERTIES:
-:export_hugo_section: blog/archive/
+:export_hugo_section: archive
 :export_hugo_layout: archive
 :export_file_name: _index.md
 :END:
