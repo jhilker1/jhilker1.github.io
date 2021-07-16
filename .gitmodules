@@ -4,3 +4,6 @@
 [submodule "themes/m10c"]
 	path = themes/m10c
 	url = https://github.com/vaga/hugo-theme-m10c.git
+[submodule "themes/all-for-one"]
+	path = themes/all-for-one
+	url = https://github.com/jhilker1/hugo-all-for-one

@@ -6,6 +6,8 @@
 #+hugo_auto_set_lastmod: t
 #+startup: overview noptag
 #+options: broken-links:mark
+#+tags: @Emacs(E) @Org_mode(O) @LaTeX(L) @Software(S)
+#+tags: Emacs(e) Org_mode(o) Latex(l)
 
 * Emacs                                                               :Emacs:@Emacs:
 ** Org-Mode                                             :@Org_mode:Org_mode:
@@ -233,7 +235,6 @@ Overall I had to nest one more =where= clause into my recent posts shortcode. Wh
     </ul>
     {{</highlight>}}
 
-[fn:feat-content-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
 
 
 *** Using A Makefile With My Website
@@ -292,12 +293,12 @@ project:
 #+end_src
 
 
-* LaTeX                                                              :@LaTeX:
+* LaTeX                                                              :@LaTeX:Latex:
 
 * Python
 
 
-* Other Software                                                  :@Software:
+* Other Software                                                  :@Software:Software:
 ** Newsboat                                                       :@Newsboat:
 *** Using Multireddits with Newsboat                  :rss:reddit:newsboat:
 :PROPERTIES:
@@ -346,5 +347,12 @@ Here is what it looks like when browsing a query feed:
 :end:
 If you saw [[/blog/2020/12/using-multireddits-with-newsboat][this post]] from a while ago,
 
+
+
 * Footnotes
-* COMMENT Local Variables                          :ARCHIVE:
+[fn:feat-content-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
+
+* COMMENT Local Variables :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
