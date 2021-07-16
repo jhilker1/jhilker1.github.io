@@ -8,7 +8,7 @@ location = "Crozet, VA"
 phone = "434-409-3789"
 skills = ["Python", "Shell Scripts (Bash/ZSH)", "Java", "HTML/CSS", "JavaScript", "PostgreSQL", "Markdown", "Org-mode", "Groff"]
 soft_skills = ["Problem Solving", "Critical Thinking", "Creativity", "Adaptability"]
-interests = ["Audio Engineering", "Sound Design", "Worldbuilding", "Writing", "Games", "Songwriting", "Drums", "Bass", "Guitar"]
+interests = ["Audio Engineering", "Sound Design", "Worldbuilding", "Songwriting"]
 +++
 
 ## Profile {#profile}
@@ -41,7 +41,7 @@ Inquisitive, energetic software developer pursuing a position in software develo
 </div>
 
 
-## Experience {#experience}
+## Volunteer Experience {#volunteer-experience}
 
 <div class="cvwrapper">
   <div></div>
@@ -57,3 +57,5 @@ Participated in week-long volunteer sessions to refurbish homes in disadvantaged
 {{</resume/exp>}}
 
 </div>
+
+<br/>
