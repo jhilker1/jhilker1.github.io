@@ -13,7 +13,7 @@ test:
     - apk add --update --no-cache git
   script:
     # - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
-    - hugo -b "https://jhilker.gitlab.io"
+    - hugo 
   except:
     - main
 
@@ -22,7 +22,7 @@ pages:
     - apk add --update --no-cache git
   script:
     # - hugo --enableGitInfo -b "https://jhilker.gitlab.io"
-    - hugo -b "https://jhilker.gitlab.io"
+    - hugo 
   artifacts:
     paths:
       - public
