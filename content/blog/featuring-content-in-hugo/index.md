@@ -3,8 +3,8 @@ title: "Featuring Site Content in Hugo"
 author: ["Jacob Hilker"]
 date: 2021-02-23T16:25:00-05:00
 lastmod: 2021-02-23T16:25:00-05:00
-tags: ["Web-dev", "Hugo"]
-categories: ["Web-dev", "Hugo"]
+tags: ["Programming", "Web-dev", "HTML", "Hugo"]
+categories: ["Programming", "Web-dev", "Hugo"]
 type: "post"
 draft: false
 featured: true
@@ -14,29 +14,29 @@ I recently found that the layout for my index page here was cluttered - I had co
 
 {{<highlight html>}}
 <ul class="posts-list">
-      {{ range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  }}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            {{ .Date.Format "02 Jan." }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{</highlight>}}
+{{ range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  }}
+<li class="posts-list-item">
+<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+<span class="posts-list-item-description">
+{{ .Date.Format "02 Jan." }}
+</span>
+</li>
+{{ end }}
+</ul>
+{{</highlight>}}
 
 Once I had created that simple list, I decided it might be nice to have a short list of all the posts I'd want to feature on my index page, sort of as a showcase. I kept trying lots of different ideas, but ultimately found this code to be the simplest and easiest.[^fn:1]
 
 {{<highlight html>}}
- <ul class="posts-list">
+<ul class="posts-list">
 {{range first 5 (where (where .Site.RegularPages "Type" "post") ".Params.featured" "`=" "true") }}
-        <li class`"posts-list-item">
-      <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-      <span class="posts-list-item-description">
-        {{ .Date.Format "02 Jan." }}
-      </span>
-    </li>
-  {{ end }}
+<li class`"posts-list-item">
+<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+<span class="posts-list-item-description">
+{{ .Date.Format "02 Jan." }}
+</span>
+</li>
+{{ end }}
 </ul>
 {{</highlight>}}
 
@@ -48,15 +48,15 @@ Overall I had to nest one more `where` clause into my recent posts shortcode. Wh
 
 {{<highlight html>}}
 <ul class="posts-list">
-      {{ range first 5 (where (where .Site.RegularPages "Section" "blog") ".Params.featured" "!=" "true").ByDate.Reverse}}
-      <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            {{ .Date.Format "02 Jan." }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{</highlight>}}
+{{ range first 5 (where (where .Site.RegularPages "Section" "blog") ".Params.featured" "!=" "true").ByDate.Reverse}}
+<li class="posts-list-item">
+<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+<span class="posts-list-item-description">
+{{ .Date.Format "02 Jan." }}
+</span>
+</li>
+{{ end }}
+</ul>
+{{</highlight>}}
 
 [^fn:1]: Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.

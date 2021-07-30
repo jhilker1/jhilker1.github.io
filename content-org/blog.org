@@ -6,11 +6,9 @@
 #+hugo_auto_set_lastmod: t
 #+startup: overview noptag
 #+options: broken-links:mark
-#+tags: @Emacs(E) @Org_mode(O) @LaTeX(L) @Software(S)
-#+tags: Emacs(e) Org_mode(o) Latex(l)
 
-* Emacs                                                               :Emacs:@Emacs:
-** Org-Mode                                             :@Org_mode:Org_mode:
+* Emacs :Emacs:@Emacs:Programming:@Programming:
+** Org-mode :Org_mode:@Org_mode:
 *** DONE My Org-Mode Workflow                                         :GTD:
 CLOSED: [2021-06-12 Sat 20:46]
 :properties:
@@ -80,11 +78,13 @@ Overall, my workflow looks a little something like this.
 Although I am not a very good writer, I do enjoy worldbuilding and writing campaign ideas. This is still very much in progress, but the idea is to capture an idea to a file called =writing.org= in my Dropbox which acts as a sort of inbox for any writing ideas I have. It's not perfect at all, but I am still figuring out the right workflow to have for this sort of thing. It acts fairly similarly to the way my task system does, where I review it at the end of the week and apply it to any relevant worldbuilding or writing projects I'm working on. I might try something with capturing into the current buffer I'm in, but I'm not entirely sure, though.
 
 
+
+
 *** DONE Building Hydras for Org-roam        :Org_roam:Worldbuilding:Wikis:
 CLOSED: [2021-06-14 Mon 22:43]
 :PROPERTIES:
-:export_hugo_custom_front_matter: :featured true 
-:export_hugo_custom_front_matter+: :enableToc true 
+:export_hugo_custom_front_matter: :featured true
+:export_hugo_custom_front_matter+: :enableToc true
 :export_hugo_custom_front_matter+: :series "Building Wikis with Hugo and Org-Roam"
 :export_hugo_bundle: building-hydras-for-org-roam
 :export_file_name: index.md
@@ -111,18 +111,18 @@ I figured fairly early on that once I had one function and hydra down, I would e
 After evaluating that in a scratch buffer, now I knew that I had enough for a basic hydra. Here is my final configuration for this base hydra after I did some UI tweaks for the help menu, but if anything the UI isn't as important as functionality, at least when first setting it up.
 #+begin_src emacs-lisp
 (defhydra jh/find-org-roam-file-hydra (:hint nil :exit t)
- "
+  "
 ^Default^            ^Conworlds^             ^Campaigns^          
 ^^^^^^^^------------------------------------------------------------
 _d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
 _q_: Quit            _s_: Shattered Skies    ^ ^
 "
 
-("d" (jh/find-org-roam-file "~/org/roam/"))
-("b" (jh/find-org-roam-file "~/Projects/conworlds/brokenThrones/"))
-("s" (jh/find-org-roam-file "~/Projects/conworlds/shatteredSkies/"))
-("e" (jh/find-org-roam-file "~/Projects/campaigns/mirkwoodCampaign/"))
-("q" nil))
+  ("d" (jh/find-org-roam-file "~/org/roam/"))
+  ("b" (jh/find-org-roam-file "~/Projects/conworlds/brokenThrones/"))
+  ("s" (jh/find-org-roam-file "~/Projects/conworlds/shatteredSkies/"))
+  ("e" (jh/find-org-roam-file "~/Projects/campaigns/mirkwoodCampaign/"))
+  ("q" nil))
 #+end_src
 
 Once I had that, I knew I could just replace =org-roam-find-file= with =org-roam-capture= or whatever I needed to call. Although I am reusing a lot of code for this, in time I will try to clean it up. If you need the other hydras I use on a daily basis for roam notes, here they are.
@@ -137,18 +137,18 @@ To actually use the hydra, bind =jh/find-org-roam-file-hydra/body= to a keybindi
     (org-roam-capture)))
 
 (defhydra jh/org-roam-capture-hydra (:hint nil :exit t)
- "
+  "
 ^Default^            ^Conworlds^             ^Campaigns^          
 ^^^^^^^^------------------------------------------------------------
 _d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
 _q_: Quit            _s_: Shattered Skies    ^ ^
 "
 
-("d" (jh/org-roam-capture "~/org/roam/"))
-("b" (jh/org-roam-capture "~/Projects/conworlds/brokenThrones/"))
-("s" (jh/org-roam-capture "~/Projects/conworlds/shatteredSkies/"))
-("e" (jh/org-roam-capture "~/Projects/campaigns/mirkwoodCampaign/"))
-("q" nil))
+  ("d" (jh/org-roam-capture "~/org/roam/"))
+  ("b" (jh/org-roam-capture "~/Projects/conworlds/brokenThrones/"))
+  ("s" (jh/org-roam-capture "~/Projects/conworlds/shatteredSkies/"))
+  ("e" (jh/org-roam-capture "~/Projects/campaigns/mirkwoodCampaign/"))
+  ("q" nil))
 #+end_src
 
 **** Insertion Hydra
@@ -160,24 +160,28 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
     (org-roam-insert)))
 
 (defhydra jh/org-roam-insert-hydra (:hint nil :exit t)
- "
+  "
 ^Default^            ^Conworlds^             ^Campaigns^          
 ^^^^^^^^------------------------------------------------------------
 _d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
 _q_: Quit            _s_: Shattered Skies    ^ ^
 "
 
-("d" (jh/org-roam-insert "~/org/roam/"))
-("b" (jh/org-roam-insert "~/Projects/conworlds/brokenThrones/"))
-("s" (jh/org-roam-insert "~/Projects/conworlds/shatteredSkies/"))
-("e" (jh/org-roam-insert "~/Projects/campaigns/mirkwoodCampaign/"))
-("q" nil))
+  ("d" (jh/org-roam-insert "~/org/roam/"))
+  ("b" (jh/org-roam-insert "~/Projects/conworlds/brokenThrones/"))
+  ("s" (jh/org-roam-insert "~/Projects/conworlds/shatteredSkies/"))
+  ("e" (jh/org-roam-insert "~/Projects/campaigns/mirkwoodCampaign/"))
+  ("q" nil))
 #+end_src
 
 
-* Webdev :Web_dev:@Web_dev:
-** Hugo                                                         :@Hugo:Hugo:
-*** Featuring Site Content in Hugo
+
+* Programming :Programming:@Programming:
+** Python :Python:@Python:
+** LaTex :Latex:@Latex:
+** Webdev                                                 :Web_dev:@Web_dev:HTML:
+*** Hugo                                                       :@Hugo:Hugo:
+**** Featuring Site Content in Hugo
 :PROPERTIES:
 :export_hugo_bundle: featuring-content-in-hugo
 :export_file_name: index.md
@@ -190,31 +194,31 @@ I recently found that the layout for my index page here was cluttered - I had co
 
 {{<highlight html>}}
 <ul class="posts-list">
-      {{ range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  }}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            {{ .Date.Format "02 Jan." }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{</highlight>}}
+{{ range first 5 (where .Site.RegularPages "Section" "blog").ByDate.Reverse  }}
+<li class="posts-list-item">
+<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+<span class="posts-list-item-description">
+{{ .Date.Format "02 Jan." }}
+</span>
+</li>
+{{ end }}
+</ul>
+{{</highlight>}}
   
- Once I had created that simple list, I decided it might be nice to have a short list of all the posts I'd want to feature on my index page, sort of as a showcase. I kept trying lots of different ideas, but ultimately found this code to be the simplest and easiest.[fn:feat-content-1]
+Once I had created that simple list, I decided it might be nice to have a short list of all the posts I'd want to feature on my index page, sort of as a showcase. I kept trying lots of different ideas, but ultimately found this code to be the simplest and easiest.[fn:feat-content-1]
     
-    {{<highlight html>}}
-     <ul class="posts-list">
-    {{range first 5 (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" "true") }}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            {{ .Date.Format "02 Jan." }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{</highlight>}}
+{{<highlight html>}}
+<ul class="posts-list">
+{{range first 5 (where (where .Site.RegularPages "Type" "post") ".Params.featured" "==" "true") }}
+<li class="posts-list-item">
+<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+<span class="posts-list-item-description">
+{{ .Date.Format "02 Jan." }}
+</span>
+</li>
+{{ end }}
+</ul>
+{{</highlight>}}
 
 However, once I had tested both the featured and recents code on the index page, certain posts would show up in both. I had tried to find some tiny bit of code that could work for both, but then I found the dumbest mistake I had made.
 
@@ -224,25 +228,25 @@ Overall I had to nest one more =where= clause into my recent posts shortcode. Wh
 
 {{<highlight html>}}
 <ul class="posts-list">
-      {{ range first 5 (where (where .Site.RegularPages "Section" "blog") ".Params.featured" "!=" "true").ByDate.Reverse}}
-      <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            {{ .Date.Format "02 Jan." }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{</highlight>}}
+{{ range first 5 (where (where .Site.RegularPages "Section" "blog") ".Params.featured" "!=" "true").ByDate.Reverse}}
+<li class="posts-list-item">
+<a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+<span class="posts-list-item-description">
+{{ .Date.Format "02 Jan." }}
+</span>
+</li>
+{{ end }}
+</ul>
+{{</highlight>}}
 
 
 
-*** Using A Makefile With My Website
+**** Using A Makefile With My Website
 :PROPERTIES:
 :export_hugo_bundle: makefile-website
 :export_file_name: index.md
-:export_date: <2021-03-12 Fri 17:47> 
-:export_hugo_lastmod: <2021-03-12 Fri 17:47> 
+:export_date: <2021-03-12 Fri 17:47>
+:export_hugo_lastmod: <2021-03-12 Fri 17:47>
 :END:
 
 It shouldn't be a surprise that I use Hugo as a static site generator. Not only is it fast, but it is also incredibly customizable, which is something that I find useful considering my website has so much stuff on it. In addition, being able to create shortcodes to avoid reusing code on certain pages is such a helpful tool for wikis. Finally, having support for Emacs' [[https://orgmode.org/][Org-Mode]] is what initially drew me to Hugo in the first place. I had tried using org-publish to try and set up a website, but had so many little issues with it that I decided to scrap it and keep looking around for a better way to set up a website. That was when I found Hugo, and decided to try it out. 
@@ -250,26 +254,26 @@ It shouldn't be a surprise that I use Hugo as a static site generator. Not only 
 
 Ultimately, I found that when I was starting to create layouts and templates, typing the full =hugo server -D --navigateToChanged= was just long to type (yes, lazy, I know), especially when I was debugging an error with my shortcodes and templates. Being able just to type =make server= makes it much faster for me to debug code but also to get previews of code. 
 
-**** Not Just For Debugging
+***** Not Just For Debugging
 Hugo also allows for content to be created with a certain [[https://gohugo.io/content-management/archetypes/][archetype]] - by default, this matches the directory you are creating the content for. As an example, if I had an archetype called =project.org=, if I ran =hugo new project/hello-world.org= the file =content/project/hello-world.org= would be created, with all the content needed for a blog post. Here's what my org-mode project archetype looks like:
 
 #+begin_src org
-#+title: {{ replace .Name "-" " " | title }} 
-#+draft: true
-#+srclang: 
-#+srcicon: 
-#+summary: 
-#+type: project
-#+featured: 
-#+layout: single
-#+percDone: 0
-#+lastUpdated: 
-#+docs:
-#+projectSite:  
-#+gitlab:
-#+github:
-#+bitbucket:
-#+readmore: false 
+,#+title: {{ replace .Name "-" " " | title }} 
+,#+draft: true
+,#+srclang: 
+,#+srcicon: 
+,#+summary: 
+,#+type: project
+,#+featured: 
+,#+layout: single
+,#+percDone: 0
+,#+lastUpdated: 
+,#+docs:
+,#+projectSite:  
+,#+gitlab:
+,#+github:
+,#+bitbucket:
+,#+readmore: false 
 #+end_src
 
 Obviously that's a lot of custom parameters, so I'll try to go through line-by-line and explain what's going on.
@@ -283,23 +287,18 @@ Here is my current Makefile for the website.
 .PHONY: server post project
 
 server:
-	@hugo server -D --navigateToChanged --verbose 
+@hugo server -D --navigateToChanged --verbose 
 
 post:
-	@echo "Enter the file name (include the suffix): " && read filename; hugo new blog/$$filename -k post
+@echo "Enter the file name (include the suffix): " && read filename; hugo new blog/$$filename -k post
 
 project:
-	@echo "Enter the file name (include the suffix): " && read filename; hugo new projects/$$filename -k project
+@echo "Enter the file name (include the suffix): " && read filename; hugo new projects/$$filename -k project
 #+end_src
 
 
-* LaTeX                                                              :@LaTeX:Latex:
-
-* Python
-
-
-* Other Software                                                  :@Software:Software:
-** Newsboat                                                       :@Newsboat:
+* Software :Software:@Software:
+** Newsboat :Newsboat:@Newsboat:rss:
 *** Using Multireddits with Newsboat                  :rss:reddit:newsboat:
 :PROPERTIES:
 :export_hugo_bundle: multireddits-newsboat
@@ -349,10 +348,10 @@ If you saw [[/blog/2020/12/using-multireddits-with-newsboat][this post]] from a 
 
 
 
+
 * Footnotes
 [fn:feat-content-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
-
-* COMMENT Local Variables :ARCHIVE:
+* COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:
 # eval: (org-hugo-auto-export-mode)
 # End:

@@ -3,8 +3,8 @@ title: "Using A Makefile With My Website"
 author: ["Jacob Hilker"]
 date: 2021-03-12T17:47:00-05:00
 lastmod: 2021-03-12T17:47:00-05:00
-tags: ["Web-dev", "Hugo"]
-categories: ["Web-dev", "Hugo"]
+tags: ["Programming", "Web-dev", "HTML", "Hugo"]
+categories: ["Programming", "Web-dev", "Hugo"]
 type: "post"
 draft: false
 ---
@@ -49,11 +49,11 @@ Here is my current Makefile for the website.
 .PHONY: server post project
 
 server:
-	@hugo server -D --navigateToChanged --verbose
+@hugo server -D --navigateToChanged --verbose
 
 post:
-	@echo "Enter the file name (include the suffix): " && read filename; hugo new blog/$$filename -k post
+@echo "Enter the file name (include the suffix): " && read filename; hugo new blog/$$filename -k post
 
 project:
-	@echo "Enter the file name (include the suffix): " && read filename; hugo new projects/$$filename -k project
+@echo "Enter the file name (include the suffix): " && read filename; hugo new projects/$$filename -k project
 ```

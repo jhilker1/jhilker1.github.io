@@ -3,8 +3,8 @@ title: "Building Hydras for Org-roam"
 author: ["Jacob Hilker"]
 date: 2021-06-14T22:43:00-04:00
 lastmod: 2021-06-14T22:43:00-04:00
-tags: ["Emacs", "Org-mode", "Org-roam", "Worldbuilding", "Wikis"]
-categories: ["Emacs", "Org-mode"]
+tags: ["Emacs", "Programming", "Org-mode", "Org-roam", "Worldbuilding", "Wikis"]
+categories: ["Emacs", "Programming", "Org-mode"]
 type: "post"
 draft: false
 featured: true
@@ -37,18 +37,18 @@ After evaluating that in a scratch buffer, now I knew that I had enough for a ba
 
 ```emacs-lisp
 (defhydra jh/find-org-roam-file-hydra (:hint nil :exit t)
- "
+  "
 ^Default^            ^Conworlds^             ^Campaigns^
 ^^^^^^^^------------------------------------------------------------
 _d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
 _q_: Quit            _s_: Shattered Skies    ^ ^
 "
 
-("d" (jh/find-org-roam-file "~/org/roam/"))
-("b" (jh/find-org-roam-file "~/Projects/conworlds/brokenThrones/"))
-("s" (jh/find-org-roam-file "~/Projects/conworlds/shatteredSkies/"))
-("e" (jh/find-org-roam-file "~/Projects/campaigns/mirkwoodCampaign/"))
-("q" nil))
+  ("d" (jh/find-org-roam-file "~/org/roam/"))
+  ("b" (jh/find-org-roam-file "~/Projects/conworlds/brokenThrones/"))
+  ("s" (jh/find-org-roam-file "~/Projects/conworlds/shatteredSkies/"))
+  ("e" (jh/find-org-roam-file "~/Projects/campaigns/mirkwoodCampaign/"))
+  ("q" nil))
 ```
 
 Once I had that, I knew I could just replace `org-roam-find-file` with `org-roam-capture` or whatever I needed to call. Although I am reusing a lot of code for this, in time I will try to clean it up. If you need the other hydras I use on a daily basis for roam notes, here they are.
@@ -66,18 +66,18 @@ To actually use the hydra, bind `jh/find-org-roam-file-hydra/body` to a keybindi
     (org-roam-capture)))
 
 (defhydra jh/org-roam-capture-hydra (:hint nil :exit t)
- "
+  "
 ^Default^            ^Conworlds^             ^Campaigns^
 ^^^^^^^^------------------------------------------------------------
 _d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
 _q_: Quit            _s_: Shattered Skies    ^ ^
 "
 
-("d" (jh/org-roam-capture "~/org/roam/"))
-("b" (jh/org-roam-capture "~/Projects/conworlds/brokenThrones/"))
-("s" (jh/org-roam-capture "~/Projects/conworlds/shatteredSkies/"))
-("e" (jh/org-roam-capture "~/Projects/campaigns/mirkwoodCampaign/"))
-("q" nil))
+  ("d" (jh/org-roam-capture "~/org/roam/"))
+  ("b" (jh/org-roam-capture "~/Projects/conworlds/brokenThrones/"))
+  ("s" (jh/org-roam-capture "~/Projects/conworlds/shatteredSkies/"))
+  ("e" (jh/org-roam-capture "~/Projects/campaigns/mirkwoodCampaign/"))
+  ("q" nil))
 ```
 
 
@@ -91,16 +91,16 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
     (org-roam-insert)))
 
 (defhydra jh/org-roam-insert-hydra (:hint nil :exit t)
- "
+  "
 ^Default^            ^Conworlds^             ^Campaigns^
 ^^^^^^^^------------------------------------------------------------
 _d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
 _q_: Quit            _s_: Shattered Skies    ^ ^
 "
 
-("d" (jh/org-roam-insert "~/org/roam/"))
-("b" (jh/org-roam-insert "~/Projects/conworlds/brokenThrones/"))
-("s" (jh/org-roam-insert "~/Projects/conworlds/shatteredSkies/"))
-("e" (jh/org-roam-insert "~/Projects/campaigns/mirkwoodCampaign/"))
-("q" nil))
+  ("d" (jh/org-roam-insert "~/org/roam/"))
+  ("b" (jh/org-roam-insert "~/Projects/conworlds/brokenThrones/"))
+  ("s" (jh/org-roam-insert "~/Projects/conworlds/shatteredSkies/"))
+  ("e" (jh/org-roam-insert "~/Projects/campaigns/mirkwoodCampaign/"))
+  ("q" nil))
 ```
