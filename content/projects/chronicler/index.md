@@ -22,7 +22,7 @@ socials:
     link: "https://discord.gg/SewRkyur3Q"
   - name: Gitter.fm Chat 
     icon: "fas fa-comment-alt"
-    link: https://gitter.im/chroniclerCK3/chronicler?utm_source=share-link&utm_medium=link&utm_campaign=share-link
+    link: https://gitter.im/chronicler-app/chronicler
 ---
 
 Chronicler is a terminal application for managing after-action reports (AARs) for Crusader Kings 3.
