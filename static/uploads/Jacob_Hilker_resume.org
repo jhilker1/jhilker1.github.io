@@ -1,0 +1,128 @@
+#+title: Software Engineer
+#+author: Jacob Hilker
+#+options: email:t
+#+latex_class_options: [a4paper,10pt,sans]
+#+latex_class: moderncv
+#+latex_header: \usepackage[scale=0.8]{geometry}
+#+latex_header: \recomputelengths
+#+latex_header: \usepackage[scaled=0.92]{helvet}
+#+latex_header: \usepackage{enumitem}
+#+latex_header: \setitemize{nosep,leftmargin=0.2in}
+#+cvstyle: banking
+#+cvcolor: blue
+#+mobile: 434-409-3789
+#+homepage: jhilker.com
+#+address: 5724 Saint George Ave.
+#+address: Crozet, VA 22932
+#+github: jhilker1
+#+gitlab: jhilker
+
+* Education
+** Bachelor's of Science in Computer Science, Minor in Cybersecurity
+:PROPERTIES:
+:CV_ENV:   cventry
+:FROM:     <2017-08-17 Thu>
+:TO:        <2021-05-08 Sat>
+:EMPLOYER: University of Mary Washington
+:LOCATION: Fredericksburg, VA
+:END:
+
+- 2.99 GPA
+- Dean's List, Spring 2021
+- *_Relevant Coursework:_*
+  - Applications of Databases
+  - Data Science
+  - Artificial Neural Networks
+  - Software Security
+
+* Experience
+** Library Volunteer
+:PROPERTIES:
+:CV_ENV:   cventry
+:FROM:     <2014-07-15 Tue>
+:TO:       <2017-07-15 Sat>
+:EMPLOYER: James Madison Regional Library - Crozet Branch
+:LOCATION: Crozet, VA
+:END:
+- Shelved books by subject according to Dewey Decimal System.
+- Performed basic book reshelving and obtained items from book drop.
+- Assembled requested library and loaned materials for users.
+
+** Impact Richmond Volunteer
+:PROPERTIES:
+:CV_ENV:   cventry
+:FROM:     <2012-07-15 Sun>
+:TO:       <2017-07-15 Sat>
+:EMPLOYER: Impact Richmond
+:LOCATION: Richmond, VA
+:END:
+
+ - Participated in week-long volunteer sessions to refurbish homes in disadvantaged neighborhoods in Richmond, VA.
+
+
+* Projects
+** All For One
+:PROPERTIES:
+:CV_ENV: cvproj
+:FROM: <2021-04-07 Wed>
+:LANGS: Halfmoon CSS, HTML
+:LINK: https://github.com/jhilker1/hugo-all-for-one
+:ICON: \faGithub
+:REPO: jhilker1/hugo-all-for-one
+:END:
+ - Developed a mobile-responsive Hugo theme with Halfmoon CSS base for an online blog, portfolio, and resume
+\vspace{1em}
+** Chronicler
+:PROPERTIES:
+:CV_ENV: cvproj
+:FROM: <2021-04-07 Wed>
+:LANGS: Python
+:LINK: https://gitlab.com/jhilker/chronicler
+:ICON: \faGithub
+:REPO: jhilker/chronicler
+:END:
+
+- Developed a terminal application for tracking characters in a particular playthrough of a Paradox game independently outside of class
+- Collaborated with users to find bugs, gather feedback, and suggest features for the application
+- Still in development
+\vspace{1em}
+** Pyronsworn
+:PROPERTIES:
+:CV_ENV: cvproj
+:FROM: <2021-04-07 Wed>
+:LANGS: Python
+:LINK: https://gitlab.com/jhilker/pyronsworn
+:ICON: \faGitlab
+:REPO: jhilker/pyronsworn
+:END:
+
+- Developed a python module for assisting developers for creating applications for the tabletop role-playing game [[https://ironswornrpg.com][Ironsworn]].
+
+
+
+* Skills
+\begin{itemize}[label={}]
+    \small{\item{
+     \textbf{Languages: }{Python, HTML/CSS, Java, SQL (Postgres), JavaScript} \\
+     \textbf{Frameworks: }{React, Node.js, Halfmoon CSS} \\
+     \textbf{Developer Tools: }{ Git, Google Cloud Platform, Vim, Emacs} \\
+     \textbf{Libraries: }{ pandas, NumPy, Matplotlib} \\
+     \textbf{Misc.: }{ Hugo, Org-mode, Vim, Emacs} \\
+     \textbf{Soft Skills: }{Teamwork and Collaboration, Verbal and Written Communication, Critical Thinking, Problem Solving}}}
+ \end{itemize}
+ 
+* Code                                                             :noexport:
+#+begin_src elisp
+(org-export-to-file 'moderncv "Jacob_Hilker_resume.tex")
+(org-latex-compile "Jacob_Hilker_resume.tex")
+#+end_src
+
+#+RESULTS:
+: c:/Users/camoh/Projects/jhilker.gitlab.io/static/uploads/Jacob_Hilker_resume.pdf
+
+
+
+# Local Variables:
+# org-latex-pdf-process: ("pdflatex -interaction=nonstopmode %f")
+# org-confirm-babel-evaluate: nil
+# End:
