@@ -36,7 +36,8 @@
   - Software Security
 
 * Experience
-** Library Volunteer
+** Volunteer
+*** Library Volunteer
 :PROPERTIES:
 :CV_ENV:   cventry
 :FROM:     <2014-07-15 Tue>
@@ -48,7 +49,7 @@
 - Performed basic book reshelving and obtained items from book drop.
 - Assembled requested library and loaned materials for users.
 
-** Impact Richmond Volunteer
+*** Impact Richmond Volunteer
 :PROPERTIES:
 :CV_ENV:   cventry
 :FROM:     <2012-07-15 Sun>
@@ -71,7 +72,7 @@
 :REPO: jhilker1/hugo-all-for-one
 :END:
  - Developed a mobile-responsive Hugo theme with Halfmoon CSS base for an online blog, portfolio, and resume
-\vspace{1em}
+\vspace{5pt}
 ** Chronicler
 :PROPERTIES:
 :CV_ENV: cvproj
@@ -81,11 +82,9 @@
 :ICON: \faGithub
 :REPO: jhilker/chronicler
 :END:
-
 - Developed a terminal application for tracking characters in a particular playthrough of a Paradox game independently outside of class
 - Collaborated with users to find bugs, gather feedback, and suggest features for the application
-- Still in development
-\vspace{1em}
+\vspace{5pt}
 ** Pyronsworn
 :PROPERTIES:
 :CV_ENV: cvproj
@@ -95,9 +94,8 @@
 :ICON: \faGitlab
 :REPO: jhilker/pyronsworn
 :END:
-
 - Developed a python module for assisting developers for creating applications for the tabletop role-playing game [[https://ironswornrpg.com][Ironsworn]].
-
+\vspace{5pt}
 
 
 * Skills
