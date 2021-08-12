@@ -1,7 +1,6 @@
 +++
 title = "About Me"
 author = ["Jacob Hilker"]
-layout = "about"
 draft = false
 +++
 

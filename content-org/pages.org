@@ -24,9 +24,8 @@ Interested in some of the things I write on my blog? Check them out here.
 
 * About Me
 :PROPERTIES:
-:EXPORT_FILE_NAME: _index.md
-:export_hugo_section: about
-:EXPORT_HUGO_LAYOUT: about
+:EXPORT_FILE_NAME: index.md
+:export_hugo_bundle: about
 :END:
 Hello! I'm Jacob, a former student of the University of Mary Washington. I graduated with a major in Computer Science with a minor in cybersecurity.  Although I majored in cybersecurity, I found that it really wasn't what I was looking for - my original plan was to minor in political science, but the closest thing the university had was International Relations, which wasn't exactly what I was looking for - this was also around the time the [[wiki:Facebook%E2%80%93Cambridge_Analytica_data_scandal][Facebook-Cambridge Analytica scandal]] was coming to light, and so I figured that cybersecurity was going to become very quickly involved with political science.
 
