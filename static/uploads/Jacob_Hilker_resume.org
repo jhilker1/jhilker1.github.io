@@ -8,6 +8,7 @@
 #+latex_header: \usepackage[scaled=0.92]{helvet}
 #+latex_header: \usepackage{enumitem}
 #+latex_header: \setitemize{nosep,leftmargin=0.2in}
+#+latex_header: \pdfgentounicode=1
 #+cvstyle: banking
 #+cvcolor: blue
 #+mobile: 434-409-3789
@@ -79,7 +80,7 @@
 :FROM: <2021-04-07 Wed>
 :LANGS: Python
 :LINK: https://gitlab.com/jhilker/chronicler
-:ICON: \faGithub
+:ICON: \faGitlab
 :REPO: jhilker/chronicler
 :END:
 - Developed a terminal application for tracking characters in a particular playthrough of a Paradox game independently outside of class
