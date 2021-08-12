@@ -28,7 +28,9 @@ Inquisitive, energetic software developer pursuing a position in software develo
 
 {{<resume/exp name="B.Sc., Computer Science" place="University of Mary Washington" city="Fredericksburg, VA" start="22 Aug 2017" end="09 May 2021">}}
 **Minor In Cybersecurity**
+
 **Dean's List, Spring 2021**
+
 **<ins>Relevant Coursework</ins>**
 
 -   Applications of Databases
