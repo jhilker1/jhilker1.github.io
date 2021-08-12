@@ -28,7 +28,7 @@ Inquisitive, energetic software developer pursuing a position in software develo
 
 {{<resume/exp name="B.Sc., Computer Science" place="University of Mary Washington" city="Fredericksburg, VA" start="22 Aug 2017" end="09 May 2021">}}
 **Minor In Cybersecurity**
-
+**Dean's List, Spring 2021**
 **<ins>Relevant Coursework</ins>**
 
 -   Applications of Databases
@@ -47,7 +47,11 @@ Inquisitive, energetic software developer pursuing a position in software develo
   <div></div>
 
 {{<resume/exp name="Library Volunteer" place="Crozet Library" city="Crozet, VA" start="07 Jul 2014" end="17 Jul 2017">}}
-Performed various tasks, such as shelving books, planning programs, and organizing projects in order to support the Crozet library and local community.
+
+-   Shelved books by subject according to Dewey Decimal System.
+-   Performed basic book reshelving and obtained items from book drop.
+-   Assembled requested library and loaned materials for users.
+
 {{</resume/exp>}}
 
 <hr>
