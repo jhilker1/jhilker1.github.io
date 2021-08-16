@@ -4,7 +4,7 @@
 #+hugo_front_matter_format: yaml
 #+seq_todo: TODO DRAFT | DONE
 #+hugo_auto_set_lastmod: t
-#+startup: overview noptag
+#+startup: fold noptag
 #+options: broken-links:mark
 
 * Emacs :Emacs:@Emacs:Programming:@Programming:
@@ -363,7 +363,3 @@ If you saw [[/blog/2020/12/using-multireddits-with-newsboat][this post]] from a 
 * Drafts :noexport:
 * Footnotes
 [fn:feat-content-1] Although this does also include my Digital Studies blog, I will most likely be archiving those posts at the end of the semester - I'll still have access to them, but at the same time, if I had made a post for that class I was proud of, I could move it to my blog directory without much of an issue.
-* COMMENT Local Variables                                           :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:
