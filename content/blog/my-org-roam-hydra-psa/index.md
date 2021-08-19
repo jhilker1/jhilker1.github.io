@@ -1,6 +1,7 @@
 ---
 title: "A PSA for my Org-Roam Hydra"
 author: ["Jacob Hilker"]
+date: 2021-08-19T16:05:00-04:00
 tags: ["Emacs", "Programming", "Org-mode"]
 categories: ["Emacs", "Programming", "Org-mode"]
 type: "post"

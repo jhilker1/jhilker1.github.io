@@ -174,7 +174,8 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
   ("q" nil))
 #+end_src
 
-*** A PSA for my Org-Roam Hydra
+*** DONE A PSA for my Org-Roam Hydra
+CLOSED: [2021-08-19 Thu 16:05]
 :PROPERTIES:
 :export_hugo_custom_front_matter: :featured true 
 :export_hugo_bundle: my-org-roam-hydra-psa
