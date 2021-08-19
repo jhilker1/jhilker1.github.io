@@ -99,13 +99,13 @@ I've recently been playing around with [[https://github.com/org-roam/org-roam][O
 And so, I decided to set up my first hydra for finding files. I figured I didn't want to set one up where I could add a file, but finding a file seemed like a good place to start.
 
 **** The Base Hydra - Finding Files 
-I figured fairly early on that once I had one function and hydra down, I would effectively have all three down, but I would just need to update the function I needed to call (such as =org-roam-find-file= or =org-roam-capture=). I started by looking over the code from the excellent blog post on [[https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/][refiling Org-mode items with a hydra]]. Spoilers - I'm not very good at Elisp, so when I saw his macro with all the backticks and commas, I found it fairly hard to follow along, at least until I found a cheatsheet for elisp earlier today. I first overwrote the function with a simple =(let*)= before I called =org-roam-find-file= and ran it in a simple scratch buffer. I was using the wiki I have for my alt-history setting [[https://brokenthrones.jhilker.com][Broken Thrones]] as an example, since that has become one of my main passion projects in my off-time, but feel free to use any hugo-site with [[https://github.com/kaushalmodi/ox-hugo][Ox-Hugo]] set up as an example. I am using a directory called =content-org= in that hugo site, but use whatever you want.
+I figured fairly early on that once I had one function and hydra down, I would effectively have all three down, but I would just need to update the function I needed to call (such as =org-roam-node-find= or =org-roam-capture=). I started by looking over the code from the excellent blog post on [[https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/][refiling Org-mode items with a hydra]]. Spoilers - I'm not very good at Elisp, so when I saw his macro with all the backticks and commas, I found it fairly hard to follow along, at least until I found a cheatsheet for elisp earlier today. I first overwrote the function with a simple =(let*)= before I called =org-roam-find-file= and ran it in a simple scratch buffer. I was using the wiki I have for my alt-history setting [[https://brokenthrones.jhilker.com][Broken Thrones]] as an example, since that has become one of my main passion projects in my off-time, but feel free to use any hugo-site with [[https://github.com/kaushalmodi/ox-hugo][Ox-Hugo]] set up as an example. I am using a directory called =content-org= in that hugo site, but use whatever you want.
 #+begin_src emacs-lisp
 (defun jh/find-org-roam-file (directory)
   "Sets the org-roam directory and database and finds file."
   (let* ((org-roam-directory (concat directory "content-org/"))
          (org-roam-db-location (concat directory "org-roam.db")))
-    (org-roam-find-file)))
+    (org-roam-node-find)))
 #+end_src
 
 After evaluating that in a scratch buffer, now I knew that I had enough for a basic hydra. Here is my final configuration for this base hydra after I did some UI tweaks for the help menu, but if anything the UI isn't as important as functionality, at least when first setting it up.
@@ -157,7 +157,7 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
   "Sets the org-roam directory and database and inserts link to file."
   (let* ((org-roam-directory (concat directory "content-org/"))
          (org-roam-db-location (concat directory "org-roam.db")))
-    (org-roam-insert)))
+    (org-roam-node-insert)))
 
 (defhydra jh/org-roam-insert-hydra (:hint nil :exit t)
   "
@@ -174,6 +174,14 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
   ("q" nil))
 #+end_src
 
+*** A PSA for my Org-Roam Hydra
+:PROPERTIES:
+:export_hugo_custom_front_matter: :featured true 
+:export_hugo_bundle: my-org-roam-hydra-psa
+:export_file_name: index.md
+:END:
+
+As you might have heard by now, [[github:org-roam/org-roam][Org-roam]] recently updated to version 2, which allows you to set an ID for a post and a headline, and then link by those IDs. However, several functions were renamed to be more consistnt with the rst of the org-roam. This is a PSA to anyone using  [[/blog/2021/06/building-hydras-for-org-roam][my hydras for Org-roam]] that you will need to edit those functions slighly for functionality. In =jh/find-org-roam-file=, you will need to replace =org-roam-find-file= with =org-roam-node-find=, and in =jh/org-roam-insert=, replace =org-roam-insert= with =org-roam-node-insert=. Although it's a minor change, you wil need to run =org-roam-db-clear= and =org-roam-db-sync= for each directory in your hydra, just to make sure everything is up to date. While not ideal, I wanted to make sure it would work.
 
 
 * Programming :Programming:@Programming:

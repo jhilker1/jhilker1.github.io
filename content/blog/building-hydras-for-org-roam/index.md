@@ -23,14 +23,14 @@ And so, I decided to set up my first hydra for finding files. I figured I didn't
 
 ## The Base Hydra - Finding Files {#the-base-hydra-finding-files}
 
-I figured fairly early on that once I had one function and hydra down, I would effectively have all three down, but I would just need to update the function I needed to call (such as `org-roam-find-file` or `org-roam-capture`). I started by looking over the code from the excellent blog post on [refiling Org-mode items with a hydra](https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/). Spoilers - I'm not very good at Elisp, so when I saw his macro with all the backticks and commas, I found it fairly hard to follow along, at least until I found a cheatsheet for elisp earlier today. I first overwrote the function with a simple `(let*)` before I called `org-roam-find-file` and ran it in a simple scratch buffer. I was using the wiki I have for my alt-history setting [Broken Thrones](https://brokenthrones.jhilker.com) as an example, since that has become one of my main passion projects in my off-time, but feel free to use any hugo-site with [Ox-Hugo](https://github.com/kaushalmodi/ox-hugo) set up as an example. I am using a directory called `content-org` in that hugo site, but use whatever you want.
+I figured fairly early on that once I had one function and hydra down, I would effectively have all three down, but I would just need to update the function I needed to call (such as `org-roam-node-find` or `org-roam-capture`). I started by looking over the code from the excellent blog post on [refiling Org-mode items with a hydra](https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/). Spoilers - I'm not very good at Elisp, so when I saw his macro with all the backticks and commas, I found it fairly hard to follow along, at least until I found a cheatsheet for elisp earlier today. I first overwrote the function with a simple `(let*)` before I called `org-roam-find-file` and ran it in a simple scratch buffer. I was using the wiki I have for my alt-history setting [Broken Thrones](https://brokenthrones.jhilker.com) as an example, since that has become one of my main passion projects in my off-time, but feel free to use any hugo-site with [Ox-Hugo](https://github.com/kaushalmodi/ox-hugo) set up as an example. I am using a directory called `content-org` in that hugo site, but use whatever you want.
 
 ```emacs-lisp
 (defun jh/find-org-roam-file (directory)
   "Sets the org-roam directory and database and finds file."
   (let* ((org-roam-directory (concat directory "content-org/"))
          (org-roam-db-location (concat directory "org-roam.db")))
-    (org-roam-find-file)))
+    (org-roam-node-find)))
 ```
 
 After evaluating that in a scratch buffer, now I knew that I had enough for a basic hydra. Here is my final configuration for this base hydra after I did some UI tweaks for the help menu, but if anything the UI isn't as important as functionality, at least when first setting it up.
@@ -88,7 +88,7 @@ _q_: Quit            _s_: Shattered Skies    ^ ^
   "Sets the org-roam directory and database and inserts link to file."
   (let* ((org-roam-directory (concat directory "content-org/"))
          (org-roam-db-location (concat directory "org-roam.db")))
-    (org-roam-insert)))
+    (org-roam-node-insert)))
 
 (defhydra jh/org-roam-insert-hydra (:hint nil :exit t)
   "
