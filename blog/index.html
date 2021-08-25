@@ -1,0 +1,391 @@
+<!doctype html><html lang=en-us><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta name=viewport content="width=device-width">
+<title> Jacob's Blog | Jacob's Website</title>
+<link href=/css/halfmoon-variables.min.3d7409702b16355b54aa235e791e286775d9908e6d9cf66e31a2ce694d5c9c63.css rel=stylesheet>
+<link href=/css/style.min.ed8bb7c020e60da4e4c980fe14bd23b23d3cf00bc07dd26012d7acf8d1b812b7.css rel=stylesheet>
+<link href=/css/syntax.min.e44896eb9fe75cf8fc30db9d4eacc299b20e752c34e7e407dac008b8a2abd98e.css rel=stylesheet>
+<link href=/css/custom.min.fada539d592d795c5e33556adf6fefad4138bd9e0a2d7b065384834030048918.css rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Jacob's Blog">
+<meta name=twitter:description content="I am a Python dev and a fan of Hugo. Currently looking for work.">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css integrity=sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js integrity=sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js integrity=sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+</head>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled=true data-sidebar-shortcut-enabled=true data-set-preferred-mode-onload=true>
+<div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="full-height overlayed-sm-and-down">
+<nav class=navbar>
+<div class=navbar-content>
+<button class="btn btn-action" type=button onclick=halfmoon.toggleSidebar()>
+<i class="fa fa-bars" aria-hidden=true></i>
+<span class=sr-only>Toggle sidebar</span>
+</button>
+</div>
+<ul class="navbar-nav d-none d-md-flex">
+<li class=nav-item>
+<a href=/ class=nav-link> &nbsp;Home</a>
+</li>
+<li class=nav-item>
+<a href=/about/ class=nav-link> &nbsp;About</a>
+</li>
+<li class=nav-item>
+<a href=/resume/ class=nav-link> &nbsp;Resumé</a>
+</li>
+<li class=nav-item>
+<a href=/projects/ class=nav-link> &nbsp;Projects</a>
+</li>
+<li class="nav-item dropdown with-arrow">
+<a class=nav-link data-toggle=dropdown id=nav-link-dropdown-toggle>
+&nbsp;Blog
+<i class="fa fa-angle-down ml-5" aria-hidden=true></i>
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby=nav-link-dropdown-toggle>
+<a href=/blog/ class=dropdown-item>&nbsp;Recent Posts</a>
+<a href=/archive/ class=dropdown-item>&nbsp;Blog Archive</a>
+<a href=/blog/feed.xml class=dropdown-item>&nbsp;RSS Feed</a>
+</div>
+</li>
+<li class=nav-item>
+<a href=https://config.jhilker.com class=nav-link> &nbsp;Configs</a>
+</li>
+<li class=nav-item>
+<a href=https://gitlab.com/jhilker/jhilker.gitlab.io class=nav-link> &nbsp;Source</a>
+</li>
+</ul>
+<div class="navbar-content d-md-none ml-auto">
+<div class="dropdown with-arrow">
+<button class=btn data-toggle=dropdown type=button id=navbar-dropdown-toggle-btn-1>
+Menu
+<i class="fa fa-angle-down" aria-hidden=true></i>
+</button>
+<div class="dropdown-menu dropdown-menu-right w-200" aria-labelledby=navbar-dropdown-toggle-btn-1>
+<a href=/ class=dropdown-item> &nbsp; Home</a>
+<a href=/about/ class=dropdown-item> &nbsp; About</a>
+<a href=/resume/ class=dropdown-item> &nbsp; Resumé</a>
+<a href=/projects/ class=dropdown-item> &nbsp; Projects</a>
+<a href=/blog/ class=dropdown-item> &nbsp; Blog</a>
+<a href=https://config.jhilker.com class=dropdown-item> &nbsp; Configs</a>
+<a href=https://gitlab.com/jhilker/jhilker.gitlab.io class=dropdown-item> &nbsp; Source</a>
+</div>
+</div>
+</div>
+<button class="btn darkModeBtn ml-auto d-none d-lg-inline-block" type=button onclick=halfmoon.toggleDarkMode() aria-label="Toggle dark mode">
+<i class="fas fa-sun" aria-hidden=true></i>
+</button>
+</nav>
+<div class=sidebar-overlay onclick=halfmoon.toggleSidebar()></div>
+<div class=sidebar>
+<div class=sidebar-menu>
+<div class=personal-content>
+<h4 id=title>Jacob's Website</h4>
+<img class="sidebar-img img-fluid" src=/pics/jhilker.jpg alt="User profile picture">
+<p>I am a Python dev and a fan of Hugo. Currently looking for work.</p>
+<div class="socials d-med-none d-inline-block">
+<a id=social href=https://gitlab.com/jhilker>
+<i class="fab fa-gitlab"></i>
+</a>
+&nbsp;
+<a id=social href=https://github.com/jhilker1>
+<i class="fab fa-github"></i>
+</a>
+&nbsp;
+<a id=social href=https://linkedin.com/in/jhilker>
+<i class="fab fa-linkedin"></i>
+</a>
+&nbsp;
+<a id=social href=https://dev.to/jhilker>
+<i class="fab fa-dev"></i>
+</a>
+&nbsp;
+<a id=social href=https://codepen.io/hilkerj>
+<i class="fab fa-codepen"></i>
+</a>
+&nbsp;
+<a id=social href=/blog/feed.xml>
+<i class="fas fa-rss"></i>
+</a>
+&nbsp;
+<a id=social href=mailto:jacob.hilker2@gmail.com>
+<i class="fas fa-envelope"></i>
+</a>
+&nbsp;
+<br>
+</div>
+<div class="sidebar-divider d-lg-none"></div>
+<div class="sidebar-link button sidebar-link-with-icon d-lg-none bg-dm-dark" id=sidebar-theme-toggle onclick=halfmoon.toggleDarkMode()>
+<span class="sidebar-icon justify-content-center">
+<i class="fa fa-moon" aria-hidden=true></i>
+</span>
+Toggle Theme
+</div>
+<p id=copyright class="font-size-12 position-absolute bottom-0">
+&copy; 2021-2021 Jacob Hilker
+</p>
+</div>
+</div>
+</div>
+<div class=content-wrapper>
+<div class=col-lg-12>
+<div class=content>
+<h1 class=text-uppercase>Jacob's Blog</h1>
+<div class="card w-70 mw-100 shadow-lg">
+<a href=/blog/2021/08/a-psa-for-my-org-roam-hydra/>
+<h2 class=card-title>A PSA for my Org-Roam Hydra</h2>
+</a>
+<span class=postInfo>
+<i class="fas fa-calendar"></i>
+19 Aug 2021.
+&nbsp;
+&nbsp;
+<i class="fas fa-stopwatch"></i>
+1-minute read
+&nbsp;
+&nbsp;
+</span>
+<p>
+As you might have heard by now, Org-roam recently updated to version 2, which allows you to set an ID for a post and a headline, and then link by those IDs. However, several functions were renamed to be more consistnt with the rst of the org-roam. This is a PSA to anyone using my hydras for Org-roam that you will need to edit those functions slighly for functionality. In jh/find-org-roam-file, you will need to replace org-roam-find-file with org-roam-node-find, and in jh/org-roam-insert, replace org-roam-insert with org-roam-node-insert.
+</p>
+<span class=mb-0>
+<i class="fas fa-folder-open"></i>
+<span class=badge>
+<a class=text-muted href=/categories/emacs>Emacs</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/org-mode>Org-mode</a>
+</span>
+<span class=text-right>
+<i class="fas fa-tags" style=padding-left:5px></i>
+<span class=badge>
+<a class=text-muted href=/tags/emacs>Emacs</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/org-mode>Org-mode</a>
+</span>
+</span>
+</span>
+</div>
+<div class="card w-70 mw-100 shadow-lg">
+<a href=/blog/2021/06/building-hydras-for-org-roam/>
+<h2 class=card-title>Building Hydras for Org-roam</h2>
+</a>
+<span class=postInfo>
+<i class="fas fa-calendar"></i>
+14 Jun 2021.
+&nbsp;
+&nbsp;
+<i class="fas fa-stopwatch"></i>
+5-minute read
+&nbsp;
+&nbsp;
+</span>
+<p>
+I&rsquo;ve recently been playing around with Org-roam, a note-taking package for Emacs and Org-mode based on the Zettelkasten method of taking notes, and interconnecting those notes by means of backlinks, and one place this style of note-taking is very common on is the Roam Research website. In the little bit of time that I&rsquo;ve gotten to try this line of research, I&rsquo;ve found it much more helpful with regards to actually remembering things rather than my old method of just writing it down in a notebook - having backlinks where I can go back and reference any information I&rsquo;ve gotten is very helpful.
+</p>
+<span class=mb-0>
+<i class="fas fa-folder-open"></i>
+<span class=badge>
+<a class=text-muted href=/categories/emacs>Emacs</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/org-mode>Org-mode</a>
+</span>
+<span class=text-right>
+<i class="fas fa-tags" style=padding-left:5px></i>
+<span class=badge>
+<a class=text-muted href=/tags/emacs>Emacs</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/org-mode>Org-mode</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/org-roam>Org-roam</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/worldbuilding>Worldbuilding</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/wikis>Wikis</a>
+</span>
+</span>
+</span>
+</div>
+<div class="card w-70 mw-100 shadow-lg">
+<a href=/blog/2021/06/my-org-mode-workflow/>
+<h2 class=card-title>My Org-Mode Workflow</h2>
+</a>
+<span class=postInfo>
+<i class="fas fa-calendar"></i>
+12 Jun 2021.
+&nbsp;
+&nbsp;
+<i class="fas fa-stopwatch"></i>
+5-minute read
+&nbsp;
+&nbsp;
+</span>
+<p>
+Although I briefly describe my workflows in the notes section of my website, I wanted to go far more in-depth here on my blog vs. in the notes file. I think of it this way - a note is a quick reminder of something, while something like an article or post is more in-depth.
+I use org-mode for most of my stuff now - if I am writing a README as an example (or writing generally), I&rsquo;ll use org-mode where I can, including in emails.
+</p>
+<span class=mb-0>
+<i class="fas fa-folder-open"></i>
+<span class=badge>
+<a class=text-muted href=/categories/emacs>Emacs</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/org-mode>Org-mode</a>
+</span>
+<span class=text-right>
+<i class="fas fa-tags" style=padding-left:5px></i>
+<span class=badge>
+<a class=text-muted href=/tags/emacs>Emacs</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/org-mode>Org-mode</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/gtd>GTD</a>
+</span>
+</span>
+</span>
+</div>
+<div class="card w-70 mw-100 shadow-lg">
+<a href=/blog/2021/03/using-a-makefile-with-my-website/>
+<h2 class=card-title>Using A Makefile With My Website</h2>
+</a>
+<span class=postInfo>
+<i class="fas fa-calendar"></i>
+12 Mar 2021.
+&nbsp;
+&nbsp;
+<i class="fas fa-stopwatch"></i>
+4-minute read
+&nbsp;
+&nbsp;
+</span>
+<p>
+It shouldn&rsquo;t be a surprise that I use Hugo as a static site generator. Not only is it fast, but it is also incredibly customizable, which is something that I find useful considering my website has so much stuff on it. In addition, being able to create shortcodes to avoid reusing code on certain pages is such a helpful tool for wikis. Finally, having support for Emacs' Org-Mode is what initially drew me to Hugo in the first place.
+</p>
+<span class=mb-0>
+<i class="fas fa-folder-open"></i>
+<span class=badge>
+<a class=text-muted href=/categories/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/web-dev>Web-dev</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/hugo>Hugo</a>
+</span>
+<span class=text-right>
+<i class="fas fa-tags" style=padding-left:5px></i>
+<span class=badge>
+<a class=text-muted href=/tags/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/web-dev>Web-dev</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/html>HTML</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/hugo>Hugo</a>
+</span>
+</span>
+</span>
+</div>
+<div class="card w-70 mw-100 shadow-lg">
+<a href=/blog/2021/02/featuring-site-content-in-hugo/>
+<h2 class=card-title>Featuring Site Content in Hugo</h2>
+</a>
+<span class=postInfo>
+<i class="fas fa-calendar"></i>
+23 Feb 2021.
+&nbsp;
+&nbsp;
+<i class="fas fa-stopwatch"></i>
+3-minute read
+&nbsp;
+&nbsp;
+</span>
+<p>
+I recently found that the layout for my index page here was cluttered - I had content both in the org-mode file where I would write a post, as well as in the index.html file that actually rendered content to the page. I knew I wanted to have a shortcode so that I could more easily use that content again, if I needed to. However, I also knew that I&rsquo;d want to have a list of both featured posts that I thought were my best work, as well as a list of recent posts on the page.
+</p>
+<span class=mb-0>
+<i class="fas fa-folder-open"></i>
+<span class=badge>
+<a class=text-muted href=/categories/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/web-dev>Web-dev</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/categories/hugo>Hugo</a>
+</span>
+<span class=text-right>
+<i class="fas fa-tags" style=padding-left:5px></i>
+<span class=badge>
+<a class=text-muted href=/tags/programming>Programming</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/web-dev>Web-dev</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/html>HTML</a>
+</span>
+<span class=badge>
+<a class=text-muted href=/tags/hugo>Hugo</a>
+</span>
+</span>
+</span>
+</div>
+<div class="text-center pagination-rounded">
+<ul class="pagination pagination-default">
+<li class="page-item disabled">
+<a href=# aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a>
+</li>
+<li class="page-item disabled">
+<a href=# aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a>
+</li>
+<li class="page-item active">
+<a href=# aria-current=page aria-label="Page 1" class=page-link role=button>1</a>
+</li>
+<li class=page-item>
+<a href=/blog/page/2/ aria-label="Page 2" class=page-link role=button>2</a>
+</li>
+<li class=page-item>
+<a href=/blog/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a>
+</li>
+<li class=page-item>
+<a href=/blog/page/2/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src=https://jhilker.com/js/halfmoon.min.9dda67a3037ca73d329f4faa3763c45c588f74139aff20cc2542a8f8458917d4.js onload=halfmoon.toggleDarkMode()></script>
+</body>
+</html>

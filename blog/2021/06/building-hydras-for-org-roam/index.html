@@ -1,0 +1,354 @@
+<!doctype html><html lang=en-us><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta name=viewport content="width=device-width">
+<title> Building Hydras for Org-roam | Jacob's Website</title>
+<link href=/css/halfmoon-variables.min.3d7409702b16355b54aa235e791e286775d9908e6d9cf66e31a2ce694d5c9c63.css rel=stylesheet>
+<link href=/css/style.min.ed8bb7c020e60da4e4c980fe14bd23b23d3cf00bc07dd26012d7acf8d1b812b7.css rel=stylesheet>
+<link href=/css/syntax.min.e44896eb9fe75cf8fc30db9d4eacc299b20e752c34e7e407dac008b8a2abd98e.css rel=stylesheet>
+<link href=/css/custom.min.fada539d592d795c5e33556adf6fefad4138bd9e0a2d7b065384834030048918.css rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Building Hydras for Org-roam">
+<meta name=twitter:description content="I&rsquo;ve recently been playing around with Org-roam, a note-taking package for Emacs and Org-mode based on the Zettelkasten method of taking notes, and interconnecting those notes by means of backlinks, and one place this style of note-taking is very common on is the Roam Research website. In the little bit of time that I&rsquo;ve gotten to try this line of research, I&rsquo;ve found it much more helpful with regards to actually remembering things rather than my old method of just writing it down in a notebook - having backlinks where I can go back and reference any information I&rsquo;ve gotten is very helpful.">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css integrity=sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js integrity=sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js integrity=sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+</head>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled=true data-sidebar-shortcut-enabled=true data-set-preferred-mode-onload=true>
+<div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="full-height overlayed-sm-and-down">
+<nav class=navbar>
+<div class=navbar-content>
+<button class="btn btn-action" type=button onclick=halfmoon.toggleSidebar()>
+<i class="fa fa-bars" aria-hidden=true></i>
+<span class=sr-only>Toggle sidebar</span>
+</button>
+</div>
+<ul class="navbar-nav d-none d-md-flex">
+<li class=nav-item>
+<a href=/ class=nav-link> &nbsp;Home</a>
+</li>
+<li class=nav-item>
+<a href=/about/ class=nav-link> &nbsp;About</a>
+</li>
+<li class=nav-item>
+<a href=/resume/ class=nav-link> &nbsp;Resumé</a>
+</li>
+<li class=nav-item>
+<a href=/projects/ class=nav-link> &nbsp;Projects</a>
+</li>
+<li class="nav-item dropdown with-arrow">
+<a class=nav-link data-toggle=dropdown id=nav-link-dropdown-toggle>
+&nbsp;Blog
+<i class="fa fa-angle-down ml-5" aria-hidden=true></i>
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby=nav-link-dropdown-toggle>
+<a href=/blog/ class=dropdown-item>&nbsp;Recent Posts</a>
+<a href=/archive/ class=dropdown-item>&nbsp;Blog Archive</a>
+<a href=/blog/feed.xml class=dropdown-item>&nbsp;RSS Feed</a>
+</div>
+</li>
+<li class=nav-item>
+<a href=https://config.jhilker.com class=nav-link> &nbsp;Configs</a>
+</li>
+<li class=nav-item>
+<a href=https://gitlab.com/jhilker/jhilker.gitlab.io class=nav-link> &nbsp;Source</a>
+</li>
+</ul>
+<div class="navbar-content d-md-none ml-auto">
+<div class="dropdown with-arrow">
+<button class=btn data-toggle=dropdown type=button id=navbar-dropdown-toggle-btn-1>
+Menu
+<i class="fa fa-angle-down" aria-hidden=true></i>
+</button>
+<div class="dropdown-menu dropdown-menu-right w-200" aria-labelledby=navbar-dropdown-toggle-btn-1>
+<a href=/ class=dropdown-item> &nbsp; Home</a>
+<a href=/about/ class=dropdown-item> &nbsp; About</a>
+<a href=/resume/ class=dropdown-item> &nbsp; Resumé</a>
+<a href=/projects/ class=dropdown-item> &nbsp; Projects</a>
+<a href=/blog/ class=dropdown-item> &nbsp; Blog</a>
+<a href=https://config.jhilker.com class=dropdown-item> &nbsp; Configs</a>
+<a href=https://gitlab.com/jhilker/jhilker.gitlab.io class=dropdown-item> &nbsp; Source</a>
+</div>
+</div>
+</div>
+<button class="btn darkModeBtn ml-auto d-none d-lg-inline-block" type=button onclick=halfmoon.toggleDarkMode() aria-label="Toggle dark mode">
+<i class="fas fa-sun" aria-hidden=true></i>
+</button>
+</nav>
+<div class=sidebar-overlay onclick=halfmoon.toggleSidebar()></div>
+<div class=sidebar>
+<div class=sidebar-menu>
+<div class=personal-content>
+<h4 id=title>Jacob's Website</h4>
+<img class="sidebar-img img-fluid" src=/pics/jhilker.jpg alt="User profile picture">
+<p>I am a Python dev and a fan of Hugo. Currently looking for work.</p>
+<div class="socials d-med-none d-inline-block">
+<a id=social href=https://gitlab.com/jhilker>
+<i class="fab fa-gitlab"></i>
+</a>
+&nbsp;
+<a id=social href=https://github.com/jhilker1>
+<i class="fab fa-github"></i>
+</a>
+&nbsp;
+<a id=social href=https://linkedin.com/in/jhilker>
+<i class="fab fa-linkedin"></i>
+</a>
+&nbsp;
+<a id=social href=https://dev.to/jhilker>
+<i class="fab fa-dev"></i>
+</a>
+&nbsp;
+<a id=social href=https://codepen.io/hilkerj>
+<i class="fab fa-codepen"></i>
+</a>
+&nbsp;
+<a id=social href=/blog/feed.xml>
+<i class="fas fa-rss"></i>
+</a>
+&nbsp;
+<a id=social href=mailto:jacob.hilker2@gmail.com>
+<i class="fas fa-envelope"></i>
+</a>
+&nbsp;
+<br>
+</div>
+<div class="sidebar-divider d-lg-none"></div>
+<div class="sidebar-link button sidebar-link-with-icon d-lg-none bg-dm-dark" id=sidebar-theme-toggle onclick=halfmoon.toggleDarkMode()>
+<span class="sidebar-icon justify-content-center">
+<i class="fa fa-moon" aria-hidden=true></i>
+</span>
+Toggle Theme
+</div>
+<p id=copyright class="font-size-12 position-absolute bottom-0">
+&copy; 2021-2021 Jacob Hilker
+</p>
+</div>
+</div>
+</div>
+<div class=content-wrapper>
+<div class=container-fluid>
+<div class=row>
+<div class=col-lg-9>
+<div class=content>
+<h1 class=title>Building Hydras for Org-Roam</h1>
+<span class=postInfo>
+<i class="fas fa-calendar"></i>
+&nbsp;Mon, 14 Jun. 2021
+&nbsp;
+<i class="fas fa-stopwatch"></i>
+5-minute read
+&nbsp;
+<i class="fas fa-calendar"></i>
+Last updated:
+&nbsp;Thu, 19 Aug. 2021
+</span>
+<br>
+<span class=mb-0>
+<span>
+<i class="fas fa-folder-open"></i>
+<b>Categories:</b>
+<a href=/categories/emacs>Emacs</a>
+<a href=/categories/programming>Programming</a>
+<a href=/categories/org-mode>Org-mode</a>
+</span>
+<br>
+<span class=text-right>
+<span>
+<i class="fas fa-tags"></i> <b>Tagged:</b>
+<a href=/tags/emacs>Emacs</a>
+<a href=/tags/programming>Programming</a>
+<a href=/tags/org-mode>Org-mode</a>
+<a href=/tags/org-roam>Org-roam</a>
+<a href=/tags/worldbuilding>Worldbuilding</a>
+<a href=/tags/wikis>Wikis</a>
+</span>
+</span>
+</span>
+<p>I&rsquo;ve recently been playing around with <a href=https://github.com/org-roam/org-roam>Org-roam</a>, a note-taking package for Emacs and Org-mode based on the <a href=https://en.wikipedia.org/wiki/Zettelkasten>Zettelkasten</a> method of taking notes, and interconnecting those notes by means of backlinks, and one place this style of note-taking is very common on is the <a href=https://roamresearch.com>Roam Research</a> website. In the little bit of time that I&rsquo;ve gotten to try this line of research, I&rsquo;ve found it much more helpful with regards to actually remembering things rather than my old method of just writing it down in a notebook - having backlinks where I can go back and reference any information I&rsquo;ve gotten is very helpful. Despite my love of this way of keeping myself organized, I wanted to be able to quickly capture ideas for any worldbuilding ideas I had - something which I feel like would fall into one of the worldbuilding wikis I maintain for myself, rather than the notes I use by default (for things such as software or any books I&rsquo;ve read). I wanted to try and do more with Emacs-lisp, and so I found that trying to write a hydra for it might be a good place to start. Although I had found that the idea in the documentation of creating a <code>.dir-locals.el</code> in the directory where I needed a roam database was a good place to start, I found that it ultimately forced me to have to be in that directory to capture an idea if I suddenly came up with one, which I feel like sort of goes against the entire workflow I have set up at this point. I knew that I needed to do three things with my &ldquo;Roam hydra&rdquo;:</p>
+<ul>
+<li>quickly capture ideas for my worldbuilding projects.</li>
+<li>insert links to those files in any other wiki files, if I had to.</li>
+<li>quickly find files for the wiki, if I needed to update them.</li>
+</ul>
+<p>And so, I decided to set up my first hydra for finding files. I figured I didn&rsquo;t want to set one up where I could add a file, but finding a file seemed like a good place to start.</p>
+<h2 id=the-base-hydra-finding-files>The Base Hydra - Finding Files</h2>
+<p>I figured fairly early on that once I had one function and hydra down, I would effectively have all three down, but I would just need to update the function I needed to call (such as <code>org-roam-node-find</code> or <code>org-roam-capture</code>). I started by looking over the code from the excellent blog post on <a href=https://mollermara.com/blog/Fast-refiling-in-org-mode-with-hydras/>refiling Org-mode items with a hydra</a>. Spoilers - I&rsquo;m not very good at Elisp, so when I saw his macro with all the backticks and commas, I found it fairly hard to follow along, at least until I found a cheatsheet for elisp earlier today. I first overwrote the function with a simple <code>(let*)</code> before I called <code>org-roam-find-file</code> and ran it in a simple scratch buffer. I was using the wiki I have for my alt-history setting <a href=https://brokenthrones.jhilker.com>Broken Thrones</a> as an example, since that has become one of my main passion projects in my off-time, but feel free to use any hugo-site with <a href=https://github.com/kaushalmodi/ox-hugo>Ox-Hugo</a> set up as an example. I am using a directory called <code>content-org</code> in that hugo site, but use whatever you want.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>defun</span> <span class=nv>jh/find-org-roam-file</span> <span class=p>(</span><span class=nv>directory</span><span class=p>)</span>
+  <span class=s>&#34;Sets the org-roam directory and database and finds file.&#34;</span>
+  <span class=p>(</span><span class=nb>let*</span> <span class=p>((</span><span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>concat</span> <span class=nv>directory</span> <span class=s>&#34;content-org/&#34;</span><span class=p>))</span>
+         <span class=p>(</span><span class=nv>org-roam-db-location</span> <span class=p>(</span><span class=nf>concat</span> <span class=nv>directory</span> <span class=s>&#34;org-roam.db&#34;</span><span class=p>)))</span>
+    <span class=p>(</span><span class=nv>org-roam-node-find</span><span class=p>)))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>After evaluating that in a scratch buffer, now I knew that I had enough for a basic hydra. Here is my final configuration for this base hydra after I did some UI tweaks for the help menu, but if anything the UI isn&rsquo;t as important as functionality, at least when first setting it up.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>defhydra</span> <span class=nv>jh/find-org-roam-file-hydra</span> <span class=p>(</span><span class=nb>:hint</span> <span class=no>nil</span> <span class=nb>:exit</span> <span class=no>t</span><span class=p>)</span>
+  <span class=s>&#34;
+</span><span class=s>^Default^            ^Conworlds^             ^Campaigns^
+</span><span class=s>^^^^^^^^------------------------------------------------------------
+</span><span class=s>_d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
+</span><span class=s>_q_: Quit            _s_: Shattered Skies    ^ ^
+</span><span class=s>&#34;</span>
+
+  <span class=p>(</span><span class=s>&#34;d&#34;</span> <span class=p>(</span><span class=nv>jh/find-org-roam-file</span> <span class=s>&#34;~/org/roam/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;b&#34;</span> <span class=p>(</span><span class=nv>jh/find-org-roam-file</span> <span class=s>&#34;~/Projects/conworlds/brokenThrones/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;s&#34;</span> <span class=p>(</span><span class=nv>jh/find-org-roam-file</span> <span class=s>&#34;~/Projects/conworlds/shatteredSkies/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;e&#34;</span> <span class=p>(</span><span class=nv>jh/find-org-roam-file</span> <span class=s>&#34;~/Projects/campaigns/mirkwoodCampaign/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;q&#34;</span> <span class=no>nil</span><span class=p>))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Once I had that, I knew I could just replace <code>org-roam-find-file</code> with <code>org-roam-capture</code> or whatever I needed to call. Although I am reusing a lot of code for this, in time I will try to clean it up. If you need the other hydras I use on a daily basis for roam notes, here they are.</p>
+<p>To actually use the hydra, bind <code>jh/find-org-roam-file-hydra/body</code> to a keybinding (I use <code>SPC n r f</code>) in my configs for both vanilla Emacs and Doom Emacs, and you should be set.</p>
+<h2 id=capturing-hydra>Capturing Hydra</h2>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>defun</span> <span class=nv>jh/org-roam-capture</span> <span class=p>(</span><span class=nv>directory</span><span class=p>)</span>
+  <span class=s>&#34;Sets the org-roam directory and database and captures to file.&#34;</span>
+  <span class=p>(</span><span class=nb>let*</span> <span class=p>((</span><span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>concat</span> <span class=nv>directory</span> <span class=s>&#34;content-org/&#34;</span><span class=p>))</span>
+         <span class=p>(</span><span class=nv>org-roam-db-location</span> <span class=p>(</span><span class=nf>concat</span> <span class=nv>directory</span> <span class=s>&#34;org-roam.db&#34;</span><span class=p>)))</span>
+    <span class=p>(</span><span class=nv>org-roam-capture</span><span class=p>)))</span>
+
+<span class=p>(</span><span class=nv>defhydra</span> <span class=nv>jh/org-roam-capture-hydra</span> <span class=p>(</span><span class=nb>:hint</span> <span class=no>nil</span> <span class=nb>:exit</span> <span class=no>t</span><span class=p>)</span>
+  <span class=s>&#34;
+</span><span class=s>^Default^            ^Conworlds^             ^Campaigns^
+</span><span class=s>^^^^^^^^------------------------------------------------------------
+</span><span class=s>_d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
+</span><span class=s>_q_: Quit            _s_: Shattered Skies    ^ ^
+</span><span class=s>&#34;</span>
+
+  <span class=p>(</span><span class=s>&#34;d&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-capture</span> <span class=s>&#34;~/org/roam/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;b&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-capture</span> <span class=s>&#34;~/Projects/conworlds/brokenThrones/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;s&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-capture</span> <span class=s>&#34;~/Projects/conworlds/shatteredSkies/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;e&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-capture</span> <span class=s>&#34;~/Projects/campaigns/mirkwoodCampaign/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;q&#34;</span> <span class=no>nil</span><span class=p>))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=insertion-hydra>Insertion Hydra</h2>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>defun</span> <span class=nv>jh/org-roam-insert</span> <span class=p>(</span><span class=nv>directory</span><span class=p>)</span>
+  <span class=s>&#34;Sets the org-roam directory and database and inserts link to file.&#34;</span>
+  <span class=p>(</span><span class=nb>let*</span> <span class=p>((</span><span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>concat</span> <span class=nv>directory</span> <span class=s>&#34;content-org/&#34;</span><span class=p>))</span>
+         <span class=p>(</span><span class=nv>org-roam-db-location</span> <span class=p>(</span><span class=nf>concat</span> <span class=nv>directory</span> <span class=s>&#34;org-roam.db&#34;</span><span class=p>)))</span>
+    <span class=p>(</span><span class=nv>org-roam-node-insert</span><span class=p>)))</span>
+
+<span class=p>(</span><span class=nv>defhydra</span> <span class=nv>jh/org-roam-insert-hydra</span> <span class=p>(</span><span class=nb>:hint</span> <span class=no>nil</span> <span class=nb>:exit</span> <span class=no>t</span><span class=p>)</span>
+  <span class=s>&#34;
+</span><span class=s>^Default^            ^Conworlds^             ^Campaigns^
+</span><span class=s>^^^^^^^^------------------------------------------------------------
+</span><span class=s>_d_: Default         _b_: Broken Thrones     _e_: Ere Break of Day
+</span><span class=s>_q_: Quit            _s_: Shattered Skies    ^ ^
+</span><span class=s>&#34;</span>
+
+  <span class=p>(</span><span class=s>&#34;d&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-insert</span> <span class=s>&#34;~/org/roam/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;b&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-insert</span> <span class=s>&#34;~/Projects/conworlds/brokenThrones/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;s&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-insert</span> <span class=s>&#34;~/Projects/conworlds/shatteredSkies/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;e&#34;</span> <span class=p>(</span><span class=nv>jh/org-roam-insert</span> <span class=s>&#34;~/Projects/campaigns/mirkwoodCampaign/&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=s>&#34;q&#34;</span> <span class=no>nil</span><span class=p>))</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 d-none d-lg-block">
+<div class=content>
+<h3 class="content-title mb-10">Table of Contents</h3>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#the-base-hydra-finding-files>The Base Hydra - Finding Files</a></li>
+<li><a href=#capturing-hydra>Capturing Hydra</a></li>
+<li><a href=#insertion-hydra>Insertion Hydra</a></li>
+</ul>
+</nav>
+<hr>
+<h3 class="content-title mb-0">See Also</h3>
+<ul>
+<li style=list-style-type:none><a href=/blog/2021/08/a-psa-for-my-org-roam-hydra/>A PSA for my Org-Roam Hydra</a></li>
+<li style=list-style-type:none><a href=/blog/2021/06/my-org-mode-workflow/>My Org-Mode Workflow</a></li>
+<li style=list-style-type:none><a href=/blog/2021/03/using-a-makefile-with-my-website/>Using A Makefile With My Website</a></li>
+<li style=list-style-type:none><a href=/blog/2021/02/featuring-site-content-in-hugo/>Featuring Site Content in Hugo</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<center>
+</center>
+<div id=fb_comments_container>
+<h2></h2>
+<script src=https://utteranc.es/client.js repo=jhilker1/website-comments issue-term=pathname theme=preferred-color-scheme crossorigin=anonymous async></script>
+</div>
+</div>
+</div>
+<script src=https://jhilker.com/js/halfmoon.min.9dda67a3037ca73d329f4faa3763c45c588f74139aff20cc2542a8f8458917d4.js onload=halfmoon.toggleDarkMode()></script>
+</body>
+</html>
